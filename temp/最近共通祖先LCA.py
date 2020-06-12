@@ -1,3 +1,9 @@
+n = int(input())
+e = [[] for i in range(n+1)]
+for i in range(n-1):
+    a,b = map(int,input().split())
+    e[a].append(b)
+    e[b].append(a)
 
 def getpar(x,d,p):
     depth[x] = d
