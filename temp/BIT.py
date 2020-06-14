@@ -24,8 +24,8 @@ class BIT:
         while ri<n:
             ri = ri<<1
         while ri > 0:
-            if le+ri < n and self.sum(le+ri)<x:
-                x -= self.sum(le+ri)
+            if le+ri < n and self.tree[le+ri]<x:
+                x -= self.tree[le+ri]
                 le += ri
             ri = ri >> 1
         return le+1
@@ -34,4 +34,4 @@ n = 10
 bit = BIT(n)
 for i in range(10):
     bit.add(i,i)
-print(bit.bsearch(12))
+print(bit.bsearch(34))

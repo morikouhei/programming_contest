@@ -7,5 +7,8 @@ for _ in range(t):
     count = min(b,dif)
     b -= count
     a -= count*2
-    count += (min(a,b)//3)*2
-    print(count)
+    if b > 0:
+        x = (a+b)//3
+        print(count+x)
+    else:
+        print(count)
