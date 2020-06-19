@@ -1,37 +1,37 @@
-import sys
-input = sys.stdin.readline
-sys.setrecursionlimit(10 ** 7)
-import numpy as np
+n = int(input())
+a = [int(input()) for i in range(n)]
+a.sort()
 
-def main():
-    n = int(input())
-    l = [list(map(int,input().split())) for i in range(n)]
-    dic = {}
-    q = int(input())
-    Q = []
-    lm = 0
-    for i in range(q):
-        a,b = map(int,input().split())
-        lm = max(b,lm)
-        Q.append((a,b))
-    d = np.zeros(lm+1,dtype=np.int64)
-    if l[0][1] <= lm:
-        d[l[0][1]] = l[0][0]
-    dic[1] = d
-    
-    def dfs(x):
-        if x in dic:
-            return dic[x]
-        
-        v,w = l[x-1]
-        li = dfs(x//2)
-        d = np.zeros(lm+1,dtype=np.int64)
-        d[w:] = np.maximum(li[w:],li[:-w]+v,out=li[w:])
-        dic[x] = d
-        return d
+p = [0]*n
+m = [0]*n
 
-    for a,b in Q:
-        s = dfs(a)
-        print(np.max(s[:b+1]))
-if __name__ == "__main__":
-    main()
+for i in range(n-1):
+    if i%2:
+        m[i] += 1
+        p[i+1] += 1
+    else:
+        p[i] += 1
+        m[i+1] += 1
+p.sort(reverse=True)
+m.sort(reverse=True)
+ans = 0
+print(p,m)
+for i in range(n):
+    if m[i] <= 0:
+        break
+    ans -= m[i]*a[i]
+for i in range(n):
+    if p[i] <= 0:
+        break
+    ans += p[i]*a[-1-i]
+ans2 = 0
+for i in range(n):
+    if p[i] <= 0:
+        break
+    ans2 -= p[i]*a[i]
+for i in range(n):
+    if m[i] <= 0:
+        break
+    ans2 += m[i]*a[-1-i]
+print(ans,ans2)
+print(max(ans,ans2))
