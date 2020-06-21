@@ -1,37 +1,16 @@
-n = int(input())
-a = [int(input()) for i in range(n)]
-a.sort()
-
-p = [0]*n
-m = [0]*n
-
-for i in range(n-1):
-    if i%2:
-        m[i] += 1
-        p[i+1] += 1
-    else:
-        p[i] += 1
-        m[i+1] += 1
-p.sort(reverse=True)
-m.sort(reverse=True)
+a,b = input().split()
 ans = 0
-print(p,m)
-for i in range(n):
-    if m[i] <= 0:
-        break
-    ans -= m[i]*a[i]
-for i in range(n):
-    if p[i] <= 0:
-        break
-    ans += p[i]*a[-1-i]
-ans2 = 0
-for i in range(n):
-    if p[i] <= 0:
-        break
-    ans2 -= p[i]*a[i]
-for i in range(n):
-    if m[i] <= 0:
-        break
-    ans2 += m[i]*a[-1-i]
-print(ans,ans2)
+if int(a[0]) < 9:
+    ans = int(a)+(9-int(a[0]))*100 -int(b)
+elif int(a[1]) < 9:
+    ans = int(a)+(9-int(a[1]))*10 -int(b)
+else:
+    ans = int(a)+(9-int(a[2])) -int(b)
+
+if int(b[0]) > 1:
+    ans2 = int(a)+(int(b[0])-1)*100 -int(b)
+elif int(b[1]) > 0:
+    ans2 = int(a)+(int(b[1]))*10 -int(b)
+else:
+    ans2 = int(a)+(int(b[2])) -int(b)
 print(max(ans,ans2))
