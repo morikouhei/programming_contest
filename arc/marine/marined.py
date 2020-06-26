@@ -1,16 +1,8 @@
-a,b = input().split()
-ans = 0
-if int(a[0]) < 9:
-    ans = int(a)+(9-int(a[0]))*100 -int(b)
-elif int(a[1]) < 9:
-    ans = int(a)+(9-int(a[1]))*10 -int(b)
-else:
-    ans = int(a)+(9-int(a[2])) -int(b)
-
-if int(b[0]) > 1:
-    ans2 = int(a)+(int(b[0])-1)*100 -int(b)
-elif int(b[1]) > 0:
-    ans2 = int(a)+(int(b[1]))*10 -int(b)
-else:
-    ans2 = int(a)+(int(b[2])) -int(b)
-print(max(ans,ans2))
+n = int(input())
+s = list(input())
+k = int(input())
+t = s[k]
+for i in range(n):
+    if s[i] != t:
+        s[i] = "*"
+print(*s,sep="")
