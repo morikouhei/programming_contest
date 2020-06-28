@@ -1,3 +1,4 @@
+n,m = map(int,input().split())
 mod = 10**9+7
 
 fact = [1,1]
@@ -20,3 +21,12 @@ def nPr(n,r,mod):
         return 0
     else: 
         return fact[n]*finv[n-r]%mod
+
+ans = 0
+for i in range(n+1):
+    now = (nCr(n,i,mod)*nPr(m-i,n-i,mod))%mod
+    if i%2:
+        now = -now
+    ans = (ans+now)%mod
+ans *= nPr(m,n,mod)
+print(ans%mod)
