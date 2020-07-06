@@ -1,2 +1,2 @@
 # atcoder
-submitted code of atcoder
+submitted code of competitive prgramming
