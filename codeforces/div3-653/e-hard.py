@@ -21,91 +21,83 @@ other.sort()
 la = len(a)
 lb = len(b)
 lab = len(ab)
+lo = len(other)
 a.append([float("INF"),-1])
 b.append([float("INF"),-1])
 ab.append([float("INF"),-1])
-s = set()
-dis = set()
-if la+lab < k or lb+lab < k:
-    print(-1)
-    exit()
-if lb > la:
+other.append([float("INF"),-1])
+if la<lb:
     la,lb = lb,la
     a,b = b,a
+ans = float("INF")
+count = 0
+ia = 0
+ib = 0
+iab = 0
+io = 0
+ana = 0
+anb = 0
+anab = 0
+ano = 0
+for i in range(lab+1):
+    if k-i > lb:
+        continue
+    if 2*k-i > m:
+        continue
+    if i + la + lb + lo < m: 
+        continue
+    if ia > 0:
+        ia -= 1
+        count -= a[ia][0]
+    if ib > 0:
+        ib -= 1
+        count -= b[ib][0]
+    if io > 0:
+        io -= 1
+        count -= other[io][0]
+    while ia < la and ia < k-i:
+        count += a[ia][0]
+        ia += 1
+    while ib < lb and ib < k-i:
+        count += b[ib][0]
+        ib += 1
+    while iab < lab and iab < i:
+        count += ab[iab][0]
+        iab += 1
 
-if lab >= k:
-    for i in range(k):
+    while ia+ib+iab+io < m:
+        na = a[ia][0]
+        nb = b[ib][0]
+        no = other[io][0]
         
-        s.add(ab[i][1])
-    now = k-1
-    na = 0
-    nb = 0
+        mi = min(na,nb,no)
+        if mi == na:
+            count += na
+            ia += 1
+        elif mi == nb:
+            count += nb
+            ib += 1
+        else:
+            count += no
+            io += 1
+    if count < ans:
+        ans = count
+        ana = ia
+        anb = ib
+        anab = iab
+        ano = io
     
+if ans == float("INF"):
+    print(-1)
 else:
-    for i,j in ab[:lab]:
-        
-        s.add(j)
-    for i in range(k-lab):
-        s.add(a[i][1])
-        s.add(b[i][1])
-    now = lab-1
-    na = k-lab
-    nb = k-lab
-
-while nb < lb and now >= 0 and ab[now][0]+min(other[0][0],ab[now+1][0],a[na][0],b[nb][0]) >= a[na][0]+b[nb][0]:
-    s.add(a[na][1])
-    s.add(b[nb][1])
-    dis.add(ab[now][1])
-    na += 1
-    nb += 1
-    now -= 1
-s2 = set()
-for i in s:
-    if i in dis:
-        continue
-    s2.add(i)
-s = set()
-dis = set()
-if len(s2) >= m:
-    q = len(s2)-m
-
-    for i in range(q):
-        na -= 1
-        nb -= 1
-        now += 1
-        if now == lab:
-            print(-1)
-            exit()
-        s.add(ab[now][1])
-        dis.add(a[na][1])
-        dis.add(b[nb][1])
-else:
-    for i in range(la):
-        if a[i][1] not in s2:
-            other += a[i:]
-            break
-    for i in range(lb):
-        if b[i][1] not in s2:
-            other += b[i:]
-            break
-    for i in range(lab):
-        if ab[i][1] not in s2:
-            other += ab[i:]
-            break
-    other.sort()
-    for i in range(m-len(s2)):
-        s.add(other[i][1])
-
-s |= s2
-ans = 0
-count = []
-for i in s:
-    if i in dis:
-        continue
-    count.append(i)
-    ans += l[i-1][0]
-print(ans)
-print(*count)
-
-
-
+    print(ans)
+    l = []
+    for i in range(ana):
+        l.append(a[i][1])
+    for i in range(anb):
+        l.append(b[i][1])
+    for i in range(anab):
+        l.append(ab[i][1])
+    for i in range(ano):
+        l.append(other[i][1])
+    print(*l)
