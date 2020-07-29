@@ -1,36 +1,33 @@
 import sys
 input = sys.stdin.readline
-
+from bisect import bisect_right as br
 t = int(input())
 for _ in range(t):
     n,m = map(int,input().split())
-
-    ab = [list(map(int,input().split())) for i in range(m)]
-    
-    mb = 0
-    ab.sort(reverse=True)
+    ab = sorted([list(map(int,input().split())) for i in range(m)])
+    sa = [0]
+    a = [0]
     for i in range(m):
-        mb = max(mb,ab[i][1])
-    nb = 0
+        now = ab[i][0]
+        a.append(now)
+        sa.append(sa[-1]+now)
     ans = 0
+    if n <= m:
+        l = m-n+1
+    else:
+        l = 0
     
-    for i in range(0,m):
-        a,b = ab[i]
+    for i in range(m):
+        na,nb = ab[i]
+        ind = max(l,br(a,nb))
         
-        if a >= mb:
-            ans += a
-            nb = max(nb,b)
-            n -= 1
-        if n == 0 or a < mb:
-            break
-    
-    nc = nb*n
-    l = i
-    for i in range(l,m):
-        a,b = ab[i]
-        c = a+(n-1)*b
-        nc = max(nc,c)
-    ans += nc
+        count = sa[-1]-sa[ind-1]
+        left = n-(m+1-ind)
+        if na < nb and left:
+            count += na
+            left -= 1
+        count += (left)*nb
+        ans = max(ans,count)
     print(ans)
-    if _ < t-1:
+    if _ != t-1:
         s = input()
