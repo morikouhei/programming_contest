@@ -10,7 +10,7 @@ while r > l + 1:
     for i in a:
         if i <= m:
             continue
-        count += (i)//m
+        count += (i-1)//m
         
     if count > k:
         l = m
