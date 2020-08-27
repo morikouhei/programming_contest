@@ -20,18 +20,10 @@ class BIT:
     # 総和がx以上になる位置のindex をbinary search
     def bsearch(self,x):
         le = 0
-        ri = 1
-        while ri<n:
-            ri = ri<<1
+        ri = 1<<(self.size.bit_length()-1)
         while ri > 0:
-            if le+ri < n and self.tree[le+ri]<x:
+            if le+ri <= self.size and self.tree[le+ri]<x:
                 x -= self.tree[le+ri]
                 le += ri
-            ri = ri >> 1
+            ri >>= 1
         return le+1
-
-n = 10
-bit = BIT(n)
-for i in range(10):
-    bit.add(i,i)
-print(bit.bsearch(34))
