@@ -3,6 +3,13 @@ class BIT:
         self.size = n
         self.tree = [0]*(n+1)
  
+    def build(self, list):
+        self.tree[1:] = list.copy()
+        for i in range(self.size+1):
+            j = i + (i & (-i))
+            if j < self.size+1:
+                self.tree[j] += self.tree[i]
+
     def sum(self, i):
         # [0, i) の要素の総和を返す
         s = 0
