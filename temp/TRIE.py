@@ -1,3 +1,5 @@
+### based on agc-B First Second ###
+
 n = int(input())
 s = [list(input()) for i in range(n)]
 M = 10**6+5
@@ -20,17 +22,3 @@ for i in s:
         node = child[node][stoi(j)]
     is_end[node] += 1
     l.append(suf)
-
-ans = 0
-for i in range(n):
-    li = l[i][::-1]
-    si = s[i]
-    suf = set()
-    for j in range(len(si)):
-        suf.add(si[j])
-        if j == 0:
-            continue
-        node = li[j]
-        for c in suf:
-            ans += is_end[child[node][stoi(c)]]
-print(ans)
