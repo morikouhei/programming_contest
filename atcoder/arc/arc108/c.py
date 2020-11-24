@@ -1,43 +1,58 @@
-import sys
-sys.setrecursionlimit(10**6)
 from collections import deque
+
+class Unionfind:
+     
+    def __init__(self,n):
+        self.uf = [-1]*n
+ 
+    def find(self,x):
+        if self.uf[x] < 0:
+            return x
+        else:
+            self.uf[x] = self.find(self.uf[x])
+            return self.uf[x]
+ 
+    def same(self,x,y):
+        return self.find(x) == self.find(y)
+ 
+    def union(self,x,y):
+        x = self.find(x)
+        y = self.find(y)
+        if x == y:
+            return False
+        if self.uf[x] > self.uf[y]:
+            x,y = y,x
+        self.uf[x] += self.uf[y]
+        self.uf[y] = x
+        return True
+ 
+    def size(self,x):
+        x = self.find(x)
+        return -self.uf[x]
 
 n,m = map(int,input().split())
 e = [[] for i in range(n+1)]
-s = [set() for i in range(n+1)]
+uf = Unionfind(n+1)
 for i in range(m):
     u,v,c = map(int,input().split())
-
+    if uf.same(u,v):
+        continue
     e[u].append((v,c))
     e[v].append((u,c))
 
-ans = [0]*(n+1)
+ans = [-1]*(n+1)
+ans[1] = 1
 q = deque([[1,0]])
-ans[1] = e[1][0][1]
 while q:
-    now, bef = q.popleft()
-    for nex,c in e[now]:
-        if nex == bef:
-            continue
-        s[nex].add(ans[now])
+    now,par = q.popleft()
+    for nex,col in e[now]:
         if ans[nex] > 0:
             continue
-        if ans[now] != c:
-            ans[nex] = c
-            q.append([nex,now])
+        if ans[now] == col:
+            ans[nex] = col%n+1
         else:
-            check = False
-            for _,c in e[nex]:
-                if c not in s[nex]:
-                    check = True
-                    ans[nex] = c
-                    break
-            if check == False:
-                for j in range(1,n+1):
-                    if j not in s[nex]:
-                        ans[nex] = j
-                        break
-            q.append([nex,now])
+            ans[nex] = col
+        q.append([nex,now])
 
 for i in ans[1:]:
     print(i)
