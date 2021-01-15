@@ -1,16 +1,9 @@
-X,Y = map(int,input().split())
-if X >= Y:
-    print(X-Y)
-    exit()
-
-dic = {}
 import sys
 sys.setrecursionlimit(10**5)
+
+X,Y = map(int,input().split())
+dic = {}
 def dfs(x):
-    if x == X:
-        return 0
-    if abs(x-X) == 1:
-        return 1
     if x <= X:
         return X-x
     if x in dic:
