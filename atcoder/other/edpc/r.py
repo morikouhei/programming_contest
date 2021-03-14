@@ -15,7 +15,6 @@ ans = [[0]*n for i in range(n)]
 for i in range(n):
     ans[i][i] = 1
 
-
 while k:
     if k%2:
         ans = cal(ans,A)
