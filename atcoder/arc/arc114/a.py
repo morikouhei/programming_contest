@@ -1,8 +1,7 @@
 import math
 n = int(input())
-X = [i for i in range(2,51)]
+X = list(map(int,input().split()))
 
-use = [0]*51
 prime = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
 base = 1
 cand = set()
