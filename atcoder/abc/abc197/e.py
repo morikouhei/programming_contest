@@ -1,47 +1,27 @@
 n = int(input())
 l = [list(map(int,input().split())) for i in range(n)]
-
-L = [10**10]*(n+1)
-R = [-10**10]*(n+1)
+inf = 10**20
+L = [inf]*(n+2)
+R = [-inf]*(n+2)
 for x,c in l:
     L[c] = min(L[c],x)
     R[c] = max(R[c],x)
 
 
-L[0] = 0
-R[0] = 0
+L[0] = R[0] = 0
+L[n+1] = R[n+1] = 0
 
-now = 0
+d = []
+for i,j in zip(L,R):
+    if i != inf:
+        d.append((i,j))
+
 dp = [0]*2
-print(L,R)
-for i in range(n+1):
-    if L[i] == 10**10:
-        continue
-    candl = 10**20
-    if R[i] <= L[now]:
-        cal1 = L[now]-L[i]+dp[0]
-    else:
-        cal1 = max(0,R[i]-L[now])+R[i]-L[i]+dp[0]
-
-    if R[i] <= R[now]:
-        cal2 = R[now]-L[i]+dp[1]
-    else:
-        cal2 = max(0,R[i]-R[now])+R[i]-L[i]+dp[1]
-    candl = min(cal1,cal2)
-
-    candr = 10**20
-    if L[i] >=  L[now]:
-        cal1 = R[i]-L[now]+dp[0]
-    else:
-        cal1 = max(0,L[now]-L[i])+R[i]-L[i]+dp[0]
-
-    if L[i] >= R[now]:
-        cal2 = R[i]-R[now]+dp[1]
-    else:
-        cal2 = max(0,R[now]-L[i])+R[i]-L[i]+dp[1]
-    candr = min(cal1,cal2)
-    dp = [candl,candr]
-    now = i
-ans = dp[0]+abs(L[now])
-ans = min(ans,dp[1]+abs(R[now]))
-print(ans)
+for i,(l,r) in enumerate(d):
+    ndp = [inf]*2
+    for j in range(2):
+        bef = d[i-1][j]
+        ndp[0] = min(ndp[0],abs(r-bef)+r-l+dp[j])
+        ndp[1] = min(ndp[1],abs(l-bef)+r-l+dp[j])
+    dp = ndp
+print(min(dp))

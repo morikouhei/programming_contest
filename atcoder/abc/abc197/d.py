@@ -4,8 +4,7 @@ x0,y0 = map(int,input().split())
 xn,yn = map(int,input().split())
 
 rot = math.pi*2/n
-print(math.degrees(rot))
-cx = (x0*xn)/2
+cx = (x0+xn)/2
 cy = (y0+yn)/2
 
 x = cx+(x0-cx)*math.cos(rot)-(y0-cy)*math.sin(rot)
