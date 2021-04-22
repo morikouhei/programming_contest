@@ -49,58 +49,28 @@ bitB.add(0,m)
 for t,x,y in Q:
     if t == 1:
         bef = A[x-1]
-        if bef == y:
-            print(ans)
-            continue
-        if bef < y:
-            r = bitB.sum(dic[y])
-            l = bitB.sum(dic[bef])
-            rsum = bitBsum.sum(dic[y])
-            lsum = bitBsum.sum(dic[bef])
-            ans += y*r-rsum+lsum-bef*l
-            bitA.add(dic[y],1)
-            bitAsum.add(dic[y],y)
-            bitA.add(dic[bef],-1)
-            bitAsum.add(dic[bef],-bef)
-            A[x-1] = y
-        else:
-            r = bitB.sum(dic[bef])
-            l = bitB.sum(dic[y])
-            rsum = bitBsum.sum(dic[bef])
-            lsum = bitBsum.sum(dic[y])
-            ans -= bef*r-rsum+lsum-y*l
-            bitA.add(dic[y],1)
-            bitAsum.add(dic[y],y)
-            bitA.add(dic[bef],-1)
-            bitAsum.add(dic[bef],-bef)
-            A[x-1] = y
+        r = bitB.sum(dic[y])
+        l = bitB.sum(dic[bef])
+        rsum = bitBsum.sum(dic[y])
+        lsum = bitBsum.sum(dic[bef])
+        ans += y*r-rsum+lsum-bef*l
+        bitA.add(dic[y],1)
+        bitAsum.add(dic[y],y)
+        bitA.add(dic[bef],-1)
+        bitAsum.add(dic[bef],-bef)
+        A[x-1] = y
+
     else:
         bef = B[x-1]
-        if bef == y:
-            print(ans)
-        if bef < y:
-            r = bitA.sum(dic[y])
-            l = bitA.sum(dic[bef])
-            rsum = bitAsum.sum(dic[y])
-            lsum = bitAsum.sum(dic[bef])
-            ans += y*r-rsum+lsum-bef*l
-            bitB.add(dic[y],1)
-            bitBsum.add(dic[y],y)
-            bitB.add(dic[bef],-1)
-            bitBsum.add(dic[bef],-bef)
-            B[x-1] = y
-        else:
-            r = bitA.sum(dic[bef])
-            
-            l = bitA.sum(dic[y])
-            rsum = bitAsum.sum(dic[bef])
-            lsum = bitAsum.sum(dic[y])
-            ans -= bef*r-rsum+lsum-y*l
-            bitB.add(dic[y],1)
-            bitBsum.add(dic[y],y)
-            bitB.add(dic[bef],-1)
-            bitBsum.add(dic[bef],-bef)
-            B[x-1] = y
-
+        r = bitA.sum(dic[y])
+        l = bitA.sum(dic[bef])
+        rsum = bitAsum.sum(dic[y])
+        lsum = bitAsum.sum(dic[bef])
+        ans += y*r-rsum+lsum-bef*l
+        bitB.add(dic[y],1)
+        bitBsum.add(dic[y],y)
+        bitB.add(dic[bef],-1)
+        bitBsum.add(dic[bef],-bef)
+        B[x-1] = y
     print(ans)
 
