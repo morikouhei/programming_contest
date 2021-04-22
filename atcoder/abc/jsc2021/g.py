@@ -58,23 +58,22 @@ for i in range(n):
     m[y][y] += 1
     m[x][y] -= 1
     m[y][x] -= 1
-for i in m:
-    print(*i)
+
 n -= 1
 ans = 1
 for i in range(n):
-    if m[i][i] == 0:
-        for j in range(i+1,n):
-            if m[j][i] != 0:
-                m[i],m[j] = m[j],m[i]
-                ans *= -1
-                break
+
+    for j in range(i+1,n):
+        if m[j][i] != 0:
+            m[i],m[j] = m[j],m[i]
+            ans *= -1
+            break
     if m[i][i] == 0:
         print(0)
         exit()
     ans *= m[i][i]
     ans %= mod
-    print(ans)
+
     inv = pow(m[i][i],mod-2,mod)
     for j in range(i,n):
         m[i][j] *= inv
@@ -83,7 +82,7 @@ for i in range(n):
     for j in range(i+1,n):
         x = m[j][i]
         for k in range(i,n):
-            m[j][k] -= m[i][j]*x
+            m[j][k] -= m[i][k]*x
             m[j][k] %= mod
 print(ans)
 
