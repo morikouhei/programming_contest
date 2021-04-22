@@ -38,8 +38,9 @@ for l,r in LR:
 cumR = [0]
 for i in range(1,n+1):
     cumR.append(cumR[i-1]+R[i])
-for l in L:
+for l,r in zip(L,R):
     ans -= l*(l-1)//2
+    ans -= r*(r-1)//2
 for l,r in LR:
     ans -= cumR[l]
 

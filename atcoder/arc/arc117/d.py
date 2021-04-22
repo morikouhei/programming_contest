@@ -1,5 +1,5 @@
 import sys
-sys.setrecursionlimit(30)
+sys.setrecursionlimit(3*10**5)
 from collections import deque
 n = int(input())
 e = [[] for i in range(n)]
@@ -26,11 +26,11 @@ def bfs(x):
 dis = bfs(0)
 dis = bfs(dis.index(max(dis)))
 ans = [-1]*n
-print(dis)
+
 def dfs(x,num):
     ans[x] = num
     p = -1
-    print(x)
+
     for nex in e[x]:
         if ans[nex] > 0:
             continue
@@ -41,9 +41,9 @@ def dfs(x,num):
     if p == -1:
         return num
     dfs(p,num+1)
-print(dis,dis.index(max(dis)))
+
 dfs(dis.index(max(dis)),1)
-print(ans)
+print(*ans)
     
 
 
