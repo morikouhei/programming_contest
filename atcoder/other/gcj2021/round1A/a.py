@@ -6,7 +6,6 @@ def solve():
     now = 0
     for i in range(n):
         nex = X[i]
-        #print(now,nex,count)
         if now < nex:
             now = nex
             continue
@@ -14,7 +13,6 @@ def solve():
         s2 = str(nex)
 
         c1 = s1[:len(s2)]
-        #print(c1)
         if int(c1) > int(s2):
             count += (len(s1)-len(s2)+1)
             s2 += "0"*(len(s1)-len(s2)+1)
@@ -26,7 +24,6 @@ def solve():
             s2 += "0"*(len(s1)-len(s2))
             
             now = int(s2)
-            #print(now)
             continue
         c2 = s1[len(s2):]
         
@@ -43,8 +40,7 @@ def solve():
         s2 += "0"*(len(s1)-len(s2)+1)
         
         now = int(s2)
-        #print(now)
-    #print(now)
+
     return count
 
 
