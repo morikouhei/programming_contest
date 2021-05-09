@@ -16,7 +16,8 @@ cost = inf
 
 while q:
     id = q.popleft()
-    a,b = divmod(id,m)
+    a = id//m
+    b = id-a*m
     if E[a][b] > 0:
         cost = min(cost,E[a][b]+dp[id]*w)
     for i in range(4):
@@ -36,9 +37,10 @@ q = deque([(n-1)*m+m-1])
 cost2 = inf
 while q:
     id = q.popleft()
-    a,b = divmod(id,m)
+    a = id//m
+    b = id-a*m
     if E[a][b] > 0:
-        cost2 = min(cost,E[a][b]+dp[id]*w)
+        cost2 = min(cost2,E[a][b]+dp[id]*w)
     for i in range(4):
         nx = a+dx[i]
         ny = b+dy[i]

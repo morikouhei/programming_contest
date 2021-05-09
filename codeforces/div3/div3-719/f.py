@@ -2,25 +2,17 @@ import sys
 n,t = map(int,input().split())
 for _ in range(t):
     k = int(input())
-    l = 1
-    r = n//2
-    size = n//4
-    while size:
-        print("?", l,r)
+    l = 0
+    r = n
+    base = 0
+    while r > l + 1:
+        m = (r+l)//2
+        print("?", 1,m)
         sys.stdout.flush()
         x = int(input())
-        if r-x >= k:
-            r -= size
+        if m-x >= k:
+            r = m
         else:
-            r += size
-        size //= 2
-        if size == 0:
-            break
-    print("?", 1,r)
-    sys.stdout.flush()
-    x = int(input())
-    if r-x == k:
-        print("!", r)
-    else:
-        print("!",r+1)
+            l = m
+    print("!",r)
     sys.stdout.flush()

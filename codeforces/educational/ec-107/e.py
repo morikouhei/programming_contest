@@ -9,10 +9,10 @@ for i in range(n):
             count += 1
 
 pow2 = [1]
-for i in range(count):
+for i in range(count+2):
     pow2.append(pow2[-1]*2%mod)
 N = [0]
-for i in range(max(n,m)):
+for i in range(max(n,m)+2):
     N.append((pow2[i]-N[-1])%mod)
 
 for i in range(n):
