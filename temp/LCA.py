@@ -1,5 +1,5 @@
 ## library of LCA by class
-## index start from 1
+## index start from 0
 
 import sys
 sys.setrecursionlimit(10**5+5)
@@ -7,22 +7,22 @@ from collections import deque
 
 class LCA:
     def __init__(self,n):
-        self.size = n+1
+        self.size = n
         self.bitlen = n.bit_length()
         self.ancestor = [[0]*self.size for i in range(self.bitlen)]
         self.depth = [-1]*self.size
         self.dis = [-1]*self.size
-        self.depth[1] = 0
-        self.dis[1] = 0
 
     ## using [log_n][n] [n][log_n]
     ## [log_n][n] is tend to faster than [n][log_n]
     ## get parent by bfs is probably faster than dfs
     def make(self,root):
+        self.depth[root] = 0
+        self.dis[root] = 0
         q = deque([root])
         while q:
             now = q.popleft()
-            for nex,c,w in e[now]:
+            for nex,w in e[now]:
                 if self.depth[nex]>= 0:
                     continue
                 self.depth[nex] = self.depth[now]+1
@@ -56,11 +56,13 @@ class LCA:
         return x
 
 n,q = map(int,input().split())
-e = [[] for i in range(n+1)]
+e = [[] for i in range(n)]
 for i in range(n-1):
-    a,b,c,d = map(int,input().split())
-    e[a].append((b,c,d))
-    e[b].append((a,c,d))
+    a,b,c = map(int,input().split())
+    a -= 1
+    b -= 1
+    e[a].append((b,c))
+    e[b].append((a,c))
     
 lca = LCA(n)
-lca.make(1)
+lca.make(0)
