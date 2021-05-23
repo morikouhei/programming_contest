@@ -1,8 +1,8 @@
 from collections import deque
 from heapq import heappop, heappush
 import sys
-input = sys.stdin.readline
-
+input = sys.stdin.buffer.readline
+ 
 def solve():
     n,s = map(int,input().split())
     e = [[] for i in range(n)]
@@ -12,7 +12,7 @@ def solve():
         v -= 1
         e[u].append((v,w,c))
         e[v].append((u,w,c))
-
+ 
     par = [-1]*n
     dep = [n]*n
     dep[0] = 0
@@ -33,7 +33,7 @@ def solve():
         if lea:
             count[now] = 1
     cum = 0
-    h1 = [(0,1)]
+    h1 = [0]
     h2 = []
     for now in topo[::-1]:
         num = count[now]
@@ -47,36 +47,34 @@ def solve():
                     h2.append((w-w//2)*num)
                     w //= 2
             else:
-                heappush(h1, ((-w+w//2)*num,w))
-
+                while w:
+                    h1.append((w-w//2)*num)
+                    w //= 2
     if cum <= s:
         return 0
+    h1.sort(reverse=True)
     h2.sort(reverse=True)
     h2cum = [0]*(len(h2)+1)
     for i in range(len(h2)):
         h2cum[-2-i] = h2cum[-1-i]+h2[i]
-
+ 
     ans = 10**10
     now = 0
     le = len(h2cum)
-    num = 0
-    while h1:
-        if cum-h2cum[0] <= s:  
-            while now < le and cum-h2cum[now] <= s:
-                now += 1
-            ans = min(ans,num+(le-now)*2)
-        a,w = heappop(h1)
-        a *= -1
-        nw = w//2
-        c = a//(w-nw)
-        num += 1
-        cum -= a
-        if nw:
-            heappush(h1, ((-nw+(nw//2))*c,nw))
+    for i in range(len(h1)):
+        h = h1[i]
+        if cum-h2cum[0] > s:
+            cum -= h
+            continue
+        while now < le and cum-h2cum[now] <= s:
+            now += 1
+        if ans > i+(le-now)*2:
+            ans = i+(le-now)*2
+        cum -= h 
     return ans
-
-
+ 
+ 
 t = int(input())
 for _ in range(t):
-
+ 
     print(solve())

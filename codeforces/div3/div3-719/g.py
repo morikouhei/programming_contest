@@ -1,6 +1,6 @@
 from collections import deque
-import io,os
-input = io.BytesIO(os.read(0, os.fstat(0).st_size)).readline
+import sys
+input = sys.stdin.buffer.readline
 
 n,m,w = map(int,input().split())
 E = [list(map(int,input().split())) for i in range(n)]
