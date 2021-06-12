@@ -2,8 +2,7 @@ from collections import deque
 import sys
 input = sys.stdin.buffer.readline
       
-t = int(input())
-for _ in range(t):
+def solve():
     q = input()
     n,m = map(int,input().split())
     e = [[] for i in range(n)]
@@ -36,3 +35,6 @@ for _ in range(t):
                         cand = dis[nex]
             ans[now] = cand
     print(*ans)
+t = int(input())
+for _ in range(t):
+    solve()

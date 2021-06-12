@@ -20,7 +20,7 @@ for j in range(1,k):
     for i in range(1,1<<n):
         now = i & (i-1)
         s = inf
-        while now:
+        while now > now^i:
             x,y = dp[now][j],dis[now^i]
             if s > x and s > y:
                 s = x if x > y else y
