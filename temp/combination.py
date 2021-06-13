@@ -14,7 +14,7 @@ def nCr(n,r,mod):
     if r > n:
         return 0
     else: 
-        return fact[n]*finv[r]*finv[n-r]%mod
+        return fact[n]*finv[r]%mod*finv[n-r]%mod
 
 def nPr(n,r,mod):
     if r > n:
@@ -49,4 +49,4 @@ def nCr(n,r,mod):
     if cum_mod[n] > cum_mod[r]+cum_mod[n-r]:
         return 0
 
-    return fact[n]*finv[r]*finv[n-r]%mod
+    return fact[n]*finv[r]%mod*finv[n-r]%mod
