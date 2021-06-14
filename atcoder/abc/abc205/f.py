@@ -1,4 +1,5 @@
 from collections import deque
+
 class MaxFlow:
     inf = 10**18
 
@@ -81,13 +82,20 @@ class MaxFlow:
                 flow += f
         return flow
 
-    def min_cut(self,s):
-        visited = [0]*self.n
-        q = deque([s])
-        while q:
-            v = q.pop()
-            visited[v] = 1
-            for e in self.graph[v]:
-                if e.cap and not visited[e.to]:
-                    q.append(e.to)
-        return visited
+h,w,n = map(int,input().split())
+s = h+w+2*n
+t = s+1
+flow = MaxFlow(t+1)
+for i in range(h):
+    flow.add_edge(s,i,1)
+for i in range(w):
+    flow.add_edge(i+h,t,1)
+for i in range(n):
+    a,b,c,d = map(int,input().split())
+    v = h+w+i
+    flow.add_edge(v,v+n,1)
+    for j in range(a-1,c):
+        flow.add_edge(j,v,1)
+    for j in range(b-1,d):
+        flow.add_edge(v+n,j+h,1)
+print(flow.flow(s,t))
