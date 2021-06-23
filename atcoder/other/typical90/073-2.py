@@ -1,6 +1,6 @@
 from collections import deque
 n = int(input())
-C = input().split(" ")
+C = input().split()
 mod = 10**9+7
 e = [[] for i in range(n)]
 for _ in range(n-1):
@@ -11,13 +11,14 @@ par = [-1]*n
 topo = []
 q = deque([0])
 while q:
-    now = q.pop()
-    topo.append(now)
-    for nex in e[now]:
-        if par[now] == nex:
+    x = q.pop()
+    topo.append(x)
+    for nex in e[x]:
+        if par[x] == nex:
             continue
-        par[nex] = now
+        par[nex] = x
         q.append(nex)
+        
 dp = [[-1]*3 for i in range(n)]
 
 for x in topo[::-1]:
