@@ -20,38 +20,39 @@ while q:
         q.append(nex)
 
 dp = [-1]*n
-size = [0]*n
-print(topo)
 for now in topo[::-1]:
-    size[now] += 1
-    dpnow = [[[0]*(n+1) for i in range(3)] for j in range(2)]
-    dpnow[0][2][1] = 1
-    dpnow[0][0][0] = 1
-    dpnow[0][1][0] = 1
-    turn = 0
+    dnow = [[0]*3 for i in range(2)]
+    dnow[0][0] = 1
+    dnow[1][2] = 1
     for nex in e[now]:
         if par[now] == nex:
             continue
+        snow = len(dnow)
+        snex = len(dp[nex])
+        ndnow = [[0]*3 for i in range(snow+snex-1)]
+        dnow,ndnow = ndnow,dnow
+        for i in range(snow):
+            for nowi in range(3):
+                for j in range(snex):
+                    for nexj in range(3):
+                        val = ndnow[i][nowi]*dp[nex][j][nexj]
+                        if val == 0:
+                            continue
+                        si = i+j
+                        sj = -1
+                        if nowi == 0 and nexj != 2:
+                            sj = 0
+                        elif nowi == 2:
+                            sj = 2
+                        else:
+                            sj = 1
+                        if nowi == 0 and nexj == 2:
+                            si += 1
+                        elif nowi == 2 and nexj == 0:
+                            si += 1
+                        dnow[si][sj] += val
+                        dnow[si][sj] %= mod
+    dp[now] = dnow
 
-        for i in range(size[now]+size[nex]+1)[::-1]:
-            for j in range(min(size[nex],i)+1)[::-1]:
-                if i-j > size[now]:
-                    break
-                dpnow[turn^1][0][i] += (dp[nex][0][j]+dp[nex][1][j])*dpnow[turn][0][i-j]
-                dpnow[turn^1][0][i] %= mod
-                dpnow[turn^1][2][i] += (dp[nex][0][j]+dp[nex][1][j]+dp[nex][2][j])*dpnow[turn][2][i-j]
-                dpnow[turn^1][2][i] %= mod
-                dpnow[turn^1][1][i] += (dp[nex][0][j]+dp[nex][1][j]+dp[nex][2][j])*dpnow[turn][1][i-j]
-                dpnow[turn^1][1][i] %= mod
-                turn ^= 1
-        size[now] += size[nex]
-
-    for i in range(size[now]+1):
-        dpnow[turn][1][i] -= dpnow[turn][0][i]
-        dpnow[turn][1][i] %= mod
-    dp[now] = dpnow[turn]
-print(dp)
 for i in range(n+1):
-    print((dp[0][0][i]+dp[0][1][i]+dp[0][2][i])%mod)
-
-
+    print(sum(dp[0][i])%mod)
