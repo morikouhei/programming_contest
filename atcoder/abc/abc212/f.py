@@ -1,46 +1,44 @@
-from heapq import heappop, heappush
+import bisect
 n,m,q = map(int,input().split())
-p = [[] for i in range(n)]
-ans = [[0] for i in range(q)]
-bas = []
-inf = 10**10
-for i in range(m):
-    a,b,s,t = map(int,input().split())
-    bas.append([s,t,a-1,b-1,i])
-query = []
-for i in range(q):
-    x,y,z = map(int,input().split())
-    query.append([x,-1,y-1,z,i])
+e = [[] for i in range(n)]
+bus = [list(map(int,input().split())) for i in range(m)]
+for i,(a,b,s,t) in enumerate(bus):
+    e[a-1].append((s,i))
 
-event = []
-for b in bas:
-    event.append(b)
-for i in query:
-    event.append(i)
-event.sort()
-
-for e in event:
-    print(e)
-    print(p)
-    if e[1] == -1:
-        x,_,y,z,i = e
-        heappush(p[y],[x,z,i])
-    else:
-        s,t,a,b,i = e
-        while True:
-            if p[a] == [] or  p[a][0][0] > s:
-                break
-            x,z,ind = heappop(p[a])
-            if z <= s:
-                ans[ind] = [a+1]
-            elif z <= t:
-                ans[ind] = [a+1,b+1]
-            else:
-                heappush(p[b],[t,z,ind])
-print(p)
 for i in range(n):
-    for x,z,ind in p[i]:
-        ans[ind] = [i+1]
+    e[i].sort()
 
-for i in ans:
-    print(*i)
+doubling = [[m]*(m+1) for i in range(20)]
+
+for i,(a,b,s,t) in enumerate(bus):
+    b -= 1
+    ind = bisect.bisect_left(e[b],(t,-1))
+    if ind == len(e[b]):
+        continue
+    doubling[0][i] = e[b][ind][1]
+
+for i in range(1,20):
+    for j in range(m):
+        doubling[i][j] = doubling[i-1][doubling[i-1][j]]
+
+
+for _ in range(q):
+    x,y,z = map(int,input().split())
+    y -= 1
+    ind = bisect.bisect_left(e[y],(x,-1))
+    if ind == len(e[y]):
+        print(y+1)
+        continue
+    now = e[y][ind][1]
+    if bus[now][2] >= z:
+        print(y+1)
+        continue
+    for i in range(20)[::-1]:
+        if doubling[i][now] == m:
+            continue
+        if bus[doubling[i][now]][2] < z:
+            now = doubling[i][now]
+    if bus[now][3] >= z:
+        print(bus[now][0],bus[now][1])
+    else:
+        print(bus[now][1])
