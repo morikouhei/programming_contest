@@ -1,4 +1,6 @@
 from collections import deque
+import sys
+input = sys.stdin.buffer.readline
 
 n,m = map(int,input().split())
 e = [[] for i in range(n)]
@@ -23,40 +25,31 @@ while q:
 
 def solve():
     Q = [int(x)-1 for x in input().split()]
-    cand = []
     dic = {}
-    id = {}
+    id = set()
     for i in Q[1:]:
         p = par[i]
         if p < 1:
             continue
-        if dis[p] in dic:
-            print("NO")
-            return
-        dic[p] = 1
-        id[p] = 1
-        cand.append(p)
-    if cand == []:
-        print("YES")
-        return
-    
+        if dis[p] in dic and dic[dis[p]] != p:
+            return 0
+        dic[dis[p]] = p
+        id.add(p)
+    if len(id) == 0:
+        return 1
     dep = 0
     ind = -1
-    for i in cand:
+    for i in id:
         if dep < dis[i]:
             dep = dis[i]
             ind = i
     
-    while ind != 0:
+    for i in range(dep):
         if ind in id:
-            id[ind] = 0
+            id.remove(ind)
         ind = par[ind]
-    for i in id.keys():
-        if id[i]:
-            print("NO")
-            return
-    print("YES")
+    return len(id) == 0
     
     
 for _ in range(m):
-    solve()
+    print("YES" if solve() else "NO")

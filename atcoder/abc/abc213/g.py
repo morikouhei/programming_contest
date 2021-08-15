@@ -10,15 +10,17 @@ for i in range(1<<n):
             edge[i] += 1
 
 dp = [0]*(1<<n)
-
+pow2 = [1]*(m+1)
+for i in range(m):
+    pow2[i+1] = pow2[i]*2%mod
 for i in range(1<<n):
     if not i&1:
         continue
-    dp[i] = pow(2,edge[i],mod)
+    dp[i] = pow2[edge[i]]
     now = (i-1) & i
     while now:
         if now&1:
-            dp[i] -= dp[now]*pow(2,edge[i^now],mod)
+            dp[i] -= dp[now]*pow2[edge[i^now]]
             dp[i] %= mod
         now = (now-1)&i
 
@@ -28,7 +30,7 @@ for i in range(1<<n):
         continue
     for j in range(n):
         if i >> j & 1:
-            ans[j] += dp[i]*pow(2,edge[((1<<n)-1)^i],mod)
+            ans[j] += dp[i]*pow2[edge[((1<<n)-1)^i]]
             ans[j] %= mod
 
 for i in ans[1:]:
