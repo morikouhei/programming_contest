@@ -1,65 +1,79 @@
 import sys
 input = sys.stdin.readline
-sys.setrecursionlimit(1000000)
 
 class SCC:
 
-    def __init__(self, n):
+    def __init__(self,n):
         self.n = n
-        self.graph = [[] for i in range(n)]
-        self.graph_rev = [[] for i in range(n)]
-        self.used = [False]*n
+        self.edges = []
 
-    def add_edge(self, fr, to):
-        if fr == to:
-            return
-        self.graph[fr].append(to)
-        self.graph_rev[to].append(fr)
+    def csr(self):
+        self.start = [0]*(self.n+1)
+        self.elist = [0]*len(self.edges)
+        for e in self.edges:
+            self.start[e[0]+1] += 1
+        for i in range(1,self.n+1):
+            self.start[i] += self.start[i-1]
+        counter = self.start[:]
+        for e in self.edges:
+            self.elist[counter[e[0]]] = e[1]
+            counter[e[0]] += 1
 
-    def dfs(self, node, graph):
-        self.used[node] = True
-        for nex in graph[node]:
-            if self.used[nex]:
-                continue
-            self.dfs(nex,graph)
-        self.order.append(node)
+    def add_edge(self,u,v):
+        self.edges.append((u,v))
 
-    def first_dfs(self):
-        self.used = [False]*self.n
-        self.order = []
-        for i in range(self.n):
-            if self.used[i]:
-                continue
-            self.dfs(i,self.graph)
-    
-    def second_dfs(self):
-        self.used = [False]*self.n
-        self.ans = []
-        for node in reversed(self.order):
-            if self.used[node]:
-                continue
-            self.used[node] = True
-            self.order = []
-            self.dfs(node, self.graph_rev)
-            self.ans.append(self.order)
+    def scc_ids(self):
+        self.csr()
+        n = self.n
+        now_ord = group_num = 0
+        visited = []
+        low = [0]*n
+        order = [-1]*n
+        ids = [0]*n
+        parent = [-1]*n
+        stack = []
+        for i in range(n):
+            if order[i] == -1:
+                stack.append(i)
+                stack.append(i)
+                while stack:
+                    v = stack.pop()
+                    if order[v] == -1:
+                        low[v] = order[v] = now_ord
+                        now_ord += 1
+                        visited.append(v)
+                        for i in range(self.start[v],self.start[v+1]):
+                            to = self.elist[i]
+                            if order[to] == -1:
+                                stack.append(to)
+                                stack.append(to)
+                                parent[to] = v
+                            else:
+                                low[v] = min(low[v],order[to])
+                    else:
+                        if low[v] == order[v]:
+                            while True:
+                                u = visited.pop()
+                                order[u] = n
+                                ids[u] = group_num
+                                if u == v:
+                                    break
+                            group_num += 1
+                        if parent[v] != -1:
+                            low[parent[v]] = min(low[parent[v]],low[v])
+        for i,x in enumerate(ids):
+            ids[i] = group_num-1-x
+
+        return group_num,ids
+
 
     def scc(self):
-        self.first_dfs()
-        self.second_dfs()
-        return self.ans
-        
-def main():
-    n,m = map(int,input().split())
-    scc = SCC(n)
-    for _ in range(m):
-        a,b = map(int,input().split())
-        scc.add_edge(a,b)
+        group_num,ids = self.scc_ids()
+        groups = [[] for i in range(group_num)]
+        for i,x in enumerate(ids):
+            groups[x].append(i)
 
-    ans = scc.scc()
+        return groups
 
-    print(len(ans))
-    for i in ans:
-        print(len(i),*i)
 
-if __name__ == "__main__":
-    main()
+    

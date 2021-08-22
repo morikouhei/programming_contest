@@ -74,6 +74,8 @@ class SCC:
             groups[x].append(i)
 
         return groups
+
+
     
 class two_SAT:
 
@@ -96,49 +98,3 @@ class two_SAT:
             self.answer.append(ids[2*i]<ids[2*i+1])
         return True
 
-
-
-n = int(input())
-M = 2*10**6+5
-divisor = [0]*M
-divisor[1] = 1
-for i in range(2,M):
-    if divisor[i]:
-        continue
-    for j in range(i,M,i):
-        if divisor[j]:
-            continue
-        divisor[j] = i
-
-def primes(x):
-    cand = []
-    while x != 1:
-        p = divisor[x]
-        cand.append(p)
-        while divisor[x] == p:
-            x //= p
-    return cand
-
-dic = {}
-count = 0
-for i in range(n):
-    a,b = map(int,input().split())
-    for bool,x in enumerate((a,b)):
-        for j in primes(x):
-            if j in dic:
-                dic[j].append((i,bool))
-            else:
-                dic[j] = [(i,bool)]
-            count += 1
-
-two_sat = two_SAT(count*2)
-pos = 0
-for v in dic.values():
-    for i,(ind,bool) in enumerate(v):
-        two_sat.add_clause(ind,1^bool,count+pos,1)
-        if i:
-            two_sat.add_clause(count+pos-1,0,count+pos,1)
-            two_sat.add_clause(ind,1^bool,count+pos-1,0)
-        pos += 1
-
-print("Yes" if two_sat.satisfiable() else "No")
