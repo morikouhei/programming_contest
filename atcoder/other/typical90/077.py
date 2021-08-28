@@ -79,10 +79,6 @@ class mf_graph:
                 break
         return ans
 
-
-
-
-
 n,T = map(int,input().split())
 dx = [1,1,0,-1,-1,-1,0,1]
 dy = [0,1,1,1,0,-1,-1,-1]
