@@ -35,7 +35,6 @@ while now != 0:
         if nex == now:
             use[ind] = 1
     now = p
-print(use)
 for i in range(m):
     if use[i]:
         dis = bfs(i)
