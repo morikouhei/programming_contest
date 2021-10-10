@@ -40,3 +40,26 @@ def baby_step_giant_step(a,b,mod):
         g *= h
         g %= mod
     return -1
+
+def euler_phi(n):
+    res = n
+    x = 2
+    while x*x <= n:
+        if n % x == 0:
+            res = res // x * (x-1)
+            while n % x == 0:
+                n //= x
+        x += 1
+    if n > 1:
+        res = res // n * (n-1)
+    return res
+
+
+def factors(n):
+    s = set()
+    for i in range(1,int(n**0.5)+1):
+        if n%i:
+            continue
+        s.add(i)
+        s.add(n//i)
+    return sorted(s)

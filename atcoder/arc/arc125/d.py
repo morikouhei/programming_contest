@@ -18,10 +18,8 @@ for i,a in enumerate(A,1):
     dic[a] = i
     cum += dp[i]
     cum %= mod
-    print(cum,a)
-print(dp)
+
 ans = 0
-print(dic)
 for v in dic.values():
     ans += dp[v]
     ans %= mod
