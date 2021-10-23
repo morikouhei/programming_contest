@@ -33,7 +33,7 @@ class LazySegTree:
 
     def point_get(self, p):
         p += self.size
-        for i in range(self.log, 0,-1):
+        for i in range(self.log,0,-1):
             self.push(p >> i)
         return self.data[p]
 
@@ -109,80 +109,41 @@ class LazySegTree:
     def all_prod(self):
         return self.data[1]
 
-    def max_right(self, l, g):
-        if l == self.n:
-            return self.n
-        l += self.size
-        for i in range(self.log, 0, -1):
-            self.push(l >> i)
-        sm = self.e
-        while True:
-            while l % 2 == 0:
-                l >>= 1
-            if not g(self.op(sm, self.data[l])):
-                while l < self.size:
-                    self.push(l)
-                    l <<= 1
-                    if g(self.op(sm, self.data[l])):
-                        sm = self.op(sm, self.data[l])
-                        l += 1
-                return l - self.size
-            sm = self.op(sm, self.data[l])
-            l += 1
-            if (l & -l) == l:
-                return self.n
-
-    def min_left(self, r, g):
-        if r == 0:
-            return 0
-        r += self.size
-        for i in range(self.log, 0, -1):
-            self.push((r-1) >> i)
-        sm = self.e
-        while True:
-            r -= 1
-            while r > 1 and r % 2:
-                r >>= 1
-            if not g(self.op(self.data[r], sm)):
-                while r < self.size:
-                    self.push(r)
-                    r = 2*r + 1
-                    if g(self.op(self.data[r], sm)):
-                        sm = self.op(self.data[r], sm)
-                        r -= 1
-                return r + 1 - self.size
-            sm = self.op(self.data[r], sm)
-            if (r & -r) == r:
-                return 0
-
 def op(x, y):
-    a = x[0]+y[0]
-    b = x[1]+y[1]
-    c = x[2]+y[2]+x[1]*y[0]
-    return (a,b,c)
+    return min(x,y)
 
 def mapping(p, x):
-    if p == 1:
-        return (x[1],x[0],x[0]*x[1]-x[2])
-    return x
+    return p+x
 
 def composition(p, q):
-    return p^q
-e = (0,0,0)
-id = 0
-lazyseg = LazySegTree(n, op, e, mapping, composition, id)
-lazyseg.build(l)
+    return p+q
 
 n,q = map(int,input().split())
-l = [(0,1,0) if i == "1" else (1,0,0) for i in input().split()]
+e = n+1
+id = 0
+l = [0]
+S = list(input())
+for s in S:
+    if s == "(":
+        l.append(l[-1]+1)
+    else:
+        l.append(l[-1]-1)
+lazyseg = LazySegTree(n+1, op, e, mapping, composition, id)
+lazyseg.build(l)
 
-
-
-ans = []
 for i in range(q):
     t,l,r = map(int,input().split())
-    if t == 1:
-        lazyseg.range_apply(l-1,r,1)
+    if t == 2:
+        if lazyseg.prod(l-1,r+1) == lazyseg.point_get(l-1) == lazyseg.point_get(r):
+            print("Yes")
+        else:
+            print("No")
+        continue
+    
+    if S[l-1] == S[r-1]:
+        continue
+    if S[l-1] == "(":
+        lazyseg.range_apply(l,r,-2)
     else:
-        ans.append(lazyseg.prod(l-1,r)[2])
-print(*ans,sep="\n")
+        lazyseg.range_apply(l,r,2)
+    S[l-1],S[r-1] = S[r-1],S[l-1]
