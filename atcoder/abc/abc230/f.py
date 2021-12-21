@@ -13,4 +13,3 @@ for i,a in enumerate(A[:-1],1):
     dp.append((dp[-1]+count)%mod)
     dic[now] = i
 print(dp[-1])
-print(dp)
