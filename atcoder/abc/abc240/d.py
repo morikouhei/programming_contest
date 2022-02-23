@@ -7,6 +7,7 @@ for a in A:
     if l:
         if l[-1][0] == a:
             l[-1][1] += 1
+            num += 1
 
         else:
             l.append([a,1])

@@ -1,16 +1,17 @@
 mod = 10**9+7
 
 ### for bigger prime 
-fact = [1,1]
-finv = [1,1]
-inv = [0,1]
+N = n+5
+fact = [1]*N
+finv = [1]*N
  
-for i in range(2,n+5):
-    fact.append((fact[-1]*i)%mod)
-    inv.append((inv[mod%i]*(mod-mod//i))%mod)
-    finv.append((finv[-1]*inv[-1])%mod)
- 
-def nCr(n,r,mod):
+for i in range(2,N):
+    fact[i] = (fact[i-1]*i)%mod
+finv[-1] = pow(fact[-1],mod-2,mod)
+for i in range(1,N)[::-1]:
+    finv[i-1] = (finv[i]*i)%mod
+
+def nCr(n,r):
     if r > n:
         return 0
     else: 

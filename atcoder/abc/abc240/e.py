@@ -34,6 +34,6 @@ for now in topo[::-1]:
         ans[now] = [num,num]
     else:
         ans[now] = [l,r]
-    print(ans)
+
 for i in ans:
     print(*i)
