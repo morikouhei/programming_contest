@@ -7,7 +7,7 @@ A = list(map(int,input().split()))
 q = int(input())
 LR = [list(map(int,input().split())) for i in range(q)]
 
-sq = int(ceil(sqrt(3)*n/sqrt(2*q)))
+sq = int(ceil(sqrt(q)))
 Query = [[] for i in range(sq)]
 for i,(l,r) in enumerate(LR):
     l -= 1
