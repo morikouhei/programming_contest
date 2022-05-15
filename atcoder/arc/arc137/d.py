@@ -1,38 +1,11 @@
-n = int(input())
-A = list(map(int,input().split()))
-Q = int(input())
-que = []
+n,m = map(int,input().split())
+A = [0]*(1<<20)
+for i,a in enumerate(list(map(int,input().split()))[::-1]):
+    A[i] = a
 
-def calc(X,Y):
-    ans = [0]*n
-    for i,x in enumerate(X):
-        ans[i] = Y[x]
-    return ans
+for i in range(30):
+    for j in range(1<<20):
+        if j >> i & 1:
+            A[j] ^= A[j^1<<i]
 
-
-move = [i for i in range(n)]
-
-for _ in range(Q):
-    q = list(map(int,input().split()))
-
-    if q[0] == 1:
-        _,x,y = q
-        x -= 1
-        y -= 1
-        que.append([x,y])
-        move[x],move[y] = move[y],move[x]
-
-    elif q[0] == 2:
-        x,y = que.pop()
-        move[x],move[y] = move[y],move[x]
-    else:
-        k = q[1]
-        base = move[:]
-        norm = [i for i in range(n)]
-        while k:
-            if k&1:
-                norm = calc(norm,base)
-            base = calc(base,base)
-            k >>= 1
-        A = [A[i] for i in norm]
-print(*A)
+print(*A[-m:][::-1])
