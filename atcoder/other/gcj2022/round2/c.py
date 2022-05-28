@@ -12,7 +12,7 @@ def solve():
             d = (x-nx)**2+(y-ny)**2
             l.append(d)
         dist.append(l)
-        print(*l)
+        # print(*l)
 
     dp = [[0]*(1<<n) for i in range(1<<n)]
     dp[0][0] = 1
