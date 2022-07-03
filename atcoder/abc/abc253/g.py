@@ -15,7 +15,7 @@ for i in range(1,n+1):
         nnum = l
         for j in range(n-s,n+1):
             A[i],A[j] = A[j],A[i]
-            print(A)
+
             nnum += 1
             if nnum > r:
                 print(*A[1:])
@@ -24,9 +24,7 @@ for i in range(1,n+1):
             ans.append(A[j])
             A[j] = 0
         last = i
-        print(i,s)
-        print(ans)
-        print(A)
+
         break
 
 
@@ -36,8 +34,7 @@ mi = 0
 for i in range(last,n+1):
 
     nnow = n-i+now
-    print(i,nnow,ans)
-    print(A)
+
     if nnow < r:
         ans.append(A.pop())
         mi += 1

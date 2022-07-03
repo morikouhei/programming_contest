@@ -156,51 +156,58 @@ class LazySegTree:
                 return 0
 
 def op(x, y):
-    return x+y
+    return min(x,y)
 
 def mapping(p, x):
-    return p+x
+    return min(p,x)
 
 def composition(p, q):
-    return p+q
+    return min(p,q)
+e = 10**10
+id = 10**10
 
-e = 0
-id = 0
-n,m,q = map(int,input().split())
-Q = [list(map(int,input().split())) for i in range(q)]
-ans = []
-for i in Q:
-    if i[0] == 3:
-        ans.append(0)
+# lazyseg = LazySegTree(n, op, e, mapping, composition, id)
+# lazyseg.build(l)
 
-lazyseg = LazySegTree(m+5, op, e, mapping, composition, id)
 
-candn = [[] for i in range(n+5)]
-
-count = 0
-for q in Q[::-1]:
-    if q[0] == 3:
-        _,i,j = q
-        candn[i].append([j,count])
-        ans[count] -= lazyseg.point_get(j)
-        count += 1
-    elif q[0] == 1:
-        _,l,r,x = q
-        lazyseg.range_apply(l,r+1,x)
+def Z_algorithm(s):
     
-    else:
-        _,i,x = q
-        for j,num in candn[i]:
-            ans[num] += lazyseg.point_get(j)
-            ans[num] += x
-        candn[i] = []
+    n = len(s)
+    if n == 0:
+        return []
 
-for i in range(n+5):
-    x = 0
-    for j,num in candn[i]:
-        ans[num] += lazyseg.point_get(j)
-        ans[num] += x
-    candn[i] = []
-for i in ans[::-1]:
-    print(i)
+    z = [0]*n
+    j = 0
+    for i in range(1,n):
+        z[i] = 0 if j + z[j] <= i else min(j+z[j]-i,z[i-j])
+        while i + z[i] < n and s[z[i]] == s[i+z[i]]:
+            z[i] += 1
+            if j + z[j] < i + z[i]:
+                j = i
+    z[0] = n
+    return z
 
+S = input().rstrip()
+T = input().rstrip()
+
+X = S+T
+Z_algo = Z_algorithm(X)
+# print(Z_algo,X)
+ls = len(S)
+lazyseg = LazySegTree(len(T)+5,op, e, mapping, composition, id)
+lazyseg.point_set(0,0)
+for i,num in enumerate(Z_algo[len(S):]):
+    # print(i,num)
+    d = lazyseg.point_get(i)
+    if d == 10**10:
+        continue
+    if num == 0:
+        continue
+    num = min(num,ls)
+    # print(i,num,d)
+    lazyseg.range_apply(i,i+num+1,d+1)
+ans = lazyseg.point_get(len(T))
+# print(len(T))
+if ans == 10**10:
+    ans = -1
+print(ans)

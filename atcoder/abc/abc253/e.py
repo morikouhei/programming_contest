@@ -22,5 +22,5 @@ for i in range(n-1):
         ndp[j+1] += ndp[j]
         ndp[j+1] %= mod
     dp = ndp
-    print(dp)
+
 print(sum(dp)%mod)
