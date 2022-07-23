@@ -9,6 +9,6 @@ for a,b in AB:
     count += a+b
     mi = min(mi,b)
     num = count + max(0,x-s)*mi
-    print(x,s,mi,num)
-    ans = min(ans,count)
+    # print(x,s,mi,num)
+    ans = min(ans,num)
 print(ans)

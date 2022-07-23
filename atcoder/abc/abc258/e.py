@@ -16,10 +16,7 @@ for i in range(n):
     ind = bisect.bisect_left(base,y+x)
     doubling[0][i] = ind%n
     size[i] = p*n+ind-i
-print(size)
 
-print(doubling[0])
-print(base)
 for i in range(1,50):
     for j in range(n):
         doubling[i][j] = doubling[i-1][doubling[i-1][j]]

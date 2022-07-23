@@ -1,33 +1,51 @@
-n,m = map(int,input().split())
-XY = [list(map(int,input().split())) for i in range(m)]
+mod = 10**9+7
+
+class BIT:
+    def __init__(self, n):
+        self.size = n
+        self.tree = [0]*(n+1)
+ 
+    def build(self, list):
+        self.tree[1:] = list.copy()
+        for i in range(self.size+1):
+            j = i + (i & (-i))
+            if j < self.size+1:
+                self.tree[j] += self.tree[i]
+
+    def sum(self, i):
+        # [0, i) の要素の総和を返す
+        s = 0
+        while i>0:
+            s += self.tree[i]
+            s %= mod
+            i -= i & -i
+        return s
+    # 0 index を 1 index に変更  転倒数を求めるなら1を足していく
+    def add(self, i, x):
+        i += 1
+        while i <= self.size:
+            self.tree[i] += x
+            self.tree[i] %= mod
+            i += i & -i
 
 
-S = [[[],[]] for i in range(2)]
+n,k = map(int,input().split())
+A = list(map(int,input().split()))
+S = input()
 
-for x,y in XY:
-    d = (x+y)%2
-    S[d][0].append(y-x)
-    S[d][1].append(x+y)
+dic = {a:i for i,a in enumerate(sorted(set(A)),1)}
+l = len(dic+5)
 
-ans = 0
+dp = [BIT(l) for i in range(k+1)]
 
-for t in range(2):
-    sp = set(S[t][0])
-    sm = set(S[t][1])
-    L = []
-    for p in sp:
-        ans += n-abs(p)
-        L.append([abs(p),1])
-        L.append([2*n-abs(p)+1,-1])
-    L.sort()
-    sm = sorted(sm)
-    count = 0
-    now = 0
-    for m in sm:
-        while now < len(L) and L[now][0] <= m:
-            count += L[now][1]
-            now += 1
-
-        base = n-abs(n+1-m)
-        ans += base-count
-print(ans)
+for i,a in enumerate(A):
+    s = dic[a]
+    for j in range(min(i+1,k+1)):
+        if j == 0:
+            dp[0].add(s,1)
+            continue
+        if S[j-1] == "<":
+            x = dp[j-1].sum(s)
+            dp[j].add(s,x)
+        else:
+            x = dp[j-1].sum(l)-dp[j-1].sum
