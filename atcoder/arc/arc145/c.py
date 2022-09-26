@@ -19,5 +19,5 @@ def nCr(n,r):
         return fact[n]*finv[r]%mod*finv[n-r]%mod
 
 
-ans = nCr(2*n,n)*pow(n+1,mod-2,mod)%mod*pow(2,n,mod)*fact[n]%mod
+ans = nCr(2*n,n)*pow(n+1,mod-2,mod)*pow(2,n,mod)*fact[n]%mod
 print(ans)
