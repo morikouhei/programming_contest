@@ -8,12 +8,11 @@ le = 0
 for s in S:
     le += len(s)
 T = set([input() for i in range(m)])
-print(T)
 dif = 16-le-(n-1)
 # print(T,dif)
 def dfs(l,ind,left,s):
     # print(l,ind,left,s)
-    s += S[ind]
+    s += S[l[ind]]
     if ind != n-1:
         s += "_"
     # print(s)

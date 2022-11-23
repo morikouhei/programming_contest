@@ -1,5 +1,4 @@
 from collections import deque
-from heapq import heappop,heappush
 n,m = map(int,input().split())
 A = list(map(int,input().split()))
 
@@ -16,45 +15,39 @@ for _ in range(m):
 
 
 cost = [0]*n
-vis = [-1]*n
-mod = 1<<20
-def calc(x,t):
+vis = [0]*n
+def calc(x):
 
-    # vis = [0]*n
-    # cost = base[:]
-    q = []
+    q = deque([])
     for i in range(n):
         cost[i] = base[i]
-        if cost[i] <= x:
-            heappush(q,-(A[i]<<20)-i)
-            vis[i] = t
-    print(cost)
+        vis[i] = 0
+        if cost[i] > x:
+            continue
+        q.append(i)
+        vis[i] = 1
+
     while q:
-        now = -heappop(q)
-        now = now%mod
-        # print(now)
+        now = q.popleft()
         for nex in e[now]:
             cost[nex] -= A[now]
         for nex in e[now]:
-            if vis[nex] == t or cost[nex] > x:
+            if vis[nex] or cost[nex] > x:
                 continue
-            heappush(q,-(A[nex]<<20)-nex)
-            vis[nex] = t
-    if sum(vis) == t*n:
+            q.append(nex)
+            vis[nex] = 1
+    if sum(vis) == n:
         return 1
     else:
         return 0
 
-t = 0
 
-cands = [0]+base[:]+[10**15]
-l = 0
+l = -1
 r = 10**15
 while r > l + 1:
     m = (r+l)//2
-    if calc(m,t):
+    if calc(m):
         r = m
     else:
         l = m
-    t += 1
 print(r)
