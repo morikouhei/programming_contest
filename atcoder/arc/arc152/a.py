@@ -8,12 +8,11 @@ for a in A:
             print("No")
             exit()
         continue
-
+    
     if l-now >= a+1:
         now += a+1
     else:
         now += a
-    print(a,now,finish)
     if now > l:
         print("No")
         exit()

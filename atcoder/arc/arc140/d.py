@@ -35,7 +35,6 @@ for i in range(n):
         trees.append(size)
     else:
         cycle += 1
-print(trees,cycle)
 m = len(trees)
 dp = [0]*(m+1)
 dp[0] = 1
