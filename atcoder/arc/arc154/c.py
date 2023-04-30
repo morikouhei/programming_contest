@@ -11,6 +11,8 @@ def solve():
         if b != nb:
             compB.append(nb)
 
+    if len(compB) >= 2 and compB[0] == compB[-1]:
+        compB.pop()
     if len(compB) == n:
         return "No"
 
