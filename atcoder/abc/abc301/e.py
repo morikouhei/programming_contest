@@ -42,7 +42,7 @@ for i in range(le):
     
     for j in range(le):
         nx,ny = candys[j]
-        print(x,y,nx,ny,dist[nx][ny])
+
         dist_all[i][j] = dist[nx][ny]
 
 
@@ -50,9 +50,7 @@ for i in range(le):
 
 dp = [[inf]*le for i in range(1<<le)]
 dp[1][0] = 0
-print(candys)
-ans = 0
-print(dist_all)
+ans = -1
 for bi in range(1<<le):
     for i in range(le):
         if dp[bi][i] == inf:

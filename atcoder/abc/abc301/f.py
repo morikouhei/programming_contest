@@ -29,8 +29,7 @@ for s in S:
             inv = pow(26-size,mod-2,mod)
             for i in range(1,27):
                 ndp[27] += dp[i]*(i-size)*inv%mod
-                if i-size < 0 and dp[i]:
-                    print(dp[i],i-size)
+       
                 ndp[27] %= mod
                 if i < 26:
                     ndp[i+1] += dp[i]*(26-i)*inv%mod

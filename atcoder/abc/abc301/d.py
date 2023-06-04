@@ -13,6 +13,7 @@ if base > n:
     print(ans)
     exit()
 
+
 for i,s in enumerate(S):
     if s != "?":
         continue
@@ -21,4 +22,4 @@ for i,s in enumerate(S):
         base += 1 << le-i-1
     
 
-print(ans)
+print(base)

@@ -10,4 +10,6 @@ for a,na in zip(A,A[1:]):
     elif a > na:
         for j in range(a-1,na,-1):
             ans.append(j)
+
+ans.append(A[-1])
 print(*ans)
