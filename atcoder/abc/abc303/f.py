@@ -46,10 +46,6 @@ for t,nex_d in zip(ts,max_d):
 
     need = min(max(need,0),dif)
 
-
-    if cons <= prop_base:
-        need = 0
-
     if need * cons >= H:
         ans = day + (H+cons-1)//cons
         print(ans)

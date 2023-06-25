@@ -37,7 +37,7 @@ def dfs(x,p):
                 x = nex
                 ok = 0
                 break
-    par[x] = p+1
+    par[x] = p
     used[x] = 1
     for nex in e[x]:
         if used[nex]:
@@ -45,5 +45,7 @@ def dfs(x,p):
         dfs(nex,x)
 
 dfs(0,-1)
-print(size)
-print(par)
+for i in range(n):
+    if par[i] != -1:
+        par[i] += 1
+print(*par)

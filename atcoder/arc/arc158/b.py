@@ -1,4 +1,3 @@
-import math
 n = int(input())
 mod = 998244353
 
@@ -12,7 +11,6 @@ for i in range(1,int(n**0.5)+1):
 divs = sorted(divs)
 le = len(divs)
 primes = []
-
 
 for i in range(2,int(n**0.5)+1):
     if n%i:
@@ -38,13 +36,15 @@ dp[0] = 1
 lp = len(primes)
 
 for i in range(le-1):
+    divi = div_count[i]
     for j in range(i+1,le):
         if divs[j]%divs[i]:
             continue
+        divj = div_count[j]
         pat = 1
         for x in range(lp):
-            if div_count[i][x] == div_count[j][x]:
-                pat *= div_count[i][x]+1
+            if divi[x] == divj[x]:
+                pat *= divi[x]+1
                 pat %= mod
         dp[j] += dp[i]*pat
         dp[j] %= mod

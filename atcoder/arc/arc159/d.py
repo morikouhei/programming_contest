@@ -139,30 +139,30 @@ lazyseg_score = LazySegTree(le, op, e, mapping, composition, id)
 lazyseg_func = LazySegTree(le, op, e, mapping, composition, id)
 
 dp = [-10**10]*(n+1)
-print(s)
+# print(s)
 
 for i,(l,r) in enumerate(LR):
     lid = dic[l]
     rid = dic[r]
 
     ## get the max value of point l
-    print(i,l,r)
+    # print(i,l,r)
     cand = lazyseg_score.prod(0,lid)
     
     lval = max(cand,0)+1
-    lval = max(lval,lazyseg_score.point_get(lid))
+    
     id = lazyseg_func.point_get(lid)
 
-    print(lval,id)
+    # print(lval,id)
     if id != -1:
         rval = dp[id]
         br = LR[id][1]
         lval = max(lval,rval- (br-l))
-        print("yes",id,rval,lval)
+        # print("yes",id,rval,lval)
 
     rval = lval + r-l
     dp[i] = rval
-    print("score",rval)
+    # print("score",rval)
     lazyseg_score.point_set(rid,rval)
     lazyseg_func.range_apply(lid,rid+1,i)
 
