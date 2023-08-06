@@ -2,14 +2,14 @@
 ## index start from 0
 
 import sys
-sys.setrecursionlimit(10**5+5)
+input = sys.stdin.readline
 from collections import deque
 
 class LCA:
     def __init__(self,n):
         self.size = n
         self.bitlen = n.bit_length()
-        self.ancestor = [[0]*self.size for i in range(self.bitlen)]
+        self.ancestor = [[-1]*self.size for i in range(self.bitlen)]
         self.depth = [-1]*self.size
         self.dis = [-1]*self.size
 
@@ -31,7 +31,7 @@ class LCA:
                 q.append(nex)
         for i in range(1,self.bitlen):
             for j in range(self.size):
-                if self.ancestor[i-1][j] > 0:
+                if self.ancestor[i-1][j] >= 0:
                     self.ancestor[i][j] = self.ancestor[i-1][self.ancestor[i-1][j]]
     
     def lca(self,x,y):
