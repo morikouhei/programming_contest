@@ -52,7 +52,12 @@ dic = {}
 use = set()
 x = [chr(ord("a")+i) for i in range(26)] + [chr(ord("A")+i) for i in range(26)] + ["."]
 for s in x:
-    dic[s] = ord(s)
+    while True:
+        r = random.randint(1,500)
+        if r in use:
+            continue
+        dic[s] = r
+        break
 dic["_"] = 0
 
 l,w = map(int,input().split())
@@ -61,7 +66,6 @@ P = input()
 
 base = S
 S += "." * (w-1)
-
 
 need = l+w-1 + w-1
 dif = need - len(S)

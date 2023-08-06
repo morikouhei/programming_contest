@@ -21,7 +21,6 @@ for i in range(n):
                 continue
 
             nj = j+1
-            # print(j,k)
             for x in range(j+1):
                 nk = x + k
                 if nk > m:
@@ -29,7 +28,6 @@ for i in range(n):
                 ndp[nj][nk] += dp[j][k] * comb[j][x] % mod
                 ndp[nj][nk] %= mod
 
-            
             nj = j
             for x in range(i-j+1):
                 nk = x + k + j
@@ -38,7 +36,6 @@ for i in range(n):
                 ndp[nj][nk] += dp[j][k] * comb[i-j][x] % mod
                 ndp[nj][nk] %= mod
     dp = ndp
-    # print(dp)
 
 ans = 0
 for i in range(1,n+1):
