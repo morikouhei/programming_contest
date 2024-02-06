@@ -4,7 +4,7 @@ n,m = map(int,input().split())
 ABXY = [list(map(int,input().split())) for i in range(m)]
 pos = [[-1,-1] for i in range(n)]
 vis = [0]*n
-
+pos[0] = [0,0]
 e = [[] for i in range(n)]
 for a,b,x,y in ABXY:
     a,b = a-1,b-1

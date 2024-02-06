@@ -81,71 +81,52 @@ class MaxFlow:
                 flow += f
         return flow
 
+    def min_cut(self,s):
+        visited = [0]*self.n
+        q = deque([s])
+        while q:
+            v = q.pop()
+            visited[v] = 1
+            for e in self.graph[v]:
+                if e.cap and not visited[e.to]:
+                    q.append(e.to)
+        return visited
+
+
 n,m = map(int,input().split())
-S = [list(map(int,input())) for i in range(n)]
 
-nums = [[] for i in range(10)]
-for i,s in enumerate(S):
+C = list(map(int,input().split()))
+A = list(map(int,input().split()))
 
-    num = [[] for j in range(10)]
+levels = 4*n
+s = levels + m
+t = s+1
 
-    for j,sj in enumerate(s):
-        num[sj].append(j)
+mf = MaxFlow(t+1)
+inf = 10**9
+for i in range(n):
     
-    for j in range(10):
-        if num[j] == []:
+    for j in range(4):
+        mf.add_edge(i*4+j,t,C[i])
+
+        if j != 3:
+            mf.add_edge(i*4+j+1,i*4+j,inf)
+
+ans = 0
+for i,a in enumerate(A):
+
+    ans += a
+
+    mf.add_edge(s,levels+i,a)
+
+    L = list(map(int,input().split()))
+
+    for j,l in enumerate(L):
+        if l == 1:
             continue
+        l -= 2
+        mf.add_edge(levels+i,4*j+l,inf)
 
-        le = len(num[j])
-        size = 0
-        for k in range(n):
-            if k and k%le == 0:
-                size += 1
-            
-            nums[j].append([size*m+num[j][k%le],i])
-
-
-ans = 10**20
-for i in range(10):
-    nums[i].sort()
-
-def calc(lim):
-    for i in range(10):
-        if len(nums[i]) != n*n:
-            continue
-        s = n+n**2+1
-        t = s+1
-        mf = MaxFlow(t+1)
-        for j in range(n):
-            mf.add_edge(j,t,1)
-        for j in range(n**2):
-            mf.add_edge(s,n+j,1)
-        
-        last = -1
-        id = -1
-        f = n
-        for ti,ind in nums[i]:
-            if ti > lim:
-                break
-            if last < ti:
-                last = ti
-                id += 1
-            mf.add_edge(n+id,ind,1)
-
-        if mf.flow(s,t,n) == n:
-            return 1
-    return 0
-
-l = -1
-r = 10**20
-while r > l + 1:
-    c = (r+l)//2
-    if calc(c):
-        r = c
-    else:
-        l = c
-    
-if r == 10**20:
-    r = -1
-print(r)
+ans -= mf.flow(s,t)
+print(ans)
 

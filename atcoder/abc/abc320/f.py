@@ -14,8 +14,7 @@ for i in range(1,h):
 for i in range(n):
     dif = X[i]-X[i+1]
     p,f = PF[i]
-    print(dif,p,f)
-    ndp = [[inf]*(h+1) for i in range(h+1)]
+    ndp = [[inf]*(h+1) for _ in range(h+1)]
 
     for j in range(h+1):
         for k in range(h+1):
@@ -39,8 +38,14 @@ for i in range(n):
             nk = k-dif
             nj = j+dif
             if nj <= h and nk >= 0:
-                nj = max(0,nj-f)
-                ndp[nj][nk] = min(ndp[nj][nk],dp[j][k]+p)
+
+                if nj == h:
+                    nj = max(0,nj-f)
+                    for t in range(nj,h):
+                        ndp[t][nk] = min(ndp[t][nk],dp[j][k]+p)
+                elif nj >= f:
+                    nj = max(0,nj-f)
+                    ndp[nj][nk] = min(ndp[nj][nk],dp[j][k]+p)
     dp = ndp
 
 ans = inf
