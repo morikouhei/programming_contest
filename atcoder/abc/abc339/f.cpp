@@ -38,7 +38,6 @@ int main()
         if (is_prime(p))
         {
             primes.push_back(p);
-            cout << p << endl;
         }
     }
 

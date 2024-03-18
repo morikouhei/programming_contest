@@ -16,7 +16,7 @@ int main()
             last = i;
     }
 
-    string ans = s.substr(last + 1, s.length() - last);
+    string ans = s.substr(last + 1);
 
     cout << ans << endl;
 }
