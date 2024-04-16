@@ -311,7 +311,7 @@ int Method4_3() {
       swap(a[nowPx][nowPy], a[nowQx][nowQy]);
     }
 
-    if (rand01() >= 0.1){
+    if (rand01() >= 0){
         int valP = a[nowPx][nowPy];
         int valQ = a[nowQx][nowQy];
         int ansPx = ansPosA[valP][0];
@@ -353,7 +353,7 @@ void Method4() {
   int loop = 0;
   while (true) {
     endTime = clock();
-    if ((double)(endTime - startTime) / CLOCKS_PER_SEC > TL / 10) {
+    if ((double)(endTime - startTime) / CLOCKS_PER_SEC > TL / 6) {
       break;
     }
     rep(i, n) {
