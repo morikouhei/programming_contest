@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-constexpr int TIME_LIM = 3;
-const long long mod = 998244353;
-const long long INF = 1e18;
 class Xorshift {
     public:
         Xorshift(uint32_t seed): x_(seed) {
@@ -90,166 +87,133 @@ Xorshift rng(998244353);
 Timer timer;
 double time_limit = 1.9;
 
-int n,m,k;
-vector<vector<long long>> A;
-vector<vector<vector<long long >>> S;
-struct stamp{
-    vector<vector<long long >> matrix;
+class P {
+public:
+    double x, y;
 
-    stamp() : matrix(3, vector<long long>(3, 0ll)) {}
-    stamp(vector<vector<long long>> ns):matrix(ns){}
+    // コンストラクタ
+    P(double x = 0.0, double y = 0.0) : x(x), y(y) {}
+
+    // 加算演算子のオーバーロード
+    P operator+(const P& a) const {
+        return P(x + a.x, y + a.y);
+    }
+
+    // 減算演算子のオーバーロード
+    P operator-(const P& a) const {
+        return P(x - a.x, y - a.y);
+    }
+
+    // スカラー乗算演算子のオーバーロード
+    P operator*(double a) const {
+        return P(x * a, y * a);
+    }
+
+    // デバッグ用の出力演算子オーバーロード
+    friend std::ostream& operator<<(std::ostream& os, const P& p) {
+        return os << "(" << p.x << ", " << p.y << ")";
+    }
 };
 
-vector<vector<vector<int>>> ord(4);
-vector<vector<stamp>> stamps(4);
+int n,m;
+double eps,sigma;
+const int MAX_T = 5000;
+vector<P> ps;
+P pos;
+vector<pair<P,P>> walls;
 void Input() {
-    cin >> n >> m >> k;
-    A.resize(n);
+    cin >> n >> m >> eps >> sigma;
+    double x,y;
+    cin >> x >> y;
+    pos = P(x,y);
+    ps.resize(n);
     for (int i = 0; i < n; i++){
-        for (int j = 0; j < n; j++){
-            long long a;
-            cin >> a;
-            A[i].push_back(a);
-        }
+        double x,y;
+        cin >> x >> y;
+        ps[i] = P(x,y);
+        
     }
-    S.resize(m);
+    walls.resize(m);
     for (int i = 0; i < m; i++){
-        S[i].resize(3);
-        for (int x = 0; x < 3; x++){
-            for (int y = 0; y < 3; y++){
-                long long s;
-                cin >> s;
-                S[i][x].push_back(s);
-            }
-        }
+        double x1,y1,x2,y2;
+        cin >> x1 >> y1 >> x2 >> y2;
+
+        walls[i] = {P(x1,y1),P(x2,y2)};
     }
-    ord[0].push_back({});
-    for (int i = 0; i < m; i++){
-        ord[1].push_back({i});
-        stamps[1].push_back((stamp)S[i]);
+    cout << pos << endl;
 
-        for (int j = 0; j < m; j++){
-
-            ord[2].push_back({i,j});
-            stamp base;
-
-            for (int x = 0; x < 3; x++){
-                for (int y = 0; y < 3; y++){
-                    base.matrix[x][y] = (S[i][x][y]+S[j][x][y])%mod;
-                }
-            }
-            stamps[2].push_back(base);
-
-            for (int l = 0; l < m; l++){
-                ord[3].push_back({i,j,l});
-                stamp base;
-
-                for (int x = 0; x < 3; x++){
-                    for (int y = 0; y < 3; y++){
-                        base.matrix[x][y] = (S[i][x][y]+S[j][x][y]+S[l][x][y])%mod;
-                    }
-                }
-                stamps[3].push_back(base);
-
-            }
-        }
-    }
-
+    
 };
 
-pair<int,int> get_best(vector<vector<long long>>& sA, int x, int y, int wx, int wy, int ma){
-    pair<int,int> ans; 
-    long long best = 0;
 
-    for (int xi = 0; xi < wx; xi++){
-        for (int yi = 0; yi < wy; yi++){
-            best += sA[x+xi][y+yi];
-        }
-    }
-    ans = {0,0};
-
-    for (int i = 1; i <= ma; i++){
-
-        for (int j = 0; j < stamps[i].size(); j++){
-            long long score = 0;
-            for (int xi = 0; xi < wx; xi++){
-                for (int yi = 0; yi < wy; yi++){
-                    score += (sA[x+xi][y+yi]+stamps[i][j].matrix[xi][yi])%mod;
-                }
-            }
-            if (score > best){
-                best = score;
-                ans = {i,j};
-            }
-        }
-    }
-    return ans;
-}
 struct Solver{
 
     void solve(){
+        P v = {0.0,0.0};
 
-        vector<vector<long long>> sA(n,vector<long long>(n,0));
-        for (int i = 0; i < n; i++){
-            for (int j = 0; j < n; j++){
-                sA[i][j] = A[i][j];
-            }
-        }
+        
 
-        vector<vector<int>> ans;
+        // vector<vector<long long>> sA(n,vector<long long>(n,0));
+        // for (int i = 0; i < n; i++){
+        //     for (int j = 0; j < n; j++){
+        //         sA[i][j] = A[i][j];
+        //     }
+        // }
 
-        for (int i = 0; i < n-2;i++){
-            for (int j = 0; j < n-2; j++){
-                int x,y;
-                if (i == n-3){
-                    if (j == n-3){
-                        auto cand = get_best(sA,i,j,3,3,3);
-                        x = cand.first;
-                        y = cand.second;
+        // vector<vector<int>> ans;
+
+        // for (int i = 0; i < n-2;i++){
+        //     for (int j = 0; j < n-2; j++){
+        //         int x,y;
+        //         if (i == n-3){
+        //             if (j == n-3){
+        //                 auto cand = get_best(sA,i,j,3,3,3);
+        //                 x = cand.first;
+        //                 y = cand.second;
                         
-                    }
-                    else{
-                        auto cand = get_best(sA,i,j,3,1,3);
-                        x = cand.first;
-                        y = cand.second;
+        //             }
+        //             else{
+        //                 auto cand = get_best(sA,i,j,3,1,3);
+        //                 x = cand.first;
+        //                 y = cand.second;
                         
-                    }
-                }
-                else if( j == n-3){
-                    auto cand = get_best(sA,i,j,1,3,3);
-                    x = cand.first;
-                    y = cand.second;
+        //             }
+        //         }
+        //         else if( j == n-3){
+        //             auto cand = get_best(sA,i,j,1,3,3);
+        //             x = cand.first;
+        //             y = cand.second;
                     
 
-                } else{
-                    auto cand = get_best(sA,i,j,1,1,1);
-                    x = cand.first;
-                    y = cand.second;
+        //         } else{
+        //             auto cand = get_best(sA,i,j,1,1,1);
+        //             x = cand.first;
+        //             y = cand.second;
 
-                }
+        //         }
 
-                for (auto id: ord[x][y]){
-                    ans.push_back({id,i,j});
-                }
+        //         for (auto id: ord[x][y]){
+        //             ans.push_back({id,i,j});
+        //         }
 
-                if (x){
-                    stamp s = stamps[x][y];
-                    for (int x = 0; x < 3; x++){
-                        for (int y = 0; y < 3; y++){
-                            sA[i+x][j+y] = (sA[i+x][j+y]+s.matrix[x][y])%mod;
-                        }
-                    }
-                }
+        //         if (x){
+        //             stamp s = stamps[x][y];
+        //             for (int x = 0; x < 3; x++){
+        //                 for (int y = 0; y < 3; y++){
+        //                     sA[i+x][j+y] = (sA[i+x][j+y]+s.matrix[x][y])%mod;
+        //                 }
+        //             }
+        //         }
                 
                 
 
-            }
-        }
-        cout << ans.size() << endl;
+        //     }
+        // }
+        // cout << ans.size() << endl;
 
-        for (int i = 0; i < ans.size(); i++){
-            cout << ans[i][0] << " " << ans[i][1] << " " << ans[i][2] << endl;
-        }
+        // for (int i = 0; i < ans.size(); i++){
+        //     cout << ans[i][0] << " " << ans[i][1] << " " << ans[i][2] << endl;
+        // }
 
 
     }

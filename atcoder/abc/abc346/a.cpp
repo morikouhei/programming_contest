@@ -8,12 +8,11 @@ int main()
 
     int n;
     cin >> n;
-    int sum = 0;
+    vector<int> A(n);
+    for (auto &a: A) cin >> a;
     for (int i = 0; i < n-1; i++){
-        int a;
-        cin >> a;
-        sum += a;
+        cout << A[i]*A[i+1] << " ";
     }
-    cout << -sum << endl;
+    cout << endl;
     return 0;
 }
