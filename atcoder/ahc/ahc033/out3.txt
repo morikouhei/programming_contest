@@ -1,0 +1,4203 @@
+Get score388
+1 3 0 4 0 4 1 2 1 2 0 2 0 3 1 3 1 2 3 4 3 0 4 2 4 
+5 10 15 20 25 
+10 1 0 2 4
+0 3 0 0 4
+7 0 0 0 3
+2 4 0 0 2
+5 0 0 1 4
+6 4 0 1 4
+7 0 3 1 4
+20 1 0 4 4
+14 2 0 2 3
+8 1 0 1 4
+15 2 0 3 4
+11 0 0 2 4
+9 2 0 1 4
+16 0 0 3 4
+17 3 0 3 4
+18 1 0 3 4
+21 3 0 4 4
+1 1 0 0 4
+2 0 2 0 4
+3 2 0 0 4
+12 3 0 2 4
+4 4 0 0 4
+22 3 0 4 4
+23 0 0 4 4
+24 4 0 4 4
+19 2 0 3 4
+13 4 0 2 4
+14 2 3 2 4
+28
+turn = 1 finish task = 0
+-1 -1 -1 -1 -1 
+2 -1 -1 -1 -1 
+0 -1 -1 -1 -1 
+8 -1 -1 -1 -1 
+1 -1 -1 -1 -1 
+3 -1 -1 -1 -1 
+
+0 -1 -1 -1 -1 
+1 -1 -1 -1 -1 
+2 -1 -1 -1 -1 
+3 -1 -1 -1 -1 
+4 -1 -1 -1 -1 
+
+start 10 1 0 2 4 1
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane -1 -1 -1 -1 -1 
+start 1
+nx = 2 ny = 3
+nx = 2 ny = 2
+nx = 2 ny = 1
+nx = 1 ny = 1
+nx = 1 ny = 0
+changed 
+
+move history clane = 1
+turn = 0 P[1 0] [1 0]
+turn = 1 R[1 0] [1 0]
+turn = 2 D[1 1] [1 1]
+turn = 3 R[2 1] [2 1]
+turn = 4 R[2 2] [2 2]
+turn = 5 R[2 3] [2 3]
+turn = 6 Q[2 4] [2 4]
+turn = 7 L[2 4] [2 4]
+turn = 8 U[2 3] [2 3]
+turn = 9 L[1 3] [1 3]
+turn = 10 L[1 2] [1 2]
+turn = 11 L[1 1] [1 1]
+turn = 12 #[1 0] [1 0]
+turn = 13 #[1 0] [1 0]
+turn = 14 #[1 0] [1 0]
+turn = 15 #[1 0] [1 0]
+turn = 16 #[1 0] [1 0]
+turn = 17 #[1 0] [1 0]
+assert check insert
+start 0 3 0 0 4 1
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane -1 7 -1 -1 -1 
+start 3
+nx = 0 ny = 3
+nx = 1 ny = 3
+nx = 2 ny = 3
+nx = 3 ny = 3
+nx = 3 ny = 3
+nx = 3 ny = 2
+nx = 3 ny = 1
+nx = 3 ny = 0
+changed 
+
+move history clane = 3
+turn = 0 P[3 0] [3 0]
+turn = 1 R[3 0] [3 0]
+turn = 2 R[3 1] [3 1]
+turn = 3 R[3 2] [3 2]
+turn = 4 .[3 3] [3 3]
+turn = 5 U[3 3] [3 3]
+turn = 6 U[2 3] [2 3]
+turn = 7 U[1 3] [1 3]
+turn = 8 R[0 3] [0 3]
+turn = 9 Q[0 4] [0 4]
+turn = 10 L[0 4] [0 4]
+turn = 11 D[0 3] [0 3]
+turn = 12 D[1 3] [1 3]
+turn = 13 D[2 3] [2 3]
+turn = 14 L[3 3] [3 3]
+turn = 15 L[3 2] [3 2]
+turn = 16 L[3 1] [3 1]
+turn = 17 #[3 0] [3 0]
+turn = 18 #[3 0] [3 0]
+turn = 19 #[3 0] [3 0]
+turn = 20 #[3 0] [3 0]
+turn = 21 #[3 0] [3 0]
+turn = 22 #[3 0] [3 0]
+assert check insert
+start 7 0 0 0 3 1
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane -1 7 -1 10 -1 
+start 0
+nx = 0 ny = 2
+nx = 0 ny = 1
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 0 ny = 0
+changed 
+3 
+move history clane = 0
+turn = 0 P[0 0] [0 0]
+turn = 1 R[0 0] [0 0]
+turn = 2 D[0 1] [0 1]
+turn = 3 U[1 1] [1 1]
+turn = 4 D[0 1] [0 1]
+turn = 5 U[1 1] [1 1]
+turn = 6 D[0 1] [0 1]
+turn = 7 U[1 1] [1 1]
+turn = 8 D[0 1] [0 1]
+turn = 9 U[1 1] [1 1]
+turn = 10 R[0 1] [0 1]
+turn = 11 R[0 2] [0 2]
+turn = 12 Q[0 3] [0 3]
+turn = 13 L[0 3] [0 3]
+turn = 14 L[0 2] [0 2]
+turn = 15 L[0 1] [0 1]
+turn = 16 #[0 0] [0 0]
+turn = 17 #[0 0] [0 0]
+turn = 18 #[0 0] [0 0]
+turn = 19 #[0 0] [0 0]
+turn = 20 #[0 0] [0 0]
+turn = 21 #[0 0] [0 0]
+assert check insert
+start 2 4 0 0 2 1
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 -1 10 -1 
+start 4
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 2 ny = 1
+nx = 3 ny = 1
+nx = 2 ny = 1
+nx = 3 ny = 1
+nx = 2 ny = 1
+nx = 3 ny = 1
+nx = 2 ny = 1
+nx = 3 ny = 1
+nx = 2 ny = 1
+nx = 3 ny = 1
+nx = 4 ny = 1
+nx = 4 ny = 0
+changed 
+0 
+move history clane = 4
+turn = 0 P[4 0] [4 0]
+turn = 1 R[4 0] [4 0]
+turn = 2 U[4 1] [4 1]
+turn = 3 U[3 1] [3 1]
+turn = 4 D[2 1] [2 1]
+turn = 5 U[3 1] [3 1]
+turn = 6 D[2 1] [2 1]
+turn = 7 U[3 1] [3 1]
+turn = 8 D[2 1] [2 1]
+turn = 9 U[3 1] [3 1]
+turn = 10 D[2 1] [2 1]
+turn = 11 U[3 1] [3 1]
+turn = 12 U[2 1] [2 1]
+turn = 13 R[1 1] [1 1]
+turn = 14 U[1 2] [1 2]
+turn = 15 Q[0 2] [0 2]
+turn = 16 D[0 2] [0 2]
+turn = 17 D[1 2] [1 2]
+turn = 18 D[2 2] [2 2]
+turn = 19 D[3 2] [3 2]
+turn = 20 L[4 2] [4 2]
+turn = 21 L[4 1] [4 1]
+turn = 22 #[4 0] [4 0]
+turn = 23 #[4 0] [4 0]
+turn = 24 #[4 0] [4 0]
+turn = 25 #[4 0] [4 0]
+turn = 26 #[4 0] [4 0]
+turn = 27 #[4 0] [4 0]
+assert check insert
+assert check insert
+turn = 2 finish task = 4
+13 7 -1 10 16 
+4 2 -1 -1 -1 
+7 0 -1 -1 -1 
+8 -1 -1 -1 -1 
+14 1 -1 -1 -1 
+5 3 -1 -1 -1 
+
+-1 0 -1 -1 -1 
+-1 1 -1 -1 -1 
+2 -1 -1 -1 -1 
+-1 3 -1 -1 -1 
+-1 4 -1 -1 -1 
+
+start 5 0 0 1 4 2
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 -1 10 16 
+assert check insert
+turn = 3 finish task = 4
+13 7 -1 10 16 
+4 -1 -1 -1 -1 
+7 2 -1 -1 -1 
+8 0 -1 -1 -1 
+14 3 1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 0 -1 -1 -1 
+2 1 -1 -1 -1 
+-1 4 3 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 5 0 0 1 4 3
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 -1 10 16 
+assert check insert
+turn = 4 finish task = 4
+13 7 -1 10 16 
+4 2 -1 -1 -1 
+7 -1 -1 -1 -1 
+8 3 0 -1 -1 
+14 -1 -1 1 -1 
+5 -1 -1 -1 -1 
+
+-1 0 -1 -1 -1 
+-1 -1 -1 -1 -1 
+2 4 1 -1 -1 
+-1 -1 -1 3 -1 
+-1 -1 -1 -1 -1 
+
+start 5 0 0 1 4 4
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 -1 10 16 
+start 2
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 0 ny = 2
+nx = 0 ny = 1
+nx = 0 ny = 0
+changed 
+
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 #[2 0] [2 0]
+turn = 16 #[2 0] [2 0]
+turn = 17 #[2 0] [2 0]
+turn = 18 #[2 0] [2 0]
+turn = 19 #[2 0] [2 0]
+turn = 20 #[2 0] [2 0]
+assert check insert
+start 6 4 0 1 4 4
+ update return from start
+last return clane -1 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+move history clane = 0
+turn = 0 P[0 0] [0 0]
+turn = 1 R[0 0] [0 0]
+turn = 2 D[0 1] [0 1]
+turn = 3 U[1 1] [1 1]
+turn = 4 D[0 1] [0 1]
+turn = 5 U[1 1] [1 1]
+turn = 6 D[0 1] [0 1]
+turn = 7 U[1 1] [1 1]
+turn = 8 D[0 1] [0 1]
+turn = 9 U[1 1] [1 1]
+turn = 10 R[0 1] [0 1]
+turn = 11 R[0 2] [0 2]
+turn = 12 Q[0 3] [0 3]
+turn = 13 L[0 3] [0 3]
+turn = 14 L[0 2] [0 2]
+turn = 15 L[0 1] [0 1]
+turn = 16 #[0 0] [0 0]
+turn = 17 #[0 0] [0 0]
+turn = 18 #[0 0] [0 0]
+turn = 19 #[0 0] [0 0]
+turn = 20 #[0 0] [0 0]
+turn = 21 #[0 0] [0 0]
+assert check insert
+turn = 5 finish task = 5
+13 7 10 10 16 
+11 4 -1 -1 -1 
+7 2 -1 -1 -1 
+8 -1 -1 0 -1 
+14 3 -1 1 -1 
+5 -1 -1 -1 -1 
+
+-1 2 -1 -1 -1 
+-1 0 -1 -1 -1 
+-1 -1 -1 1 -1 
+-1 4 -1 3 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 5
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 6 finish task = 5
+13 7 10 10 16 
+11 2 4 -1 -1 
+7 -1 -1 -1 -1 
+8 3 -1 1 0 
+14 -1 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 0 2 -1 -1 
+-1 -1 -1 -1 -1 
+-1 4 -1 3 1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 6
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 7 finish task = 5
+13 7 10 10 16 
+11 -1 -1 -1 -1 
+7 2 4 1 -1 
+8 -1 -1 -1 0 
+14 3 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 0 2 3 -1 
+-1 -1 -1 -1 1 
+-1 4 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 7
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 8 finish task = 5
+13 7 10 10 16 
+11 2 -1 1 -1 
+7 -1 -1 4 -1 
+8 3 -1 -1 -1 
+14 -1 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 0 -1 3 -1 
+-1 -1 -1 2 -1 
+-1 4 -1 1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 8
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 9 finish task = 5
+13 7 10 10 16 
+11 -1 -1 -1 1 
+7 2 -1 -1 4 
+8 -1 -1 -1 -1 
+14 3 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 -1 -1 -1 3 
+-1 0 -1 1 2 
+-1 -1 -1 -1 -1 
+-1 4 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 9
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 10 finish task = 5
+13 7 10 10 16 
+11 2 -1 -1 1 
+7 -1 -1 -1 4 
+8 3 -1 -1 -1 
+14 -1 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 0 -1 -1 3 
+-1 -1 1 -1 2 
+-1 4 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 10
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 11 finish task = 5
+13 7 10 10 16 
+11 -1 2 -1 -1 
+7 -1 -1 -1 -1 
+8 -1 -1 -1 -1 
+14 3 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 -1 0 3 -1 
+-1 1 -1 2 -1 
+-1 -1 -1 -1 -1 
+-1 4 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 11
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 12 finish task = 5
+13 7 10 10 16 
+11 -1 -1 2 -1 
+7 -1 -1 -1 -1 
+8 3 -1 -1 -1 
+14 -1 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 -1 -1 0 -1 
+1 -1 -1 3 -1 
+-1 4 -1 2 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 12
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 13 finish task = 5
+13 7 10 10 16 
+11 -1 -1 6 -1 
+7 3 -1 -1 -1 
+8 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 -1 -1 0 -1 
+1 4 -1 -1 -1 
+-1 -1 2 3 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 13
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+assert check insert
+turn = 14 finish task = 5
+13 7 10 10 16 
+11 -1 -1 6 -1 
+7 -1 3 -1 -1 
+8 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+5 -1 -1 -1 -1 
+
+-1 -1 0 -1 -1 
+1 -1 4 -1 -1 
+-1 2 -1 -1 -1 
+-1 -1 -1 3 -1 
+-1 -1 -1 -1 -1 
+
+start 6 4 0 1 4 14
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 7 10 10 16 
+start 1
+nx = 1 ny = 3
+nx = 2 ny = 3
+nx = 3 ny = 3
+nx = 3 ny = 2
+nx = 4 ny = 2
+nx = 4 ny = 1
+nx = 4 ny = 0
+changed 
+
+move history clane = 1
+turn = 0 P[1 0] [1 0]
+turn = 1 R[1 0] [1 0]
+turn = 2 D[1 1] [1 1]
+turn = 3 R[2 1] [2 1]
+turn = 4 R[2 2] [2 2]
+turn = 5 R[2 3] [2 3]
+turn = 6 Q[2 4] [2 4]
+turn = 7 L[2 4] [2 4]
+turn = 8 L[2 3] [2 3]
+turn = 9 D[2 2] [2 2]
+turn = 10 D[3 2] [3 2]
+turn = 11 L[4 2] [4 2]
+turn = 12 L[4 1] [4 1]
+turn = 13 P[4 0] [4 0]
+turn = 14 R[4 0] [4 0]
+turn = 15 R[4 1] [4 1]
+turn = 16 U[4 2] [4 2]
+turn = 17 R[3 2] [3 2]
+turn = 18 U[3 3] [3 3]
+turn = 19 U[2 3] [2 3]
+turn = 20 R[1 3] [1 3]
+turn = 21 Q[1 4] [1 4]
+turn = 22 L[1 4] [1 4]
+turn = 23 L[1 3] [1 3]
+turn = 24 L[1 2] [1 2]
+turn = 25 L[1 1] [1 1]
+turn = 26 #[1 0] [1 0]
+turn = 27 #[1 0] [1 0]
+turn = 28 #[1 0] [1 0]
+turn = 29 #[1 0] [1 0]
+turn = 30 #[1 0] [1 0]
+turn = 31 #[1 0] [1 0]
+assert check insert
+start 7 0 3 1 4 14
+ update return from start
+last return clane 0 1 2 3 -1 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 22 10 10 16 
+move history clane = 4
+turn = 0 P[4 0] [4 0]
+turn = 1 R[4 0] [4 0]
+turn = 2 U[4 1] [4 1]
+turn = 3 U[3 1] [3 1]
+turn = 4 D[2 1] [2 1]
+turn = 5 U[3 1] [3 1]
+turn = 6 D[2 1] [2 1]
+turn = 7 U[3 1] [3 1]
+turn = 8 D[2 1] [2 1]
+turn = 9 U[3 1] [3 1]
+turn = 10 D[2 1] [2 1]
+turn = 11 U[3 1] [3 1]
+turn = 12 U[2 1] [2 1]
+turn = 13 R[1 1] [1 1]
+turn = 14 U[1 2] [1 2]
+turn = 15 Q[0 2] [0 2]
+turn = 16 D[0 2] [0 2]
+turn = 17 D[1 2] [1 2]
+turn = 18 D[2 2] [2 2]
+turn = 19 D[3 2] [3 2]
+turn = 20 L[4 2] [4 2]
+turn = 21 L[4 1] [4 1]
+turn = 22 #[4 0] [4 0]
+turn = 23 #[4 0] [4 0]
+turn = 24 #[4 0] [4 0]
+turn = 25 #[4 0] [4 0]
+turn = 26 #[4 0] [4 0]
+turn = 27 #[4 0] [4 0]
+assert check insert
+turn = 15 finish task = 6
+13 22 10 10 16 
+11 -1 3 6 -1 
+7 -1 -1 -1 -1 
+8 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+21 5 -1 -1 -1 
+
+-1 0 4 -1 -1 
+-1 -1 -1 -1 -1 
+2 -1 -1 -1 -1 
+-1 -1 3 -1 -1 
+-1 1 -1 -1 -1 
+
+start 7 0 3 1 4 15
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 22 10 10 16 
+start 3
+nx = 0 ny = 4
+nx = 0 ny = 3
+nx = 0 ny = 3
+nx = 0 ny = 3
+nx = 1 ny = 3
+nx = 0 ny = 3
+nx = 1 ny = 3
+nx = 0 ny = 3
+changed 
+1 
+move history clane = 3
+turn = 0 P[3 0] [3 0]
+turn = 1 R[3 0] [3 0]
+turn = 2 R[3 1] [3 1]
+turn = 3 R[3 2] [3 2]
+turn = 4 .[3 3] [3 3]
+turn = 5 U[3 3] [3 3]
+turn = 6 U[2 3] [2 3]
+turn = 7 U[1 3] [1 3]
+turn = 8 R[0 3] [0 3]
+turn = 9 Q[0 4] [0 4]
+turn = 10 L[0 4] [0 4]
+turn = 11 D[0 3] [0 3]
+turn = 12 .[1 3] [1 3]
+turn = 13 U[1 3] [1 3]
+turn = 14 P[0 3] [0 3]
+turn = 15 D[0 3] [0 3]
+turn = 16 U[1 3] [1 3]
+turn = 17 D[0 3] [0 3]
+turn = 18 U[1 3] [1 3]
+turn = 19 .[0 3] [0 3]
+turn = 20 .[0 3] [0 3]
+turn = 21 R[0 3] [0 3]
+turn = 22 D[0 4] [0 4]
+turn = 23 Q[1 4] [1 4]
+turn = 24 L[1 4] [1 4]
+turn = 25 D[1 3] [1 3]
+turn = 26 D[2 3] [2 3]
+turn = 27 L[3 3] [3 3]
+turn = 28 L[3 2] [3 2]
+turn = 29 L[3 1] [3 1]
+turn = 30 #[3 0] [3 0]
+turn = 31 #[3 0] [3 0]
+turn = 32 #[3 0] [3 0]
+turn = 33 #[3 0] [3 0]
+turn = 34 #[3 0] [3 0]
+turn = 35 #[3 0] [3 0]
+assert check insert
+start 20 1 0 4 4 15
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 22 10 24 16 
+assert check insert
+turn = 16 finish task = 7
+13 22 10 24 16 
+11 -1 18 -1 -1 
+7 -1 -1 6 -1 
+8 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+21 -1 5 -1 -1 
+
+0 -1 4 -1 -1 
+-1 -1 -1 3 -1 
+2 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 1 -1 -1 
+
+start 20 1 0 4 4 16
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 22 10 24 16 
+assert check insert
+turn = 17 finish task = 7
+13 22 10 24 16 
+11 -1 18 6 -1 
+7 -1 -1 -1 -1 
+8 -1 -1 -1 -1 
+14 -1 5 -1 -1 
+21 -1 -1 -1 -1 
+
+0 -1 -1 3 -1 
+-1 -1 4 -1 -1 
+2 -1 -1 -1 -1 
+-1 -1 1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 20 1 0 4 4 17
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 22 10 24 16 
+start 2
+nx = 4 ny = 3
+nx = 4 ny = 2
+nx = 3 ny = 2
+nx = 3 ny = 1
+nx = 2 ny = 1
+nx = 1 ny = 1
+nx = 1 ny = 0
+changed 
+
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 #[2 0] [2 0]
+turn = 32 #[2 0] [2 0]
+turn = 33 #[2 0] [2 0]
+turn = 34 #[2 0] [2 0]
+turn = 35 #[2 0] [2 0]
+turn = 36 #[2 0] [2 0]
+assert check insert
+start 14 2 0 2 3 17
+ update return from start
+last return clane 0 -1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 22 25 24 16 
+move history clane = 1
+turn = 0 P[1 0] [1 0]
+turn = 1 R[1 0] [1 0]
+turn = 2 D[1 1] [1 1]
+turn = 3 R[2 1] [2 1]
+turn = 4 R[2 2] [2 2]
+turn = 5 R[2 3] [2 3]
+turn = 6 Q[2 4] [2 4]
+turn = 7 L[2 4] [2 4]
+turn = 8 L[2 3] [2 3]
+turn = 9 D[2 2] [2 2]
+turn = 10 D[3 2] [3 2]
+turn = 11 L[4 2] [4 2]
+turn = 12 L[4 1] [4 1]
+turn = 13 P[4 0] [4 0]
+turn = 14 R[4 0] [4 0]
+turn = 15 R[4 1] [4 1]
+turn = 16 U[4 2] [4 2]
+turn = 17 R[3 2] [3 2]
+turn = 18 U[3 3] [3 3]
+turn = 19 U[2 3] [2 3]
+turn = 20 R[1 3] [1 3]
+turn = 21 Q[1 4] [1 4]
+turn = 22 L[1 4] [1 4]
+turn = 23 L[1 3] [1 3]
+turn = 24 L[1 2] [1 2]
+turn = 25 L[1 1] [1 1]
+turn = 26 #[1 0] [1 0]
+turn = 27 #[1 0] [1 0]
+turn = 28 #[1 0] [1 0]
+turn = 29 #[1 0] [1 0]
+turn = 30 #[1 0] [1 0]
+turn = 31 #[1 0] [1 0]
+assert check insert
+turn = 18 finish task = 8
+13 22 25 24 16 
+11 -1 18 -1 -1 
+9 7 -1 6 -1 
+8 -1 -1 -1 -1 
+14 -1 -1 5 -1 
+21 -1 -1 -1 -1 
+
+0 -1 -1 -1 -1 
+-1 2 -1 3 -1 
+-1 -1 4 -1 -1 
+-1 -1 -1 1 -1 
+-1 -1 -1 -1 -1 
+
+start 14 2 0 2 3 18
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 22 25 24 16 
+assert check insert
+turn = 19 finish task = 8
+13 22 25 24 16 
+11 -1 18 6 -1 
+9 -1 -1 -1 -1 
+8 7 -1 5 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+0 -1 -1 3 -1 
+-1 -1 -1 -1 -1 
+-1 2 -1 1 -1 
+-1 -1 4 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 14 2 0 2 3 19
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 13 22 25 24 16 
+start 0
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 0 ny = 1
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 1 ny = 1
+nx = 2 ny = 1
+nx = 2 ny = 0
+changed 
+2 3 
+move history clane = 0
+turn = 0 P[0 0] [0 0]
+turn = 1 R[0 0] [0 0]
+turn = 2 D[0 1] [0 1]
+turn = 3 U[1 1] [1 1]
+turn = 4 D[0 1] [0 1]
+turn = 5 U[1 1] [1 1]
+turn = 6 D[0 1] [0 1]
+turn = 7 U[1 1] [1 1]
+turn = 8 D[0 1] [0 1]
+turn = 9 U[1 1] [1 1]
+turn = 10 R[0 1] [0 1]
+turn = 11 R[0 2] [0 2]
+turn = 12 Q[0 3] [0 3]
+turn = 13 L[0 3] [0 3]
+turn = 14 L[0 2] [0 2]
+turn = 15 D[0 1] [0 1]
+turn = 16 D[1 1] [1 1]
+turn = 17 L[2 1] [2 1]
+turn = 18 P[2 0] [2 0]
+turn = 19 R[2 0] [2 0]
+turn = 20 U[2 1] [2 1]
+turn = 21 U[1 1] [1 1]
+turn = 22 D[0 1] [0 1]
+turn = 23 U[1 1] [1 1]
+turn = 24 .[0 1] [0 1]
+turn = 25 D[0 1] [0 1]
+turn = 26 R[1 1] [1 1]
+turn = 27 R[1 2] [1 2]
+turn = 28 D[1 3] [1 3]
+turn = 29 Q[2 3] [2 3]
+turn = 30 U[2 3] [2 3]
+turn = 31 U[1 3] [1 3]
+turn = 32 L[0 3] [0 3]
+turn = 33 L[0 2] [0 2]
+turn = 34 L[0 1] [0 1]
+turn = 35 #[0 0] [0 0]
+turn = 36 #[0 0] [0 0]
+turn = 37 #[0 0] [0 0]
+turn = 38 #[0 0] [0 0]
+turn = 39 #[0 0] [0 0]
+turn = 40 #[0 0] [0 0]
+assert check insert
+start 8 1 0 1 4 19
+ update return from start
+last return clane 0 1 -1 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 16 
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 #[2 0] [2 0]
+turn = 32 #[2 0] [2 0]
+turn = 33 #[2 0] [2 0]
+turn = 34 #[2 0] [2 0]
+turn = 35 #[2 0] [2 0]
+turn = 36 #[2 0] [2 0]
+assert check insert
+turn = 20 finish task = 9
+30 22 25 24 16 
+11 -1 18 6 -1 
+9 -1 -1 5 -1 
+10 8 -1 -1 -1 
+14 7 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 3 -1 
+-1 -1 -1 1 -1 
+-1 0 -1 -1 -1 
+-1 2 -1 -1 -1 
+-1 -1 4 -1 -1 
+
+start 8 1 0 1 4 20
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 16 
+assert check insert
+turn = 21 finish task = 9
+30 22 25 24 16 
+11 -1 18 6 -1 
+9 8 -1 -1 5 
+10 -1 -1 -1 -1 
+14 -1 7 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 3 -1 
+-1 0 -1 -1 1 
+-1 -1 -1 -1 -1 
+-1 -1 2 -1 -1 
+-1 4 -1 -1 -1 
+
+start 8 1 0 1 4 21
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 16 
+start 4
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 2 ny = 2
+nx = 2 ny = 1
+nx = 1 ny = 1
+nx = 1 ny = 0
+changed 
+1 3 
+move history clane = 4
+turn = 0 P[4 0] [4 0]
+turn = 1 R[4 0] [4 0]
+turn = 2 U[4 1] [4 1]
+turn = 3 U[3 1] [3 1]
+turn = 4 D[2 1] [2 1]
+turn = 5 U[3 1] [3 1]
+turn = 6 D[2 1] [2 1]
+turn = 7 U[3 1] [3 1]
+turn = 8 D[2 1] [2 1]
+turn = 9 U[3 1] [3 1]
+turn = 10 D[2 1] [2 1]
+turn = 11 U[3 1] [3 1]
+turn = 12 U[2 1] [2 1]
+turn = 13 R[1 1] [1 1]
+turn = 14 U[1 2] [1 2]
+turn = 15 Q[0 2] [0 2]
+turn = 16 D[0 2] [0 2]
+turn = 17 .[1 2] [1 2]
+turn = 18 L[1 2] [1 2]
+turn = 19 L[1 1] [1 1]
+turn = 20 P[1 0] [1 0]
+turn = 21 R[1 0] [1 0]
+turn = 22 D[1 1] [1 1]
+turn = 23 R[2 1] [2 1]
+turn = 24 U[2 2] [2 2]
+turn = 25 R[1 2] [1 2]
+turn = 26 R[1 3] [1 3]
+turn = 27 Q[1 4] [1 4]
+turn = 28 L[1 4] [1 4]
+turn = 29 L[1 3] [1 3]
+turn = 30 D[1 2] [1 2]
+turn = 31 D[2 2] [2 2]
+turn = 32 D[3 2] [3 2]
+turn = 33 L[4 2] [4 2]
+turn = 34 L[4 1] [4 1]
+turn = 35 #[4 0] [4 0]
+turn = 36 #[4 0] [4 0]
+turn = 37 #[4 0] [4 0]
+turn = 38 #[4 0] [4 0]
+turn = 39 #[4 0] [4 0]
+turn = 40 #[4 0] [4 0]
+assert check insert
+start 15 2 0 3 4 21
+ update return from start
+last return clane 0 -1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 28 
+move history clane = 1
+turn = 0 P[1 0] [1 0]
+turn = 1 R[1 0] [1 0]
+turn = 2 D[1 1] [1 1]
+turn = 3 R[2 1] [2 1]
+turn = 4 R[2 2] [2 2]
+turn = 5 R[2 3] [2 3]
+turn = 6 Q[2 4] [2 4]
+turn = 7 L[2 4] [2 4]
+turn = 8 L[2 3] [2 3]
+turn = 9 D[2 2] [2 2]
+turn = 10 D[3 2] [3 2]
+turn = 11 L[4 2] [4 2]
+turn = 12 L[4 1] [4 1]
+turn = 13 P[4 0] [4 0]
+turn = 14 R[4 0] [4 0]
+turn = 15 R[4 1] [4 1]
+turn = 16 U[4 2] [4 2]
+turn = 17 R[3 2] [3 2]
+turn = 18 U[3 3] [3 3]
+turn = 19 U[2 3] [2 3]
+turn = 20 R[1 3] [1 3]
+turn = 21 Q[1 4] [1 4]
+turn = 22 L[1 4] [1 4]
+turn = 23 L[1 3] [1 3]
+turn = 24 L[1 2] [1 2]
+turn = 25 L[1 1] [1 1]
+turn = 26 #[1 0] [1 0]
+turn = 27 #[1 0] [1 0]
+turn = 28 #[1 0] [1 0]
+turn = 29 #[1 0] [1 0]
+turn = 30 #[1 0] [1 0]
+turn = 31 #[1 0] [1 0]
+assert check insert
+turn = 22 finish task = 10
+30 22 25 24 28 
+11 8 18 -1 6 
+15 9 -1 -1 5 
+10 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+21 -1 7 -1 -1 
+
+-1 0 -1 -1 3 
+-1 4 -1 -1 1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 2 -1 -1 
+
+start 15 2 0 3 4 22
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 28 
+assert check insert
+turn = 23 finish task = 10
+30 22 25 24 28 
+11 -1 18 -1 -1 
+15 8 -1 -1 6 
+10 9 -1 -1 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 7 -1 
+
+-1 -1 -1 -1 -1 
+-1 0 -1 1 3 
+-1 4 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 2 -1 
+
+start 15 2 0 3 4 23
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 28 
+assert check insert
+turn = 24 finish task = 10
+30 22 25 24 28 
+11 8 18 -1 -1 
+15 -1 -1 -1 6 
+10 -1 9 -1 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 7 
+
+-1 0 -1 -1 -1 
+-1 -1 1 -1 3 
+-1 -1 4 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 2 
+
+start 15 2 0 3 4 24
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 28 
+assert check insert
+turn = 25 finish task = 10
+30 22 25 24 28 
+11 8 18 -1 -1 
+15 -1 9 -1 -1 
+10 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 7 
+
+-1 0 -1 -1 -1 
+-1 1 4 3 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 2 
+
+start 15 2 0 3 4 25
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 28 
+assert check insert
+turn = 26 finish task = 10
+30 22 25 24 28 
+11 -1 18 -1 -1 
+15 8 -1 9 -1 
+10 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+1 0 -1 4 -1 
+-1 -1 -1 3 -1 
+-1 -1 -1 -1 2 
+-1 -1 -1 -1 -1 
+
+start 15 2 0 3 4 26
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 28 
+assert check insert
+turn = 27 finish task = 10
+30 22 25 24 28 
+11 -1 18 -1 -1 
+15 -1 8 -1 9 
+10 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+1 -1 0 -1 4 
+-1 -1 -1 -1 2 
+-1 -1 -1 3 -1 
+-1 -1 -1 -1 -1 
+
+start 15 2 0 3 4 27
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 28 
+assert check insert
+turn = 28 finish task = 10
+30 22 25 24 28 
+11 -1 18 -1 -1 
+15 -1 -1 8 9 
+10 -1 -1 -1 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+1 -1 -1 0 4 
+-1 -1 -1 2 -1 
+-1 -1 3 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 15 2 0 3 4 28
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 22 25 24 28 
+start 1
+nx = 3 ny = 3
+nx = 3 ny = 2
+nx = 3 ny = 1
+nx = 2 ny = 1
+nx = 2 ny = 0
+changed 
+
+move history clane = 1
+turn = 0 P[1 0] [1 0]
+turn = 1 R[1 0] [1 0]
+turn = 2 D[1 1] [1 1]
+turn = 3 R[2 1] [2 1]
+turn = 4 R[2 2] [2 2]
+turn = 5 R[2 3] [2 3]
+turn = 6 Q[2 4] [2 4]
+turn = 7 L[2 4] [2 4]
+turn = 8 L[2 3] [2 3]
+turn = 9 D[2 2] [2 2]
+turn = 10 D[3 2] [3 2]
+turn = 11 L[4 2] [4 2]
+turn = 12 L[4 1] [4 1]
+turn = 13 P[4 0] [4 0]
+turn = 14 R[4 0] [4 0]
+turn = 15 R[4 1] [4 1]
+turn = 16 U[4 2] [4 2]
+turn = 17 R[3 2] [3 2]
+turn = 18 U[3 3] [3 3]
+turn = 19 U[2 3] [2 3]
+turn = 20 R[1 3] [1 3]
+turn = 21 Q[1 4] [1 4]
+turn = 22 L[1 4] [1 4]
+turn = 23 L[1 3] [1 3]
+turn = 24 L[1 2] [1 2]
+turn = 25 L[1 1] [1 1]
+turn = 26 D[1 0] [1 0]
+turn = 27 P[2 0] [2 0]
+turn = 28 R[2 0] [2 0]
+turn = 29 D[2 1] [2 1]
+turn = 30 R[3 1] [3 1]
+turn = 31 R[3 2] [3 2]
+turn = 32 R[3 3] [3 3]
+turn = 33 Q[3 4] [3 4]
+turn = 34 L[3 4] [3 4]
+turn = 35 U[3 3] [3 3]
+turn = 36 U[2 3] [2 3]
+turn = 37 L[1 3] [1 3]
+turn = 38 L[1 2] [1 2]
+turn = 39 L[1 1] [1 1]
+turn = 40 #[1 0] [1 0]
+turn = 41 #[1 0] [1 0]
+turn = 42 #[1 0] [1 0]
+turn = 43 #[1 0] [1 0]
+turn = 44 #[1 0] [1 0]
+turn = 45 #[1 0] [1 0]
+assert check insert
+start 11 0 0 2 4 28
+ update return from start
+last return clane 0 1 -1 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 25 24 28 
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 #[2 0] [2 0]
+turn = 32 #[2 0] [2 0]
+turn = 33 #[2 0] [2 0]
+turn = 34 #[2 0] [2 0]
+turn = 35 #[2 0] [2 0]
+turn = 36 #[2 0] [2 0]
+assert check insert
+turn = 29 finish task = 11
+30 34 25 24 28 
+11 -1 18 -1 -1 
+15 -1 -1 -1 -1 
+12 10 -1 8 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 -1 -1 4 -1 
+-1 1 2 0 -1 
+-1 3 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 11 0 0 2 4 29
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 25 24 28 
+assert check insert
+turn = 30 finish task = 11
+30 34 25 24 28 
+11 -1 18 -1 -1 
+15 -1 -1 -1 -1 
+12 -1 -1 27 -1 
+14 10 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 -1 4 -1 -1 
+-1 2 -1 0 -1 
+3 1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 11 0 0 2 4 30
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 25 24 28 
+start 3
+nx = 1 ny = 4
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 0 ny = 0
+changed 
+
+move history clane = 3
+turn = 0 P[3 0] [3 0]
+turn = 1 R[3 0] [3 0]
+turn = 2 R[3 1] [3 1]
+turn = 3 R[3 2] [3 2]
+turn = 4 .[3 3] [3 3]
+turn = 5 U[3 3] [3 3]
+turn = 6 U[2 3] [2 3]
+turn = 7 U[1 3] [1 3]
+turn = 8 R[0 3] [0 3]
+turn = 9 Q[0 4] [0 4]
+turn = 10 L[0 4] [0 4]
+turn = 11 D[0 3] [0 3]
+turn = 12 .[1 3] [1 3]
+turn = 13 U[1 3] [1 3]
+turn = 14 P[0 3] [0 3]
+turn = 15 D[0 3] [0 3]
+turn = 16 U[1 3] [1 3]
+turn = 17 D[0 3] [0 3]
+turn = 18 U[1 3] [1 3]
+turn = 19 .[0 3] [0 3]
+turn = 20 .[0 3] [0 3]
+turn = 21 R[0 3] [0 3]
+turn = 22 D[0 4] [0 4]
+turn = 23 Q[1 4] [1 4]
+turn = 24 L[1 4] [1 4]
+turn = 25 U[1 3] [1 3]
+turn = 26 L[0 3] [0 3]
+turn = 27 L[0 2] [0 2]
+turn = 28 L[0 1] [0 1]
+turn = 29 P[0 0] [0 0]
+turn = 30 R[0 0] [0 0]
+turn = 31 D[0 1] [0 1]
+turn = 32 R[1 1] [1 1]
+turn = 33 R[1 2] [1 2]
+turn = 34 R[1 3] [1 3]
+turn = 35 D[1 4] [1 4]
+turn = 36 Q[2 4] [2 4]
+turn = 37 L[2 4] [2 4]
+turn = 38 D[2 3] [2 3]
+turn = 39 L[3 3] [3 3]
+turn = 40 L[3 2] [3 2]
+turn = 41 L[3 1] [3 1]
+turn = 42 #[3 0] [3 0]
+turn = 43 #[3 0] [3 0]
+turn = 44 #[3 0] [3 0]
+turn = 45 #[3 0] [3 0]
+turn = 46 #[3 0] [3 0]
+turn = 47 #[3 0] [3 0]
+assert check insert
+start 9 2 0 1 4 30
+ update return from start
+last return clane -1 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 25 37 28 
+move history clane = 0
+turn = 0 P[0 0] [0 0]
+turn = 1 R[0 0] [0 0]
+turn = 2 D[0 1] [0 1]
+turn = 3 U[1 1] [1 1]
+turn = 4 D[0 1] [0 1]
+turn = 5 U[1 1] [1 1]
+turn = 6 D[0 1] [0 1]
+turn = 7 U[1 1] [1 1]
+turn = 8 D[0 1] [0 1]
+turn = 9 U[1 1] [1 1]
+turn = 10 R[0 1] [0 1]
+turn = 11 R[0 2] [0 2]
+turn = 12 Q[0 3] [0 3]
+turn = 13 L[0 3] [0 3]
+turn = 14 L[0 2] [0 2]
+turn = 15 D[0 1] [0 1]
+turn = 16 D[1 1] [1 1]
+turn = 17 L[2 1] [2 1]
+turn = 18 P[2 0] [2 0]
+turn = 19 R[2 0] [2 0]
+turn = 20 U[2 1] [2 1]
+turn = 21 U[1 1] [1 1]
+turn = 22 D[0 1] [0 1]
+turn = 23 U[1 1] [1 1]
+turn = 24 .[0 1] [0 1]
+turn = 25 D[0 1] [0 1]
+turn = 26 R[1 1] [1 1]
+turn = 27 R[1 2] [1 2]
+turn = 28 D[1 3] [1 3]
+turn = 29 Q[2 3] [2 3]
+turn = 30 U[2 3] [2 3]
+turn = 31 U[1 3] [1 3]
+turn = 32 L[0 3] [0 3]
+turn = 33 L[0 2] [0 2]
+turn = 34 L[0 1] [0 1]
+turn = 35 #[0 0] [0 0]
+turn = 36 #[0 0] [0 0]
+turn = 37 #[0 0] [0 0]
+turn = 38 #[0 0] [0 0]
+turn = 39 #[0 0] [0 0]
+turn = 40 #[0 0] [0 0]
+assert check insert
+turn = 31 finish task = 12
+30 34 25 37 28 
+13 11 18 -1 -1 
+15 -1 -1 -1 -1 
+12 -1 -1 27 -1 
+14 -1 10 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 3 -1 -1 -1 
+-1 -1 -1 0 -1 
+2 -1 4 -1 -1 
+-1 -1 1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 9 2 0 1 4 31
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 25 37 28 
+assert check insert
+turn = 32 finish task = 12
+30 34 25 37 28 
+13 -1 18 -1 -1 
+15 11 -1 -1 -1 
+12 -1 -1 27 -1 
+14 -1 -1 10 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 0 -1 
+-1 3 -1 -1 -1 
+2 -1 -1 -1 -1 
+-1 -1 4 1 -1 
+-1 -1 -1 -1 -1 
+
+start 9 2 0 1 4 32
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 25 37 28 
+start 2
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 2 ny = 1
+nx = 2 ny = 0
+changed 
+3 
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 P[2 0] [2 0]
+turn = 32 R[2 0] [2 0]
+turn = 33 U[2 1] [2 1]
+turn = 34 R[1 1] [1 1]
+turn = 35 R[1 2] [1 2]
+turn = 36 R[1 3] [1 3]
+turn = 37 Q[1 4] [1 4]
+turn = 38 L[1 4] [1 4]
+turn = 39 D[1 3] [1 3]
+turn = 40 L[2 3] [2 3]
+turn = 41 L[2 2] [2 2]
+turn = 42 L[2 1] [2 1]
+turn = 43 #[2 0] [2 0]
+turn = 44 #[2 0] [2 0]
+turn = 45 #[2 0] [2 0]
+turn = 46 #[2 0] [2 0]
+turn = 47 #[2 0] [2 0]
+turn = 48 #[2 0] [2 0]
+assert check insert
+start 16 0 0 3 4 32
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 38 37 28 
+assert check insert
+turn = 33 finish task = 13
+30 34 38 37 28 
+13 -1 18 -1 -1 
+15 -1 11 -1 -1 
+19 12 -1 27 -1 
+14 -1 -1 -1 10 
+21 -1 -1 -1 -1 
+
+-1 -1 0 -1 -1 
+-1 -1 3 -1 -1 
+-1 2 -1 -1 -1 
+-1 -1 -1 -1 1 
+-1 -1 4 -1 -1 
+
+start 16 0 0 3 4 33
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 38 37 28 
+assert check insert
+turn = 34 finish task = 13
+30 34 38 37 28 
+13 -1 18 -1 -1 
+15 12 -1 11 -1 
+19 -1 -1 27 -1 
+14 -1 -1 -1 10 
+21 -1 -1 -1 -1 
+
+-1 0 -1 -1 -1 
+-1 2 -1 3 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 1 
+-1 4 -1 -1 -1 
+
+start 16 0 0 3 4 34
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 38 37 28 
+assert check insert
+turn = 35 finish task = 13
+30 34 38 37 28 
+13 -1 18 -1 -1 
+15 -1 12 -1 11 
+19 -1 -1 27 -1 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+0 -1 -1 -1 -1 
+-1 -1 2 -1 3 
+-1 -1 -1 -1 -1 
+-1 -1 -1 1 -1 
+4 -1 -1 -1 -1 
+
+start 16 0 0 3 4 35
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 38 37 28 
+assert check insert
+turn = 36 finish task = 13
+30 34 38 37 28 
+13 -1 18 -1 -1 
+15 -1 -1 12 -1 
+19 -1 -1 27 11 
+14 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+0 -1 -1 -1 -1 
+-1 -1 -1 2 -1 
+-1 -1 -1 1 3 
+-1 -1 -1 -1 -1 
+4 -1 -1 -1 -1 
+
+start 16 0 0 3 4 36
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 30 34 38 37 28 
+start 0
+nx = 3 ny = 3
+nx = 3 ny = 2
+nx = 2 ny = 2
+nx = 2 ny = 1
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 0 ny = 0
+changed 
+
+move history clane = 0
+turn = 0 P[0 0] [0 0]
+turn = 1 R[0 0] [0 0]
+turn = 2 D[0 1] [0 1]
+turn = 3 U[1 1] [1 1]
+turn = 4 D[0 1] [0 1]
+turn = 5 U[1 1] [1 1]
+turn = 6 D[0 1] [0 1]
+turn = 7 U[1 1] [1 1]
+turn = 8 D[0 1] [0 1]
+turn = 9 U[1 1] [1 1]
+turn = 10 R[0 1] [0 1]
+turn = 11 R[0 2] [0 2]
+turn = 12 Q[0 3] [0 3]
+turn = 13 L[0 3] [0 3]
+turn = 14 L[0 2] [0 2]
+turn = 15 D[0 1] [0 1]
+turn = 16 D[1 1] [1 1]
+turn = 17 L[2 1] [2 1]
+turn = 18 P[2 0] [2 0]
+turn = 19 R[2 0] [2 0]
+turn = 20 U[2 1] [2 1]
+turn = 21 U[1 1] [1 1]
+turn = 22 D[0 1] [0 1]
+turn = 23 U[1 1] [1 1]
+turn = 24 .[0 1] [0 1]
+turn = 25 D[0 1] [0 1]
+turn = 26 R[1 1] [1 1]
+turn = 27 R[1 2] [1 2]
+turn = 28 D[1 3] [1 3]
+turn = 29 Q[2 3] [2 3]
+turn = 30 U[2 3] [2 3]
+turn = 31 U[1 3] [1 3]
+turn = 32 L[0 3] [0 3]
+turn = 33 L[0 2] [0 2]
+turn = 34 L[0 1] [0 1]
+turn = 35 P[0 0] [0 0]
+turn = 36 R[0 0] [0 0]
+turn = 37 D[0 1] [0 1]
+turn = 38 D[1 1] [1 1]
+turn = 39 R[2 1] [2 1]
+turn = 40 D[2 2] [2 2]
+turn = 41 R[3 2] [3 2]
+turn = 42 R[3 3] [3 3]
+turn = 43 Q[3 4] [3 4]
+turn = 44 L[3 4] [3 4]
+turn = 45 U[3 3] [3 3]
+turn = 46 U[2 3] [2 3]
+turn = 47 U[1 3] [1 3]
+turn = 48 L[0 3] [0 3]
+turn = 49 L[0 2] [0 2]
+turn = 50 L[0 1] [0 1]
+turn = 51 #[0 0] [0 0]
+turn = 52 #[0 0] [0 0]
+turn = 53 #[0 0] [0 0]
+turn = 54 #[0 0] [0 0]
+turn = 55 #[0 0] [0 0]
+turn = 56 #[0 0] [0 0]
+assert check insert
+start 17 3 0 3 4 36
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 34 38 37 28 
+start 4
+nx = 4 ny = 4
+nx = 4 ny = 3
+nx = 4 ny = 3
+nx = 4 ny = 2
+nx = 4 ny = 1
+nx = 3 ny = 1
+nx = 2 ny = 1
+nx = 3 ny = 1
+nx = 3 ny = 0
+changed 
+0 
+move history clane = 4
+turn = 0 P[4 0] [4 0]
+turn = 1 R[4 0] [4 0]
+turn = 2 U[4 1] [4 1]
+turn = 3 U[3 1] [3 1]
+turn = 4 D[2 1] [2 1]
+turn = 5 U[3 1] [3 1]
+turn = 6 D[2 1] [2 1]
+turn = 7 U[3 1] [3 1]
+turn = 8 D[2 1] [2 1]
+turn = 9 U[3 1] [3 1]
+turn = 10 D[2 1] [2 1]
+turn = 11 U[3 1] [3 1]
+turn = 12 U[2 1] [2 1]
+turn = 13 R[1 1] [1 1]
+turn = 14 U[1 2] [1 2]
+turn = 15 Q[0 2] [0 2]
+turn = 16 D[0 2] [0 2]
+turn = 17 .[1 2] [1 2]
+turn = 18 L[1 2] [1 2]
+turn = 19 L[1 1] [1 1]
+turn = 20 P[1 0] [1 0]
+turn = 21 R[1 0] [1 0]
+turn = 22 D[1 1] [1 1]
+turn = 23 R[2 1] [2 1]
+turn = 24 U[2 2] [2 2]
+turn = 25 R[1 2] [1 2]
+turn = 26 R[1 3] [1 3]
+turn = 27 Q[1 4] [1 4]
+turn = 28 L[1 4] [1 4]
+turn = 29 L[1 3] [1 3]
+turn = 30 D[1 2] [1 2]
+turn = 31 D[2 2] [2 2]
+turn = 32 L[3 2] [3 2]
+turn = 33 L[3 1] [3 1]
+turn = 34 .[3 0] [3 0]
+turn = 35 P[3 0] [3 0]
+turn = 36 R[3 0] [3 0]
+turn = 37 U[3 1] [3 1]
+turn = 38 D[2 1] [2 1]
+turn = 39 D[3 1] [3 1]
+turn = 40 R[4 1] [4 1]
+turn = 41 R[4 2] [4 2]
+turn = 42 .[4 3] [4 3]
+turn = 43 R[4 3] [4 3]
+turn = 44 U[4 4] [4 4]
+turn = 45 Q[3 4] [3 4]
+turn = 46 L[3 4] [3 4]
+turn = 47 D[3 3] [3 3]
+turn = 48 L[4 3] [4 3]
+turn = 49 L[4 2] [4 2]
+turn = 50 L[4 1] [4 1]
+turn = 51 #[4 0] [4 0]
+turn = 52 #[4 0] [4 0]
+turn = 53 #[4 0] [4 0]
+turn = 54 #[4 0] [4 0]
+turn = 55 #[4 0] [4 0]
+turn = 56 #[4 0] [4 0]
+assert check insert
+start 18 1 0 3 4 36
+ update return from start
+last return clane 0 1 2 -1 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 34 38 37 46 
+move history clane = 3
+turn = 0 P[3 0] [3 0]
+turn = 1 R[3 0] [3 0]
+turn = 2 R[3 1] [3 1]
+turn = 3 R[3 2] [3 2]
+turn = 4 .[3 3] [3 3]
+turn = 5 U[3 3] [3 3]
+turn = 6 U[2 3] [2 3]
+turn = 7 U[1 3] [1 3]
+turn = 8 R[0 3] [0 3]
+turn = 9 Q[0 4] [0 4]
+turn = 10 L[0 4] [0 4]
+turn = 11 D[0 3] [0 3]
+turn = 12 .[1 3] [1 3]
+turn = 13 U[1 3] [1 3]
+turn = 14 P[0 3] [0 3]
+turn = 15 D[0 3] [0 3]
+turn = 16 U[1 3] [1 3]
+turn = 17 D[0 3] [0 3]
+turn = 18 U[1 3] [1 3]
+turn = 19 .[0 3] [0 3]
+turn = 20 .[0 3] [0 3]
+turn = 21 R[0 3] [0 3]
+turn = 22 D[0 4] [0 4]
+turn = 23 Q[1 4] [1 4]
+turn = 24 L[1 4] [1 4]
+turn = 25 U[1 3] [1 3]
+turn = 26 L[0 3] [0 3]
+turn = 27 L[0 2] [0 2]
+turn = 28 L[0 1] [0 1]
+turn = 29 P[0 0] [0 0]
+turn = 30 R[0 0] [0 0]
+turn = 31 D[0 1] [0 1]
+turn = 32 R[1 1] [1 1]
+turn = 33 R[1 2] [1 2]
+turn = 34 R[1 3] [1 3]
+turn = 35 D[1 4] [1 4]
+turn = 36 Q[2 4] [2 4]
+turn = 37 L[2 4] [2 4]
+turn = 38 D[2 3] [2 3]
+turn = 39 L[3 3] [3 3]
+turn = 40 L[3 2] [3 2]
+turn = 41 L[3 1] [3 1]
+turn = 42 #[3 0] [3 0]
+turn = 43 #[3 0] [3 0]
+turn = 44 #[3 0] [3 0]
+turn = 45 #[3 0] [3 0]
+turn = 46 #[3 0] [3 0]
+turn = 47 #[3 0] [3 0]
+assert check insert
+turn = 37 finish task = 15
+44 34 38 37 46 
+23 13 18 -1 -1 
+15 -1 -1 -1 12 
+19 -1 -1 27 11 
+16 14 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 0 -1 -1 -1 
+-1 -1 -1 1 2 
+-1 -1 -1 -1 3 
+-1 4 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 18 1 0 3 4 37
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 34 38 37 46 
+assert check insert
+turn = 38 finish task = 15
+44 34 38 37 46 
+23 -1 18 -1 -1 
+15 13 -1 -1 12 
+19 14 -1 27 -1 
+16 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 0 1 -1 2 
+-1 4 -1 3 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 18 1 0 3 4 38
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 34 38 37 46 
+assert check insert
+turn = 39 finish task = 15
+44 34 38 37 46 
+23 -1 18 -1 -1 
+15 -1 -1 -1 -1 
+19 13 -1 27 -1 
+16 14 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 1 -1 2 -1 
+-1 0 -1 -1 -1 
+-1 4 -1 3 -1 
+-1 -1 -1 -1 -1 
+
+start 18 1 0 3 4 39
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 34 38 37 46 
+assert check insert
+turn = 40 finish task = 15
+44 34 38 37 46 
+23 -1 18 -1 -1 
+15 -1 -1 -1 -1 
+19 -1 13 27 -1 
+16 -1 -1 -1 -1 
+21 14 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+1 -1 -1 -1 -1 
+-1 -1 0 2 -1 
+-1 -1 3 -1 -1 
+-1 4 -1 -1 -1 
+
+start 18 1 0 3 4 40
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 34 38 37 46 
+assert check insert
+turn = 41 finish task = 15
+44 34 38 37 46 
+23 -1 18 -1 -1 
+15 -1 -1 -1 -1 
+19 -1 -1 27 -1 
+16 -1 13 -1 -1 
+21 -1 14 -1 -1 
+
+-1 -1 -1 -1 -1 
+1 -1 -1 -1 -1 
+-1 -1 2 -1 -1 
+-1 3 0 -1 -1 
+-1 -1 4 -1 -1 
+
+start 18 1 0 3 4 41
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 34 38 37 46 
+start 1
+nx = 2 ny = 4
+nx = 1 ny = 4
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 1 ny = 0
+changed 
+0 4 
+move history clane = 1
+turn = 0 P[1 0] [1 0]
+turn = 1 R[1 0] [1 0]
+turn = 2 D[1 1] [1 1]
+turn = 3 R[2 1] [2 1]
+turn = 4 R[2 2] [2 2]
+turn = 5 R[2 3] [2 3]
+turn = 6 Q[2 4] [2 4]
+turn = 7 L[2 4] [2 4]
+turn = 8 L[2 3] [2 3]
+turn = 9 D[2 2] [2 2]
+turn = 10 D[3 2] [3 2]
+turn = 11 L[4 2] [4 2]
+turn = 12 L[4 1] [4 1]
+turn = 13 P[4 0] [4 0]
+turn = 14 R[4 0] [4 0]
+turn = 15 R[4 1] [4 1]
+turn = 16 U[4 2] [4 2]
+turn = 17 R[3 2] [3 2]
+turn = 18 U[3 3] [3 3]
+turn = 19 U[2 3] [2 3]
+turn = 20 R[1 3] [1 3]
+turn = 21 Q[1 4] [1 4]
+turn = 22 L[1 4] [1 4]
+turn = 23 L[1 3] [1 3]
+turn = 24 L[1 2] [1 2]
+turn = 25 L[1 1] [1 1]
+turn = 26 D[1 0] [1 0]
+turn = 27 P[2 0] [2 0]
+turn = 28 R[2 0] [2 0]
+turn = 29 D[2 1] [2 1]
+turn = 30 R[3 1] [3 1]
+turn = 31 R[3 2] [3 2]
+turn = 32 R[3 3] [3 3]
+turn = 33 Q[3 4] [3 4]
+turn = 34 L[3 4] [3 4]
+turn = 35 U[3 3] [3 3]
+turn = 36 U[2 3] [2 3]
+turn = 37 L[1 3] [1 3]
+turn = 38 L[1 2] [1 2]
+turn = 39 L[1 1] [1 1]
+turn = 40 P[1 0] [1 0]
+turn = 41 R[1 0] [1 0]
+turn = 42 R[1 1] [1 1]
+turn = 43 R[1 2] [1 2]
+turn = 44 R[1 3] [1 3]
+turn = 45 D[1 4] [1 4]
+turn = 46 D[2 4] [2 4]
+turn = 47 Q[3 4] [3 4]
+turn = 48 L[3 4] [3 4]
+turn = 49 U[3 3] [3 3]
+turn = 50 U[2 3] [2 3]
+turn = 51 L[1 3] [1 3]
+turn = 52 L[1 2] [1 2]
+turn = 53 L[1 1] [1 1]
+turn = 54 #[1 0] [1 0]
+turn = 55 #[1 0] [1 0]
+turn = 56 #[1 0] [1 0]
+turn = 57 #[1 0] [1 0]
+turn = 58 #[1 0] [1 0]
+turn = 59 #[1 0] [1 0]
+assert check insert
+start 21 3 0 4 4 41
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 38 37 46 
+assert check insert
+turn = 42 finish task = 16
+44 48 38 37 46 
+23 -1 18 -1 -1 
+17 15 -1 -1 -1 
+19 -1 -1 27 -1 
+16 -1 -1 13 -1 
+21 -1 -1 14 -1 
+
+-1 -1 -1 -1 -1 
+-1 1 -1 -1 -1 
+-1 2 -1 -1 -1 
+3 -1 -1 0 -1 
+-1 -1 -1 4 -1 
+
+start 21 3 0 4 4 42
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 38 37 46 
+assert check insert
+turn = 43 finish task = 16
+44 48 38 37 46 
+23 -1 18 -1 -1 
+17 -1 15 -1 -1 
+19 -1 -1 27 -1 
+16 -1 -1 -1 13 
+21 -1 -1 14 -1 
+
+-1 -1 -1 -1 -1 
+-1 -1 1 -1 -1 
+2 -1 -1 -1 -1 
+3 -1 -1 -1 0 
+-1 -1 -1 4 -1 
+
+start 21 3 0 4 4 43
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 38 37 46 
+start 3
+nx = 4 ny = 3
+nx = 4 ny = 2
+nx = 4 ny = 1
+nx = 3 ny = 1
+nx = 3 ny = 0
+changed 
+4 
+move history clane = 3
+turn = 0 P[3 0] [3 0]
+turn = 1 R[3 0] [3 0]
+turn = 2 R[3 1] [3 1]
+turn = 3 R[3 2] [3 2]
+turn = 4 .[3 3] [3 3]
+turn = 5 U[3 3] [3 3]
+turn = 6 U[2 3] [2 3]
+turn = 7 U[1 3] [1 3]
+turn = 8 R[0 3] [0 3]
+turn = 9 Q[0 4] [0 4]
+turn = 10 L[0 4] [0 4]
+turn = 11 D[0 3] [0 3]
+turn = 12 .[1 3] [1 3]
+turn = 13 U[1 3] [1 3]
+turn = 14 P[0 3] [0 3]
+turn = 15 D[0 3] [0 3]
+turn = 16 U[1 3] [1 3]
+turn = 17 D[0 3] [0 3]
+turn = 18 U[1 3] [1 3]
+turn = 19 .[0 3] [0 3]
+turn = 20 .[0 3] [0 3]
+turn = 21 R[0 3] [0 3]
+turn = 22 D[0 4] [0 4]
+turn = 23 Q[1 4] [1 4]
+turn = 24 L[1 4] [1 4]
+turn = 25 U[1 3] [1 3]
+turn = 26 L[0 3] [0 3]
+turn = 27 L[0 2] [0 2]
+turn = 28 L[0 1] [0 1]
+turn = 29 P[0 0] [0 0]
+turn = 30 R[0 0] [0 0]
+turn = 31 D[0 1] [0 1]
+turn = 32 R[1 1] [1 1]
+turn = 33 R[1 2] [1 2]
+turn = 34 R[1 3] [1 3]
+turn = 35 D[1 4] [1 4]
+turn = 36 Q[2 4] [2 4]
+turn = 37 L[2 4] [2 4]
+turn = 38 D[2 3] [2 3]
+turn = 39 L[3 3] [3 3]
+turn = 40 L[3 2] [3 2]
+turn = 41 L[3 1] [3 1]
+turn = 42 P[3 0] [3 0]
+turn = 43 R[3 0] [3 0]
+turn = 44 D[3 1] [3 1]
+turn = 45 R[4 1] [4 1]
+turn = 46 R[4 2] [4 2]
+turn = 47 R[4 3] [4 3]
+turn = 48 Q[4 4] [4 4]
+turn = 49 L[4 4] [4 4]
+turn = 50 U[4 3] [4 3]
+turn = 51 L[3 3] [3 3]
+turn = 52 L[3 2] [3 2]
+turn = 53 L[3 1] [3 1]
+turn = 54 #[3 0] [3 0]
+turn = 55 #[3 0] [3 0]
+turn = 56 #[3 0] [3 0]
+turn = 57 #[3 0] [3 0]
+turn = 58 #[3 0] [3 0]
+turn = 59 #[3 0] [3 0]
+assert check insert
+start 1 1 0 0 4 43
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 38 49 46 
+assert check insert
+turn = 44 finish task = 17
+44 48 38 49 46 
+23 -1 18 -1 -1 
+17 -1 -1 15 -1 
+19 -1 -1 27 -1 
+20 16 -1 -1 13 
+21 -1 -1 -1 14 
+
+-1 -1 -1 -1 -1 
+-1 -1 -1 1 -1 
+2 -1 -1 -1 -1 
+-1 3 -1 -1 0 
+-1 -1 -1 -1 4 
+
+start 1 1 0 0 4 44
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 38 49 46 
+assert check insert
+turn = 45 finish task = 17
+44 48 38 49 46 
+23 -1 18 -1 -1 
+17 -1 -1 -1 15 
+19 -1 -1 27 -1 
+20 -1 -1 -1 14 
+21 16 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 1 
+2 -1 -1 -1 -1 
+-1 -1 -1 0 4 
+-1 3 -1 -1 -1 
+
+start 1 1 0 0 4 45
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 38 49 46 
+start 2
+nx = 0 ny = 3
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 1 ny = 0
+changed 
+
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 P[2 0] [2 0]
+turn = 32 R[2 0] [2 0]
+turn = 33 U[2 1] [2 1]
+turn = 34 R[1 1] [1 1]
+turn = 35 R[1 2] [1 2]
+turn = 36 R[1 3] [1 3]
+turn = 37 Q[1 4] [1 4]
+turn = 38 L[1 4] [1 4]
+turn = 39 D[1 3] [1 3]
+turn = 40 L[2 3] [2 3]
+turn = 41 L[2 2] [2 2]
+turn = 42 L[2 1] [2 1]
+turn = 43 U[2 0] [2 0]
+turn = 44 P[1 0] [1 0]
+turn = 45 R[1 0] [1 0]
+turn = 46 R[1 1] [1 1]
+turn = 47 R[1 2] [1 2]
+turn = 48 U[1 3] [1 3]
+turn = 49 R[0 3] [0 3]
+turn = 50 Q[0 4] [0 4]
+turn = 51 L[0 4] [0 4]
+turn = 52 D[0 3] [0 3]
+turn = 53 D[1 3] [1 3]
+turn = 54 L[2 3] [2 3]
+turn = 55 L[2 2] [2 2]
+turn = 56 L[2 1] [2 1]
+turn = 57 #[2 0] [2 0]
+turn = 58 #[2 0] [2 0]
+turn = 59 #[2 0] [2 0]
+turn = 60 #[2 0] [2 0]
+turn = 61 #[2 0] [2 0]
+turn = 62 #[2 0] [2 0]
+assert check insert
+start 2 0 2 0 4 45
+ update return from start
+last return clane 0 -1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 51 49 46 
+move history clane = 1
+turn = 0 P[1 0] [1 0]
+turn = 1 R[1 0] [1 0]
+turn = 2 D[1 1] [1 1]
+turn = 3 R[2 1] [2 1]
+turn = 4 R[2 2] [2 2]
+turn = 5 R[2 3] [2 3]
+turn = 6 Q[2 4] [2 4]
+turn = 7 L[2 4] [2 4]
+turn = 8 L[2 3] [2 3]
+turn = 9 D[2 2] [2 2]
+turn = 10 D[3 2] [3 2]
+turn = 11 L[4 2] [4 2]
+turn = 12 L[4 1] [4 1]
+turn = 13 P[4 0] [4 0]
+turn = 14 R[4 0] [4 0]
+turn = 15 R[4 1] [4 1]
+turn = 16 U[4 2] [4 2]
+turn = 17 R[3 2] [3 2]
+turn = 18 U[3 3] [3 3]
+turn = 19 U[2 3] [2 3]
+turn = 20 R[1 3] [1 3]
+turn = 21 Q[1 4] [1 4]
+turn = 22 L[1 4] [1 4]
+turn = 23 L[1 3] [1 3]
+turn = 24 L[1 2] [1 2]
+turn = 25 L[1 1] [1 1]
+turn = 26 D[1 0] [1 0]
+turn = 27 P[2 0] [2 0]
+turn = 28 R[2 0] [2 0]
+turn = 29 D[2 1] [2 1]
+turn = 30 R[3 1] [3 1]
+turn = 31 R[3 2] [3 2]
+turn = 32 R[3 3] [3 3]
+turn = 33 Q[3 4] [3 4]
+turn = 34 L[3 4] [3 4]
+turn = 35 U[3 3] [3 3]
+turn = 36 U[2 3] [2 3]
+turn = 37 L[1 3] [1 3]
+turn = 38 L[1 2] [1 2]
+turn = 39 L[1 1] [1 1]
+turn = 40 P[1 0] [1 0]
+turn = 41 R[1 0] [1 0]
+turn = 42 R[1 1] [1 1]
+turn = 43 R[1 2] [1 2]
+turn = 44 R[1 3] [1 3]
+turn = 45 D[1 4] [1 4]
+turn = 46 D[2 4] [2 4]
+turn = 47 Q[3 4] [3 4]
+turn = 48 L[3 4] [3 4]
+turn = 49 U[3 3] [3 3]
+turn = 50 U[2 3] [2 3]
+turn = 51 L[1 3] [1 3]
+turn = 52 L[1 2] [1 2]
+turn = 53 L[1 1] [1 1]
+turn = 54 #[1 0] [1 0]
+turn = 55 #[1 0] [1 0]
+turn = 56 #[1 0] [1 0]
+turn = 57 #[1 0] [1 0]
+turn = 58 #[1 0] [1 0]
+turn = 59 #[1 0] [1 0]
+assert check insert
+turn = 46 finish task = 18
+44 48 51 49 46 
+23 -1 18 -1 -1 
+-1 17 -1 -1 -1 
+19 -1 -1 27 15 
+20 -1 -1 -1 14 
+21 -1 16 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 2 -1 -1 -1 
+-1 -1 -1 0 1 
+-1 -1 -1 -1 4 
+-1 -1 3 -1 -1 
+
+start 2 0 2 0 4 46
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 51 49 46 
+assert check insert
+turn = 47 finish task = 18
+44 48 51 49 46 
+23 -1 18 -1 -1 
+-1 -1 17 -1 -1 
+19 -1 -1 27 -1 
+20 -1 -1 -1 15 
+21 -1 -1 16 -1 
+
+-1 -1 -1 -1 -1 
+-1 -1 2 0 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 4 1 
+-1 -1 -1 3 -1 
+
+start 2 0 2 0 4 47
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 51 49 46 
+assert check insert
+turn = 48 finish task = 18
+44 48 51 49 46 
+23 -1 18 -1 -1 
+-1 -1 -1 17 -1 
+19 -1 -1 27 -1 
+20 -1 -1 -1 15 
+21 -1 -1 -1 16 
+
+-1 -1 -1 0 -1 
+-1 -1 -1 2 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 1 
+-1 -1 -1 4 3 
+
+start 2 0 2 0 4 48
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 51 49 46 
+assert check insert
+turn = 49 finish task = 18
+44 48 51 49 46 
+23 -1 18 17 -1 
+-1 -1 -1 -1 -1 
+19 -1 -1 27 -1 
+20 -1 -1 -1 -1 
+21 -1 -1 -1 16 
+
+-1 -1 0 2 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 1 -1 
+-1 -1 4 -1 3 
+
+start 2 0 2 0 4 49
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 51 49 46 
+assert check insert
+turn = 50 finish task = 18
+44 48 51 49 46 
+23 -1 18 -1 17 
+-1 -1 -1 -1 -1 
+19 -1 -1 27 -1 
+20 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 0 -1 -1 2 
+-1 -1 -1 -1 -1 
+-1 -1 -1 1 -1 
+-1 -1 -1 -1 -1 
+-1 4 -1 3 -1 
+
+start 2 0 2 0 4 50
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 44 48 51 49 46 
+start 0
+nx = 0 ny = 3
+nx = 0 ny = 2
+nx = 1 ny = 2
+nx = 0 ny = 2
+changed 
+2 
+move history clane = 0
+turn = 0 P[0 0] [0 0]
+turn = 1 R[0 0] [0 0]
+turn = 2 D[0 1] [0 1]
+turn = 3 U[1 1] [1 1]
+turn = 4 D[0 1] [0 1]
+turn = 5 U[1 1] [1 1]
+turn = 6 D[0 1] [0 1]
+turn = 7 U[1 1] [1 1]
+turn = 8 D[0 1] [0 1]
+turn = 9 U[1 1] [1 1]
+turn = 10 R[0 1] [0 1]
+turn = 11 R[0 2] [0 2]
+turn = 12 Q[0 3] [0 3]
+turn = 13 L[0 3] [0 3]
+turn = 14 L[0 2] [0 2]
+turn = 15 D[0 1] [0 1]
+turn = 16 D[1 1] [1 1]
+turn = 17 L[2 1] [2 1]
+turn = 18 P[2 0] [2 0]
+turn = 19 R[2 0] [2 0]
+turn = 20 U[2 1] [2 1]
+turn = 21 U[1 1] [1 1]
+turn = 22 D[0 1] [0 1]
+turn = 23 U[1 1] [1 1]
+turn = 24 .[0 1] [0 1]
+turn = 25 D[0 1] [0 1]
+turn = 26 R[1 1] [1 1]
+turn = 27 R[1 2] [1 2]
+turn = 28 D[1 3] [1 3]
+turn = 29 Q[2 3] [2 3]
+turn = 30 U[2 3] [2 3]
+turn = 31 U[1 3] [1 3]
+turn = 32 L[0 3] [0 3]
+turn = 33 L[0 2] [0 2]
+turn = 34 L[0 1] [0 1]
+turn = 35 P[0 0] [0 0]
+turn = 36 R[0 0] [0 0]
+turn = 37 D[0 1] [0 1]
+turn = 38 D[1 1] [1 1]
+turn = 39 R[2 1] [2 1]
+turn = 40 D[2 2] [2 2]
+turn = 41 R[3 2] [3 2]
+turn = 42 R[3 3] [3 3]
+turn = 43 Q[3 4] [3 4]
+turn = 44 L[3 4] [3 4]
+turn = 45 U[3 3] [3 3]
+turn = 46 U[2 3] [2 3]
+turn = 47 U[1 3] [1 3]
+turn = 48 L[0 3] [0 3]
+turn = 49 P[0 2] [0 2]
+turn = 50 D[0 2] [0 2]
+turn = 51 U[1 2] [1 2]
+turn = 52 R[0 2] [0 2]
+turn = 53 R[0 3] [0 3]
+turn = 54 Q[0 4] [0 4]
+turn = 55 L[0 4] [0 4]
+turn = 56 L[0 3] [0 3]
+turn = 57 L[0 2] [0 2]
+turn = 58 L[0 1] [0 1]
+turn = 59 #[0 0] [0 0]
+turn = 60 #[0 0] [0 0]
+turn = 61 #[0 0] [0 0]
+turn = 62 #[0 0] [0 0]
+turn = 63 #[0 0] [0 0]
+turn = 64 #[0 0] [0 0]
+assert check insert
+start 3 2 0 0 4 50
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 48 51 49 46 
+assert check insert
+turn = 51 finish task = 19
+55 48 51 49 46 
+23 -1 -1 -1 17 
+-1 -1 18 -1 -1 
+19 -1 -1 27 -1 
+20 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 2 
+-1 -1 0 1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 3 -1 
+4 -1 -1 -1 -1 
+
+start 3 2 0 0 4 51
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 48 51 49 46 
+assert check insert
+turn = 52 finish task = 19
+55 48 51 49 46 
+23 -1 18 -1 -1 
+-1 -1 -1 -1 -1 
+19 -1 -1 27 -1 
+20 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 0 2 -1 
+-1 -1 1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 3 -1 -1 
+4 -1 -1 -1 -1 
+
+start 3 2 0 0 4 52
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 48 51 49 46 
+start 4
+nx = 0 ny = 3
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 2 ny = 1
+nx = 2 ny = 0
+changed 
+0 
+move history clane = 4
+turn = 0 P[4 0] [4 0]
+turn = 1 R[4 0] [4 0]
+turn = 2 U[4 1] [4 1]
+turn = 3 U[3 1] [3 1]
+turn = 4 D[2 1] [2 1]
+turn = 5 U[3 1] [3 1]
+turn = 6 D[2 1] [2 1]
+turn = 7 U[3 1] [3 1]
+turn = 8 D[2 1] [2 1]
+turn = 9 U[3 1] [3 1]
+turn = 10 D[2 1] [2 1]
+turn = 11 U[3 1] [3 1]
+turn = 12 U[2 1] [2 1]
+turn = 13 R[1 1] [1 1]
+turn = 14 U[1 2] [1 2]
+turn = 15 Q[0 2] [0 2]
+turn = 16 D[0 2] [0 2]
+turn = 17 .[1 2] [1 2]
+turn = 18 L[1 2] [1 2]
+turn = 19 L[1 1] [1 1]
+turn = 20 P[1 0] [1 0]
+turn = 21 R[1 0] [1 0]
+turn = 22 D[1 1] [1 1]
+turn = 23 R[2 1] [2 1]
+turn = 24 U[2 2] [2 2]
+turn = 25 R[1 2] [1 2]
+turn = 26 R[1 3] [1 3]
+turn = 27 Q[1 4] [1 4]
+turn = 28 L[1 4] [1 4]
+turn = 29 L[1 3] [1 3]
+turn = 30 D[1 2] [1 2]
+turn = 31 D[2 2] [2 2]
+turn = 32 L[3 2] [3 2]
+turn = 33 L[3 1] [3 1]
+turn = 34 .[3 0] [3 0]
+turn = 35 P[3 0] [3 0]
+turn = 36 R[3 0] [3 0]
+turn = 37 U[3 1] [3 1]
+turn = 38 D[2 1] [2 1]
+turn = 39 D[3 1] [3 1]
+turn = 40 R[4 1] [4 1]
+turn = 41 R[4 2] [4 2]
+turn = 42 .[4 3] [4 3]
+turn = 43 R[4 3] [4 3]
+turn = 44 U[4 4] [4 4]
+turn = 45 Q[3 4] [3 4]
+turn = 46 L[3 4] [3 4]
+turn = 47 L[3 3] [3 3]
+turn = 48 L[3 2] [3 2]
+turn = 49 L[3 1] [3 1]
+turn = 50 U[3 0] [3 0]
+turn = 51 P[2 0] [2 0]
+turn = 52 R[2 0] [2 0]
+turn = 53 U[2 1] [2 1]
+turn = 54 R[1 1] [1 1]
+turn = 55 R[1 2] [1 2]
+turn = 56 U[1 3] [1 3]
+turn = 57 R[0 3] [0 3]
+turn = 58 Q[0 4] [0 4]
+turn = 59 L[0 4] [0 4]
+turn = 60 D[0 3] [0 3]
+turn = 61 D[1 3] [1 3]
+turn = 62 D[2 3] [2 3]
+turn = 63 D[3 3] [3 3]
+turn = 64 L[4 3] [4 3]
+turn = 65 L[4 2] [4 2]
+turn = 66 L[4 1] [4 1]
+turn = 67 #[4 0] [4 0]
+turn = 68 #[4 0] [4 0]
+turn = 69 #[4 0] [4 0]
+turn = 70 #[4 0] [4 0]
+turn = 71 #[4 0] [4 0]
+turn = 72 #[4 0] [4 0]
+assert check insert
+start 12 3 0 2 4 52
+ update return from start
+last return clane 0 1 -1 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 48 51 49 59 
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 P[2 0] [2 0]
+turn = 32 R[2 0] [2 0]
+turn = 33 U[2 1] [2 1]
+turn = 34 R[1 1] [1 1]
+turn = 35 R[1 2] [1 2]
+turn = 36 R[1 3] [1 3]
+turn = 37 Q[1 4] [1 4]
+turn = 38 L[1 4] [1 4]
+turn = 39 D[1 3] [1 3]
+turn = 40 L[2 3] [2 3]
+turn = 41 L[2 2] [2 2]
+turn = 42 L[2 1] [2 1]
+turn = 43 U[2 0] [2 0]
+turn = 44 P[1 0] [1 0]
+turn = 45 R[1 0] [1 0]
+turn = 46 R[1 1] [1 1]
+turn = 47 R[1 2] [1 2]
+turn = 48 U[1 3] [1 3]
+turn = 49 R[0 3] [0 3]
+turn = 50 Q[0 4] [0 4]
+turn = 51 L[0 4] [0 4]
+turn = 52 D[0 3] [0 3]
+turn = 53 D[1 3] [1 3]
+turn = 54 L[2 3] [2 3]
+turn = 55 L[2 2] [2 2]
+turn = 56 L[2 1] [2 1]
+turn = 57 #[2 0] [2 0]
+turn = 58 #[2 0] [2 0]
+turn = 59 #[2 0] [2 0]
+turn = 60 #[2 0] [2 0]
+turn = 61 #[2 0] [2 0]
+turn = 62 #[2 0] [2 0]
+assert check insert
+turn = 53 finish task = 20
+55 48 51 49 59 
+23 -1 -1 18 -1 
+-1 -1 -1 -1 -1 
+25 19 -1 27 -1 
+20 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 0 -1 
+-1 1 -1 2 -1 
+-1 4 -1 -1 -1 
+-1 3 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 12 3 0 2 4 53
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 48 51 49 59 
+assert check insert
+turn = 54 finish task = 20
+55 48 51 49 59 
+23 -1 -1 -1 18 
+-1 19 -1 -1 -1 
+25 -1 -1 27 -1 
+20 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 0 
+1 4 -1 -1 -1 
+-1 -1 -1 2 -1 
+3 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 12 3 0 2 4 54
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 48 51 49 59 
+assert check insert
+turn = 55 finish task = 20
+55 48 51 49 59 
+23 -1 -1 -1 18 
+-1 -1 19 -1 -1 
+25 -1 -1 27 -1 
+20 -1 -1 -1 -1 
+21 -1 -1 -1 -1 
+
+-1 -1 -1 -1 0 
+1 -1 4 -1 -1 
+-1 -1 2 -1 -1 
+3 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 12 3 0 2 4 55
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 48 51 49 59 
+start 3
+nx = 3 ny = 4
+nx = 3 ny = 3
+nx = 3 ny = 2
+nx = 3 ny = 1
+nx = 3 ny = 0
+changed 
+
+move history clane = 3
+turn = 0 P[3 0] [3 0]
+turn = 1 R[3 0] [3 0]
+turn = 2 R[3 1] [3 1]
+turn = 3 R[3 2] [3 2]
+turn = 4 .[3 3] [3 3]
+turn = 5 U[3 3] [3 3]
+turn = 6 U[2 3] [2 3]
+turn = 7 U[1 3] [1 3]
+turn = 8 R[0 3] [0 3]
+turn = 9 Q[0 4] [0 4]
+turn = 10 L[0 4] [0 4]
+turn = 11 D[0 3] [0 3]
+turn = 12 .[1 3] [1 3]
+turn = 13 U[1 3] [1 3]
+turn = 14 P[0 3] [0 3]
+turn = 15 D[0 3] [0 3]
+turn = 16 U[1 3] [1 3]
+turn = 17 D[0 3] [0 3]
+turn = 18 U[1 3] [1 3]
+turn = 19 .[0 3] [0 3]
+turn = 20 .[0 3] [0 3]
+turn = 21 R[0 3] [0 3]
+turn = 22 D[0 4] [0 4]
+turn = 23 Q[1 4] [1 4]
+turn = 24 L[1 4] [1 4]
+turn = 25 U[1 3] [1 3]
+turn = 26 L[0 3] [0 3]
+turn = 27 L[0 2] [0 2]
+turn = 28 L[0 1] [0 1]
+turn = 29 P[0 0] [0 0]
+turn = 30 R[0 0] [0 0]
+turn = 31 D[0 1] [0 1]
+turn = 32 R[1 1] [1 1]
+turn = 33 R[1 2] [1 2]
+turn = 34 R[1 3] [1 3]
+turn = 35 D[1 4] [1 4]
+turn = 36 Q[2 4] [2 4]
+turn = 37 L[2 4] [2 4]
+turn = 38 D[2 3] [2 3]
+turn = 39 L[3 3] [3 3]
+turn = 40 L[3 2] [3 2]
+turn = 41 L[3 1] [3 1]
+turn = 42 P[3 0] [3 0]
+turn = 43 R[3 0] [3 0]
+turn = 44 D[3 1] [3 1]
+turn = 45 R[4 1] [4 1]
+turn = 46 R[4 2] [4 2]
+turn = 47 R[4 3] [4 3]
+turn = 48 Q[4 4] [4 4]
+turn = 49 L[4 4] [4 4]
+turn = 50 U[4 3] [4 3]
+turn = 51 L[3 3] [3 3]
+turn = 52 L[3 2] [3 2]
+turn = 53 L[3 1] [3 1]
+turn = 54 P[3 0] [3 0]
+turn = 55 R[3 0] [3 0]
+turn = 56 R[3 1] [3 1]
+turn = 57 R[3 2] [3 2]
+turn = 58 R[3 3] [3 3]
+turn = 59 U[3 4] [3 4]
+turn = 60 Q[2 4] [2 4]
+turn = 61 .[2 4] [2 4]
+turn = 62 L[2 4] [2 4]
+turn = 63 D[2 3] [2 3]
+turn = 64 L[3 3] [3 3]
+turn = 65 L[3 2] [3 2]
+turn = 66 L[3 1] [3 1]
+turn = 67 #[3 0] [3 0]
+turn = 68 #[3 0] [3 0]
+turn = 69 #[3 0] [3 0]
+turn = 70 #[3 0] [3 0]
+turn = 71 #[3 0] [3 0]
+turn = 72 #[3 0] [3 0]
+assert check insert
+start 4 4 0 0 4 55
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 48 51 61 59 
+start 1
+nx = 0 ny = 3
+nx = 0 ny = 2
+nx = 0 ny = 1
+nx = 1 ny = 1
+nx = 2 ny = 1
+nx = 3 ny = 1
+nx = 4 ny = 1
+nx = 4 ny = 0
+changed 
+4 
+move history clane = 1
+turn = 0 P[1 0] [1 0]
+turn = 1 R[1 0] [1 0]
+turn = 2 D[1 1] [1 1]
+turn = 3 R[2 1] [2 1]
+turn = 4 R[2 2] [2 2]
+turn = 5 R[2 3] [2 3]
+turn = 6 Q[2 4] [2 4]
+turn = 7 L[2 4] [2 4]
+turn = 8 L[2 3] [2 3]
+turn = 9 D[2 2] [2 2]
+turn = 10 D[3 2] [3 2]
+turn = 11 L[4 2] [4 2]
+turn = 12 L[4 1] [4 1]
+turn = 13 P[4 0] [4 0]
+turn = 14 R[4 0] [4 0]
+turn = 15 R[4 1] [4 1]
+turn = 16 U[4 2] [4 2]
+turn = 17 R[3 2] [3 2]
+turn = 18 U[3 3] [3 3]
+turn = 19 U[2 3] [2 3]
+turn = 20 R[1 3] [1 3]
+turn = 21 Q[1 4] [1 4]
+turn = 22 L[1 4] [1 4]
+turn = 23 L[1 3] [1 3]
+turn = 24 L[1 2] [1 2]
+turn = 25 L[1 1] [1 1]
+turn = 26 D[1 0] [1 0]
+turn = 27 P[2 0] [2 0]
+turn = 28 R[2 0] [2 0]
+turn = 29 D[2 1] [2 1]
+turn = 30 R[3 1] [3 1]
+turn = 31 R[3 2] [3 2]
+turn = 32 R[3 3] [3 3]
+turn = 33 Q[3 4] [3 4]
+turn = 34 L[3 4] [3 4]
+turn = 35 U[3 3] [3 3]
+turn = 36 U[2 3] [2 3]
+turn = 37 L[1 3] [1 3]
+turn = 38 L[1 2] [1 2]
+turn = 39 L[1 1] [1 1]
+turn = 40 P[1 0] [1 0]
+turn = 41 R[1 0] [1 0]
+turn = 42 R[1 1] [1 1]
+turn = 43 R[1 2] [1 2]
+turn = 44 R[1 3] [1 3]
+turn = 45 D[1 4] [1 4]
+turn = 46 D[2 4] [2 4]
+turn = 47 Q[3 4] [3 4]
+turn = 48 L[3 4] [3 4]
+turn = 49 L[3 3] [3 3]
+turn = 50 L[3 2] [3 2]
+turn = 51 L[3 1] [3 1]
+turn = 52 .[3 0] [3 0]
+turn = 53 D[3 0] [3 0]
+turn = 54 P[4 0] [4 0]
+turn = 55 R[4 0] [4 0]
+turn = 56 U[4 1] [4 1]
+turn = 57 U[3 1] [3 1]
+turn = 58 U[2 1] [2 1]
+turn = 59 U[1 1] [1 1]
+turn = 60 R[0 1] [0 1]
+turn = 61 R[0 2] [0 2]
+turn = 62 R[0 3] [0 3]
+turn = 63 Q[0 4] [0 4]
+turn = 64 L[0 4] [0 4]
+turn = 65 D[0 3] [0 3]
+turn = 66 L[1 3] [1 3]
+turn = 67 L[1 2] [1 2]
+turn = 68 L[1 1] [1 1]
+turn = 69 #[1 0] [1 0]
+turn = 70 #[1 0] [1 0]
+turn = 71 #[1 0] [1 0]
+turn = 72 #[1 0] [1 0]
+turn = 73 #[1 0] [1 0]
+turn = 74 #[1 0] [1 0]
+assert check insert
+move history clane = 4
+turn = 0 P[4 0] [4 0]
+turn = 1 R[4 0] [4 0]
+turn = 2 U[4 1] [4 1]
+turn = 3 U[3 1] [3 1]
+turn = 4 D[2 1] [2 1]
+turn = 5 U[3 1] [3 1]
+turn = 6 D[2 1] [2 1]
+turn = 7 U[3 1] [3 1]
+turn = 8 D[2 1] [2 1]
+turn = 9 U[3 1] [3 1]
+turn = 10 D[2 1] [2 1]
+turn = 11 U[3 1] [3 1]
+turn = 12 U[2 1] [2 1]
+turn = 13 R[1 1] [1 1]
+turn = 14 U[1 2] [1 2]
+turn = 15 Q[0 2] [0 2]
+turn = 16 D[0 2] [0 2]
+turn = 17 .[1 2] [1 2]
+turn = 18 L[1 2] [1 2]
+turn = 19 L[1 1] [1 1]
+turn = 20 P[1 0] [1 0]
+turn = 21 R[1 0] [1 0]
+turn = 22 D[1 1] [1 1]
+turn = 23 R[2 1] [2 1]
+turn = 24 U[2 2] [2 2]
+turn = 25 R[1 2] [1 2]
+turn = 26 R[1 3] [1 3]
+turn = 27 Q[1 4] [1 4]
+turn = 28 L[1 4] [1 4]
+turn = 29 L[1 3] [1 3]
+turn = 30 D[1 2] [1 2]
+turn = 31 D[2 2] [2 2]
+turn = 32 L[3 2] [3 2]
+turn = 33 L[3 1] [3 1]
+turn = 34 .[3 0] [3 0]
+turn = 35 P[3 0] [3 0]
+turn = 36 R[3 0] [3 0]
+turn = 37 U[3 1] [3 1]
+turn = 38 D[2 1] [2 1]
+turn = 39 D[3 1] [3 1]
+turn = 40 R[4 1] [4 1]
+turn = 41 R[4 2] [4 2]
+turn = 42 .[4 3] [4 3]
+turn = 43 R[4 3] [4 3]
+turn = 44 U[4 4] [4 4]
+turn = 45 Q[3 4] [3 4]
+turn = 46 L[3 4] [3 4]
+turn = 47 L[3 3] [3 3]
+turn = 48 L[3 2] [3 2]
+turn = 49 L[3 1] [3 1]
+turn = 50 U[3 0] [3 0]
+turn = 51 P[2 0] [2 0]
+turn = 52 R[2 0] [2 0]
+turn = 53 U[2 1] [2 1]
+turn = 54 R[1 1] [1 1]
+turn = 55 R[1 2] [1 2]
+turn = 56 U[1 3] [1 3]
+turn = 57 R[0 3] [0 3]
+turn = 58 Q[0 4] [0 4]
+turn = 59 L[0 4] [0 4]
+turn = 60 D[0 3] [0 3]
+turn = 61 D[1 3] [1 3]
+turn = 62 D[2 3] [2 3]
+turn = 63 D[3 3] [3 3]
+turn = 64 L[4 3] [4 3]
+turn = 65 L[4 2] [4 2]
+turn = 66 L[4 1] [4 1]
+turn = 67 #[4 0] [4 0]
+turn = 68 #[4 0] [4 0]
+turn = 69 #[4 0] [4 0]
+turn = 70 #[4 0] [4 0]
+turn = 71 #[4 0] [4 0]
+turn = 72 #[4 0] [4 0]
+assert check insert
+turn = 56 finish task = 22
+55 64 51 61 59 
+23 -1 -1 -1 -1 
+-1 -1 -1 19 -1 
+25 -1 -1 27 -1 
+22 20 -1 -1 -1 
+24 21 -1 -1 -1 
+
+-1 -1 -1 0 -1 
+-1 -1 -1 4 -1 
+-1 2 -1 -1 -1 
+-1 3 -1 -1 -1 
+-1 1 -1 -1 -1 
+
+start 22 3 0 4 4 56
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 64 51 61 59 
+assert check insert
+turn = 57 finish task = 22
+55 64 51 61 59 
+23 -1 -1 19 -1 
+-1 -1 -1 -1 -1 
+25 -1 -1 27 -1 
+22 21 20 -1 -1 
+24 -1 -1 -1 -1 
+
+-1 -1 0 4 -1 
+-1 -1 -1 -1 -1 
+2 -1 -1 -1 -1 
+-1 1 3 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 22 3 0 4 4 57
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 64 51 61 59 
+assert check insert
+turn = 58 finish task = 22
+55 64 51 61 59 
+23 -1 -1 -1 19 
+-1 -1 -1 -1 -1 
+25 21 -1 27 -1 
+22 -1 -1 20 -1 
+24 -1 -1 -1 -1 
+
+-1 0 -1 -1 4 
+-1 -1 -1 -1 -1 
+2 1 -1 -1 -1 
+-1 -1 -1 3 -1 
+-1 -1 -1 -1 -1 
+
+start 22 3 0 4 4 58
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 64 51 61 59 
+assert check insert
+turn = 59 finish task = 22
+55 64 51 61 59 
+23 -1 -1 -1 19 
+-1 21 -1 -1 -1 
+25 -1 -1 27 -1 
+22 -1 -1 -1 20 
+24 -1 -1 -1 -1 
+
+0 -1 -1 -1 4 
+-1 1 -1 -1 -1 
+2 -1 -1 -1 -1 
+-1 -1 -1 -1 3 
+-1 -1 -1 -1 -1 
+
+start 22 3 0 4 4 59
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 64 51 61 59 
+start 2
+nx = 4 ny = 3
+nx = 4 ny = 2
+nx = 4 ny = 1
+nx = 3 ny = 1
+nx = 3 ny = 0
+changed 
+
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 P[2 0] [2 0]
+turn = 32 R[2 0] [2 0]
+turn = 33 U[2 1] [2 1]
+turn = 34 R[1 1] [1 1]
+turn = 35 R[1 2] [1 2]
+turn = 36 R[1 3] [1 3]
+turn = 37 Q[1 4] [1 4]
+turn = 38 L[1 4] [1 4]
+turn = 39 D[1 3] [1 3]
+turn = 40 L[2 3] [2 3]
+turn = 41 L[2 2] [2 2]
+turn = 42 L[2 1] [2 1]
+turn = 43 U[2 0] [2 0]
+turn = 44 P[1 0] [1 0]
+turn = 45 R[1 0] [1 0]
+turn = 46 R[1 1] [1 1]
+turn = 47 R[1 2] [1 2]
+turn = 48 U[1 3] [1 3]
+turn = 49 R[0 3] [0 3]
+turn = 50 Q[0 4] [0 4]
+turn = 51 L[0 4] [0 4]
+turn = 52 D[0 3] [0 3]
+turn = 53 D[1 3] [1 3]
+turn = 54 L[2 3] [2 3]
+turn = 55 L[2 2] [2 2]
+turn = 56 L[2 1] [2 1]
+turn = 57 D[2 0] [2 0]
+turn = 58 P[3 0] [3 0]
+turn = 59 R[3 0] [3 0]
+turn = 60 D[3 1] [3 1]
+turn = 61 R[4 1] [4 1]
+turn = 62 R[4 2] [4 2]
+turn = 63 R[4 3] [4 3]
+turn = 64 Q[4 4] [4 4]
+turn = 65 L[4 4] [4 4]
+turn = 66 U[4 3] [4 3]
+turn = 67 U[3 3] [3 3]
+turn = 68 L[2 3] [2 3]
+turn = 69 L[2 2] [2 2]
+turn = 70 L[2 1] [2 1]
+turn = 71 #[2 0] [2 0]
+turn = 72 #[2 0] [2 0]
+turn = 73 #[2 0] [2 0]
+turn = 74 #[2 0] [2 0]
+turn = 75 #[2 0] [2 0]
+turn = 76 #[2 0] [2 0]
+assert check insert
+start 23 0 0 4 4 59
+ update return from start
+last return clane 0 1 2 -1 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 64 65 61 59 
+move history clane = 3
+turn = 0 P[3 0] [3 0]
+turn = 1 R[3 0] [3 0]
+turn = 2 R[3 1] [3 1]
+turn = 3 R[3 2] [3 2]
+turn = 4 .[3 3] [3 3]
+turn = 5 U[3 3] [3 3]
+turn = 6 U[2 3] [2 3]
+turn = 7 U[1 3] [1 3]
+turn = 8 R[0 3] [0 3]
+turn = 9 Q[0 4] [0 4]
+turn = 10 L[0 4] [0 4]
+turn = 11 D[0 3] [0 3]
+turn = 12 .[1 3] [1 3]
+turn = 13 U[1 3] [1 3]
+turn = 14 P[0 3] [0 3]
+turn = 15 D[0 3] [0 3]
+turn = 16 U[1 3] [1 3]
+turn = 17 D[0 3] [0 3]
+turn = 18 U[1 3] [1 3]
+turn = 19 .[0 3] [0 3]
+turn = 20 .[0 3] [0 3]
+turn = 21 R[0 3] [0 3]
+turn = 22 D[0 4] [0 4]
+turn = 23 Q[1 4] [1 4]
+turn = 24 L[1 4] [1 4]
+turn = 25 U[1 3] [1 3]
+turn = 26 L[0 3] [0 3]
+turn = 27 L[0 2] [0 2]
+turn = 28 L[0 1] [0 1]
+turn = 29 P[0 0] [0 0]
+turn = 30 R[0 0] [0 0]
+turn = 31 D[0 1] [0 1]
+turn = 32 R[1 1] [1 1]
+turn = 33 R[1 2] [1 2]
+turn = 34 R[1 3] [1 3]
+turn = 35 D[1 4] [1 4]
+turn = 36 Q[2 4] [2 4]
+turn = 37 L[2 4] [2 4]
+turn = 38 D[2 3] [2 3]
+turn = 39 L[3 3] [3 3]
+turn = 40 L[3 2] [3 2]
+turn = 41 L[3 1] [3 1]
+turn = 42 P[3 0] [3 0]
+turn = 43 R[3 0] [3 0]
+turn = 44 D[3 1] [3 1]
+turn = 45 R[4 1] [4 1]
+turn = 46 R[4 2] [4 2]
+turn = 47 R[4 3] [4 3]
+turn = 48 Q[4 4] [4 4]
+turn = 49 L[4 4] [4 4]
+turn = 50 U[4 3] [4 3]
+turn = 51 L[3 3] [3 3]
+turn = 52 L[3 2] [3 2]
+turn = 53 L[3 1] [3 1]
+turn = 54 P[3 0] [3 0]
+turn = 55 R[3 0] [3 0]
+turn = 56 R[3 1] [3 1]
+turn = 57 R[3 2] [3 2]
+turn = 58 R[3 3] [3 3]
+turn = 59 U[3 4] [3 4]
+turn = 60 Q[2 4] [2 4]
+turn = 61 .[2 4] [2 4]
+turn = 62 L[2 4] [2 4]
+turn = 63 D[2 3] [2 3]
+turn = 64 L[3 3] [3 3]
+turn = 65 L[3 2] [3 2]
+turn = 66 L[3 1] [3 1]
+turn = 67 #[3 0] [3 0]
+turn = 68 #[3 0] [3 0]
+turn = 69 #[3 0] [3 0]
+turn = 70 #[3 0] [3 0]
+turn = 71 #[3 0] [3 0]
+turn = 72 #[3 0] [3 0]
+assert check insert
+turn = 60 finish task = 23
+55 64 65 61 59 
+23 21 -1 -1 -1 
+-1 -1 -1 -1 -1 
+25 -1 -1 27 20 
+-1 22 -1 -1 -1 
+24 -1 -1 -1 -1 
+
+0 1 -1 4 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 3 
+-1 2 -1 -1 -1 
+-1 -1 -1 -1 -1 
+
+start 23 0 0 4 4 60
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 55 64 65 61 59 
+start 0
+nx = 3 ny = 4
+nx = 2 ny = 4
+nx = 1 ny = 4
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 0 ny = 1
+nx = 0 ny = 0
+changed 
+2 
+move history clane = 0
+turn = 0 P[0 0] [0 0]
+turn = 1 R[0 0] [0 0]
+turn = 2 D[0 1] [0 1]
+turn = 3 U[1 1] [1 1]
+turn = 4 D[0 1] [0 1]
+turn = 5 U[1 1] [1 1]
+turn = 6 D[0 1] [0 1]
+turn = 7 U[1 1] [1 1]
+turn = 8 D[0 1] [0 1]
+turn = 9 U[1 1] [1 1]
+turn = 10 R[0 1] [0 1]
+turn = 11 R[0 2] [0 2]
+turn = 12 Q[0 3] [0 3]
+turn = 13 L[0 3] [0 3]
+turn = 14 L[0 2] [0 2]
+turn = 15 D[0 1] [0 1]
+turn = 16 D[1 1] [1 1]
+turn = 17 L[2 1] [2 1]
+turn = 18 P[2 0] [2 0]
+turn = 19 R[2 0] [2 0]
+turn = 20 U[2 1] [2 1]
+turn = 21 U[1 1] [1 1]
+turn = 22 D[0 1] [0 1]
+turn = 23 U[1 1] [1 1]
+turn = 24 .[0 1] [0 1]
+turn = 25 D[0 1] [0 1]
+turn = 26 R[1 1] [1 1]
+turn = 27 R[1 2] [1 2]
+turn = 28 D[1 3] [1 3]
+turn = 29 Q[2 3] [2 3]
+turn = 30 U[2 3] [2 3]
+turn = 31 U[1 3] [1 3]
+turn = 32 L[0 3] [0 3]
+turn = 33 L[0 2] [0 2]
+turn = 34 L[0 1] [0 1]
+turn = 35 P[0 0] [0 0]
+turn = 36 R[0 0] [0 0]
+turn = 37 D[0 1] [0 1]
+turn = 38 D[1 1] [1 1]
+turn = 39 R[2 1] [2 1]
+turn = 40 D[2 2] [2 2]
+turn = 41 R[3 2] [3 2]
+turn = 42 R[3 3] [3 3]
+turn = 43 Q[3 4] [3 4]
+turn = 44 L[3 4] [3 4]
+turn = 45 U[3 3] [3 3]
+turn = 46 U[2 3] [2 3]
+turn = 47 U[1 3] [1 3]
+turn = 48 L[0 3] [0 3]
+turn = 49 P[0 2] [0 2]
+turn = 50 D[0 2] [0 2]
+turn = 51 U[1 2] [1 2]
+turn = 52 R[0 2] [0 2]
+turn = 53 R[0 3] [0 3]
+turn = 54 Q[0 4] [0 4]
+turn = 55 L[0 4] [0 4]
+turn = 56 L[0 3] [0 3]
+turn = 57 L[0 2] [0 2]
+turn = 58 L[0 1] [0 1]
+turn = 59 P[0 0] [0 0]
+turn = 60 R[0 0] [0 0]
+turn = 61 D[0 1] [0 1]
+turn = 62 R[1 1] [1 1]
+turn = 63 R[1 2] [1 2]
+turn = 64 R[1 3] [1 3]
+turn = 65 D[1 4] [1 4]
+turn = 66 D[2 4] [2 4]
+turn = 67 D[3 4] [3 4]
+turn = 68 Q[4 4] [4 4]
+turn = 69 L[4 4] [4 4]
+turn = 70 U[4 3] [4 3]
+turn = 71 U[3 3] [3 3]
+turn = 72 U[2 3] [2 3]
+turn = 73 U[1 3] [1 3]
+turn = 74 L[0 3] [0 3]
+turn = 75 L[0 2] [0 2]
+turn = 76 L[0 1] [0 1]
+turn = 77 #[0 0] [0 0]
+turn = 78 #[0 0] [0 0]
+turn = 79 #[0 0] [0 0]
+turn = 80 #[0 0] [0 0]
+turn = 81 #[0 0] [0 0]
+turn = 82 #[0 0] [0 0]
+assert check insert
+start 24 4 0 4 4 60
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+assert check insert
+turn = 61 finish task = 24
+69 64 65 61 59 
+-1 23 21 -1 -1 
+-1 -1 -1 -1 -1 
+25 -1 -1 27 20 
+-1 -1 -1 -1 -1 
+24 22 -1 -1 -1 
+
+-1 0 1 -1 -1 
+-1 -1 -1 4 -1 
+-1 -1 -1 -1 3 
+-1 -1 -1 -1 -1 
+-1 2 -1 -1 -1 
+
+start 24 4 0 4 4 61
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+assert check insert
+turn = 62 finish task = 24
+69 64 65 61 59 
+-1 -1 -1 21 -1 
+-1 23 -1 -1 -1 
+25 -1 -1 27 -1 
+-1 -1 -1 -1 -1 
+24 -1 22 -1 -1 
+
+-1 -1 -1 1 -1 
+-1 0 -1 -1 -1 
+-1 -1 -1 4 3 
+-1 -1 -1 -1 -1 
+-1 -1 2 -1 -1 
+
+start 24 4 0 4 4 62
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+assert check insert
+turn = 63 finish task = 24
+69 64 65 61 59 
+-1 -1 -1 -1 21 
+-1 -1 23 -1 -1 
+25 -1 -1 27 -1 
+-1 -1 -1 -1 -1 
+24 -1 -1 22 -1 
+
+-1 -1 -1 -1 1 
+-1 -1 0 -1 -1 
+-1 -1 -1 3 -1 
+-1 -1 -1 4 -1 
+-1 -1 -1 2 -1 
+
+start 24 4 0 4 4 63
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+assert check insert
+turn = 64 finish task = 24
+69 64 65 61 59 
+-1 -1 -1 -1 21 
+-1 -1 -1 23 -1 
+25 -1 -1 27 -1 
+-1 -1 -1 -1 -1 
+24 -1 -1 -1 22 
+
+-1 -1 -1 -1 1 
+-1 -1 -1 0 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 3 -1 
+-1 -1 -1 4 2 
+
+start 24 4 0 4 4 64
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+assert check insert
+turn = 65 finish task = 24
+69 64 65 61 59 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 23 
+25 -1 -1 27 -1 
+-1 -1 -1 -1 -1 
+24 -1 -1 -1 22 
+
+-1 -1 -1 1 -1 
+-1 -1 -1 -1 0 
+-1 -1 -1 -1 -1 
+-1 -1 3 -1 -1 
+-1 -1 4 -1 2 
+
+start 24 4 0 4 4 65
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+assert check insert
+turn = 66 finish task = 24
+69 64 65 61 59 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+25 -1 -1 27 23 
+-1 -1 -1 -1 -1 
+24 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 -1 -1 1 -1 
+-1 -1 -1 -1 0 
+-1 3 -1 -1 -1 
+-1 4 -1 2 -1 
+
+start 24 4 0 4 4 66
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+assert check insert
+turn = 67 finish task = 24
+69 64 65 61 59 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+25 -1 -1 27 -1 
+-1 -1 -1 -1 23 
+24 -1 -1 -1 -1 
+
+-1 -1 -1 -1 -1 
+-1 -1 1 -1 -1 
+-1 -1 -1 -1 -1 
+3 -1 -1 2 0 
+4 -1 -1 -1 -1 
+
+start 24 4 0 4 4 67
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+assert check insert
+turn = 68 finish task = 24
+69 64 65 61 59 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+25 -1 -1 27 -1 
+-1 -1 -1 -1 -1 
+24 -1 -1 -1 23 
+
+-1 -1 -1 -1 -1 
+-1 1 -1 -1 -1 
+-1 -1 -1 2 -1 
+3 -1 -1 -1 -1 
+4 -1 -1 -1 0 
+
+start 24 4 0 4 4 68
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 59 
+start 4
+nx = 4 ny = 3
+nx = 4 ny = 2
+nx = 4 ny = 1
+nx = 4 ny = 0
+changed 
+0 
+move history clane = 4
+turn = 0 P[4 0] [4 0]
+turn = 1 R[4 0] [4 0]
+turn = 2 U[4 1] [4 1]
+turn = 3 U[3 1] [3 1]
+turn = 4 D[2 1] [2 1]
+turn = 5 U[3 1] [3 1]
+turn = 6 D[2 1] [2 1]
+turn = 7 U[3 1] [3 1]
+turn = 8 D[2 1] [2 1]
+turn = 9 U[3 1] [3 1]
+turn = 10 D[2 1] [2 1]
+turn = 11 U[3 1] [3 1]
+turn = 12 U[2 1] [2 1]
+turn = 13 R[1 1] [1 1]
+turn = 14 U[1 2] [1 2]
+turn = 15 Q[0 2] [0 2]
+turn = 16 D[0 2] [0 2]
+turn = 17 .[1 2] [1 2]
+turn = 18 L[1 2] [1 2]
+turn = 19 L[1 1] [1 1]
+turn = 20 P[1 0] [1 0]
+turn = 21 R[1 0] [1 0]
+turn = 22 D[1 1] [1 1]
+turn = 23 R[2 1] [2 1]
+turn = 24 U[2 2] [2 2]
+turn = 25 R[1 2] [1 2]
+turn = 26 R[1 3] [1 3]
+turn = 27 Q[1 4] [1 4]
+turn = 28 L[1 4] [1 4]
+turn = 29 L[1 3] [1 3]
+turn = 30 D[1 2] [1 2]
+turn = 31 D[2 2] [2 2]
+turn = 32 L[3 2] [3 2]
+turn = 33 L[3 1] [3 1]
+turn = 34 .[3 0] [3 0]
+turn = 35 P[3 0] [3 0]
+turn = 36 R[3 0] [3 0]
+turn = 37 U[3 1] [3 1]
+turn = 38 D[2 1] [2 1]
+turn = 39 D[3 1] [3 1]
+turn = 40 R[4 1] [4 1]
+turn = 41 R[4 2] [4 2]
+turn = 42 .[4 3] [4 3]
+turn = 43 R[4 3] [4 3]
+turn = 44 U[4 4] [4 4]
+turn = 45 Q[3 4] [3 4]
+turn = 46 L[3 4] [3 4]
+turn = 47 L[3 3] [3 3]
+turn = 48 L[3 2] [3 2]
+turn = 49 L[3 1] [3 1]
+turn = 50 U[3 0] [3 0]
+turn = 51 P[2 0] [2 0]
+turn = 52 R[2 0] [2 0]
+turn = 53 U[2 1] [2 1]
+turn = 54 R[1 1] [1 1]
+turn = 55 R[1 2] [1 2]
+turn = 56 U[1 3] [1 3]
+turn = 57 R[0 3] [0 3]
+turn = 58 Q[0 4] [0 4]
+turn = 59 L[0 4] [0 4]
+turn = 60 D[0 3] [0 3]
+turn = 61 D[1 3] [1 3]
+turn = 62 D[2 3] [2 3]
+turn = 63 D[3 3] [3 3]
+turn = 64 L[4 3] [4 3]
+turn = 65 L[4 2] [4 2]
+turn = 66 L[4 1] [4 1]
+turn = 67 P[4 0] [4 0]
+turn = 68 R[4 0] [4 0]
+turn = 69 R[4 1] [4 1]
+turn = 70 R[4 2] [4 2]
+turn = 71 R[4 3] [4 3]
+turn = 72 Q[4 4] [4 4]
+turn = 73 L[4 4] [4 4]
+turn = 74 L[4 3] [4 3]
+turn = 75 L[4 2] [4 2]
+turn = 76 L[4 1] [4 1]
+turn = 77 #[4 0] [4 0]
+turn = 78 #[4 0] [4 0]
+turn = 79 #[4 0] [4 0]
+turn = 80 #[4 0] [4 0]
+turn = 81 #[4 0] [4 0]
+turn = 82 #[4 0] [4 0]
+assert check insert
+start 19 2 0 3 4 68
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 61 73 
+start 3
+nx = 3 ny = 3
+nx = 3 ny = 2
+nx = 3 ny = 1
+nx = 2 ny = 1
+nx = 2 ny = 0
+changed 
+
+move history clane = 3
+turn = 0 P[3 0] [3 0]
+turn = 1 R[3 0] [3 0]
+turn = 2 R[3 1] [3 1]
+turn = 3 R[3 2] [3 2]
+turn = 4 .[3 3] [3 3]
+turn = 5 U[3 3] [3 3]
+turn = 6 U[2 3] [2 3]
+turn = 7 U[1 3] [1 3]
+turn = 8 R[0 3] [0 3]
+turn = 9 Q[0 4] [0 4]
+turn = 10 L[0 4] [0 4]
+turn = 11 D[0 3] [0 3]
+turn = 12 .[1 3] [1 3]
+turn = 13 U[1 3] [1 3]
+turn = 14 P[0 3] [0 3]
+turn = 15 D[0 3] [0 3]
+turn = 16 U[1 3] [1 3]
+turn = 17 D[0 3] [0 3]
+turn = 18 U[1 3] [1 3]
+turn = 19 .[0 3] [0 3]
+turn = 20 .[0 3] [0 3]
+turn = 21 R[0 3] [0 3]
+turn = 22 D[0 4] [0 4]
+turn = 23 Q[1 4] [1 4]
+turn = 24 L[1 4] [1 4]
+turn = 25 U[1 3] [1 3]
+turn = 26 L[0 3] [0 3]
+turn = 27 L[0 2] [0 2]
+turn = 28 L[0 1] [0 1]
+turn = 29 P[0 0] [0 0]
+turn = 30 R[0 0] [0 0]
+turn = 31 D[0 1] [0 1]
+turn = 32 R[1 1] [1 1]
+turn = 33 R[1 2] [1 2]
+turn = 34 R[1 3] [1 3]
+turn = 35 D[1 4] [1 4]
+turn = 36 Q[2 4] [2 4]
+turn = 37 L[2 4] [2 4]
+turn = 38 D[2 3] [2 3]
+turn = 39 L[3 3] [3 3]
+turn = 40 L[3 2] [3 2]
+turn = 41 L[3 1] [3 1]
+turn = 42 P[3 0] [3 0]
+turn = 43 R[3 0] [3 0]
+turn = 44 D[3 1] [3 1]
+turn = 45 R[4 1] [4 1]
+turn = 46 R[4 2] [4 2]
+turn = 47 R[4 3] [4 3]
+turn = 48 Q[4 4] [4 4]
+turn = 49 L[4 4] [4 4]
+turn = 50 U[4 3] [4 3]
+turn = 51 L[3 3] [3 3]
+turn = 52 L[3 2] [3 2]
+turn = 53 L[3 1] [3 1]
+turn = 54 P[3 0] [3 0]
+turn = 55 R[3 0] [3 0]
+turn = 56 R[3 1] [3 1]
+turn = 57 R[3 2] [3 2]
+turn = 58 R[3 3] [3 3]
+turn = 59 U[3 4] [3 4]
+turn = 60 Q[2 4] [2 4]
+turn = 61 .[2 4] [2 4]
+turn = 62 L[2 4] [2 4]
+turn = 63 .[2 3] [2 3]
+turn = 64 L[2 3] [2 3]
+turn = 65 L[2 2] [2 2]
+turn = 66 L[2 1] [2 1]
+turn = 67 P[2 0] [2 0]
+turn = 68 R[2 0] [2 0]
+turn = 69 D[2 1] [2 1]
+turn = 70 R[3 1] [3 1]
+turn = 71 R[3 2] [3 2]
+turn = 72 R[3 3] [3 3]
+turn = 73 Q[3 4] [3 4]
+turn = 74 L[3 4] [3 4]
+turn = 75 L[3 3] [3 3]
+turn = 76 L[3 2] [3 2]
+turn = 77 L[3 1] [3 1]
+turn = 78 #[3 0] [3 0]
+turn = 79 #[3 0] [3 0]
+turn = 80 #[3 0] [3 0]
+turn = 81 #[3 0] [3 0]
+turn = 82 #[3 0] [3 0]
+turn = 83 #[3 0] [3 0]
+assert check insert
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 P[2 0] [2 0]
+turn = 32 R[2 0] [2 0]
+turn = 33 U[2 1] [2 1]
+turn = 34 R[1 1] [1 1]
+turn = 35 R[1 2] [1 2]
+turn = 36 R[1 3] [1 3]
+turn = 37 Q[1 4] [1 4]
+turn = 38 L[1 4] [1 4]
+turn = 39 D[1 3] [1 3]
+turn = 40 L[2 3] [2 3]
+turn = 41 L[2 2] [2 2]
+turn = 42 L[2 1] [2 1]
+turn = 43 U[2 0] [2 0]
+turn = 44 P[1 0] [1 0]
+turn = 45 R[1 0] [1 0]
+turn = 46 R[1 1] [1 1]
+turn = 47 R[1 2] [1 2]
+turn = 48 U[1 3] [1 3]
+turn = 49 R[0 3] [0 3]
+turn = 50 Q[0 4] [0 4]
+turn = 51 L[0 4] [0 4]
+turn = 52 D[0 3] [0 3]
+turn = 53 D[1 3] [1 3]
+turn = 54 L[2 3] [2 3]
+turn = 55 L[2 2] [2 2]
+turn = 56 L[2 1] [2 1]
+turn = 57 D[2 0] [2 0]
+turn = 58 P[3 0] [3 0]
+turn = 59 R[3 0] [3 0]
+turn = 60 D[3 1] [3 1]
+turn = 61 R[4 1] [4 1]
+turn = 62 R[4 2] [4 2]
+turn = 63 R[4 3] [4 3]
+turn = 64 Q[4 4] [4 4]
+turn = 65 L[4 4] [4 4]
+turn = 66 U[4 3] [4 3]
+turn = 67 U[3 3] [3 3]
+turn = 68 L[2 3] [2 3]
+turn = 69 L[2 2] [2 2]
+turn = 70 L[2 1] [2 1]
+turn = 71 #[2 0] [2 0]
+turn = 72 #[2 0] [2 0]
+turn = 73 #[2 0] [2 0]
+turn = 74 #[2 0] [2 0]
+turn = 75 #[2 0] [2 0]
+turn = 76 #[2 0] [2 0]
+assert check insert
+turn = 69 finish task = 26
+69 64 65 74 73 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 25 -1 27 -1 
+-1 -1 -1 -1 -1 
+26 24 -1 -1 23 
+
+-1 -1 -1 -1 -1 
+1 -1 -1 -1 -1 
+-1 3 2 -1 -1 
+-1 -1 -1 -1 -1 
+-1 4 -1 -1 0 
+
+start 13 4 0 2 4 69
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 74 73 
+assert check insert
+turn = 70 finish task = 26
+69 64 65 74 73 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 27 -1 
+-1 25 -1 -1 -1 
+26 -1 24 -1 -1 
+
+-1 -1 -1 -1 -1 
+1 -1 -1 -1 -1 
+-1 2 -1 -1 -1 
+-1 3 -1 -1 -1 
+-1 -1 4 0 -1 
+
+start 13 4 0 2 4 70
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 74 73 
+assert check insert
+turn = 71 finish task = 26
+69 64 65 74 73 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 27 -1 
+-1 -1 25 -1 -1 
+26 -1 -1 24 -1 
+
+-1 -1 -1 -1 -1 
+1 -1 -1 -1 -1 
+2 -1 -1 -1 -1 
+-1 -1 3 0 -1 
+-1 -1 -1 4 -1 
+
+start 13 4 0 2 4 71
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 74 73 
+assert check insert
+turn = 72 finish task = 26
+69 64 65 74 73 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 27 -1 
+-1 -1 -1 25 -1 
+26 -1 -1 -1 24 
+
+-1 -1 -1 -1 -1 
+1 -1 -1 -1 -1 
+2 -1 -1 0 -1 
+-1 -1 -1 3 -1 
+-1 -1 -1 -1 4 
+
+start 13 4 0 2 4 72
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 65 74 73 
+start 2
+nx = 1 ny = 4
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 1 ny = 1
+nx = 2 ny = 1
+nx = 3 ny = 1
+nx = 4 ny = 1
+nx = 4 ny = 0
+changed 
+
+move history clane = 2
+turn = 0 #[2 0] [2 0]
+turn = 1 U[2 0] [2 0]
+turn = 2 U[1 0] [1 0]
+turn = 3 P[0 0] [0 0]
+turn = 4 R[0 0] [0 0]
+turn = 5 R[0 1] [0 1]
+turn = 6 D[0 2] [0 2]
+turn = 7 R[1 2] [1 2]
+turn = 8 R[1 3] [1 3]
+turn = 9 Q[1 4] [1 4]
+turn = 10 L[1 4] [1 4]
+turn = 11 D[1 3] [1 3]
+turn = 12 L[2 3] [2 3]
+turn = 13 L[2 2] [2 2]
+turn = 14 L[2 1] [2 1]
+turn = 15 U[2 0] [2 0]
+turn = 16 P[1 0] [1 0]
+turn = 17 R[1 0] [1 0]
+turn = 18 D[1 1] [1 1]
+turn = 19 D[2 1] [2 1]
+turn = 20 R[3 1] [3 1]
+turn = 21 D[3 2] [3 2]
+turn = 22 R[4 2] [4 2]
+turn = 23 R[4 3] [4 3]
+turn = 24 Q[4 4] [4 4]
+turn = 25 U[4 4] [4 4]
+turn = 26 U[3 4] [3 4]
+turn = 27 L[2 4] [2 4]
+turn = 28 L[2 3] [2 3]
+turn = 29 L[2 2] [2 2]
+turn = 30 L[2 1] [2 1]
+turn = 31 P[2 0] [2 0]
+turn = 32 R[2 0] [2 0]
+turn = 33 U[2 1] [2 1]
+turn = 34 R[1 1] [1 1]
+turn = 35 R[1 2] [1 2]
+turn = 36 R[1 3] [1 3]
+turn = 37 Q[1 4] [1 4]
+turn = 38 L[1 4] [1 4]
+turn = 39 D[1 3] [1 3]
+turn = 40 L[2 3] [2 3]
+turn = 41 L[2 2] [2 2]
+turn = 42 L[2 1] [2 1]
+turn = 43 U[2 0] [2 0]
+turn = 44 P[1 0] [1 0]
+turn = 45 R[1 0] [1 0]
+turn = 46 R[1 1] [1 1]
+turn = 47 R[1 2] [1 2]
+turn = 48 U[1 3] [1 3]
+turn = 49 R[0 3] [0 3]
+turn = 50 Q[0 4] [0 4]
+turn = 51 L[0 4] [0 4]
+turn = 52 D[0 3] [0 3]
+turn = 53 D[1 3] [1 3]
+turn = 54 L[2 3] [2 3]
+turn = 55 L[2 2] [2 2]
+turn = 56 L[2 1] [2 1]
+turn = 57 D[2 0] [2 0]
+turn = 58 P[3 0] [3 0]
+turn = 59 R[3 0] [3 0]
+turn = 60 D[3 1] [3 1]
+turn = 61 R[4 1] [4 1]
+turn = 62 R[4 2] [4 2]
+turn = 63 R[4 3] [4 3]
+turn = 64 Q[4 4] [4 4]
+turn = 65 L[4 4] [4 4]
+turn = 66 U[4 3] [4 3]
+turn = 67 L[3 3] [3 3]
+turn = 68 L[3 2] [3 2]
+turn = 69 L[3 1] [3 1]
+turn = 70 D[3 0] [3 0]
+turn = 71 P[4 0] [4 0]
+turn = 72 R[4 0] [4 0]
+turn = 73 U[4 1] [4 1]
+turn = 74 U[3 1] [3 1]
+turn = 75 U[2 1] [2 1]
+turn = 76 R[1 1] [1 1]
+turn = 77 R[1 2] [1 2]
+turn = 78 R[1 3] [1 3]
+turn = 79 D[1 4] [1 4]
+turn = 80 Q[2 4] [2 4]
+turn = 81 L[2 4] [2 4]
+turn = 82 L[2 3] [2 3]
+turn = 83 L[2 2] [2 2]
+turn = 84 L[2 1] [2 1]
+turn = 85 #[2 0] [2 0]
+turn = 86 #[2 0] [2 0]
+turn = 87 #[2 0] [2 0]
+turn = 88 #[2 0] [2 0]
+turn = 89 #[2 0] [2 0]
+turn = 90 #[2 0] [2 0]
+assert check insert
+start 14 2 3 2 4 72
+ update return from start
+last return clane 0 1 2 3 -1 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 81 74 73 
+move history clane = 4
+turn = 0 P[4 0] [4 0]
+turn = 1 R[4 0] [4 0]
+turn = 2 U[4 1] [4 1]
+turn = 3 U[3 1] [3 1]
+turn = 4 D[2 1] [2 1]
+turn = 5 U[3 1] [3 1]
+turn = 6 D[2 1] [2 1]
+turn = 7 U[3 1] [3 1]
+turn = 8 D[2 1] [2 1]
+turn = 9 U[3 1] [3 1]
+turn = 10 D[2 1] [2 1]
+turn = 11 U[3 1] [3 1]
+turn = 12 U[2 1] [2 1]
+turn = 13 R[1 1] [1 1]
+turn = 14 U[1 2] [1 2]
+turn = 15 Q[0 2] [0 2]
+turn = 16 D[0 2] [0 2]
+turn = 17 .[1 2] [1 2]
+turn = 18 L[1 2] [1 2]
+turn = 19 L[1 1] [1 1]
+turn = 20 P[1 0] [1 0]
+turn = 21 R[1 0] [1 0]
+turn = 22 D[1 1] [1 1]
+turn = 23 R[2 1] [2 1]
+turn = 24 U[2 2] [2 2]
+turn = 25 R[1 2] [1 2]
+turn = 26 R[1 3] [1 3]
+turn = 27 Q[1 4] [1 4]
+turn = 28 L[1 4] [1 4]
+turn = 29 L[1 3] [1 3]
+turn = 30 D[1 2] [1 2]
+turn = 31 D[2 2] [2 2]
+turn = 32 L[3 2] [3 2]
+turn = 33 L[3 1] [3 1]
+turn = 34 .[3 0] [3 0]
+turn = 35 P[3 0] [3 0]
+turn = 36 R[3 0] [3 0]
+turn = 37 U[3 1] [3 1]
+turn = 38 D[2 1] [2 1]
+turn = 39 D[3 1] [3 1]
+turn = 40 R[4 1] [4 1]
+turn = 41 R[4 2] [4 2]
+turn = 42 .[4 3] [4 3]
+turn = 43 R[4 3] [4 3]
+turn = 44 U[4 4] [4 4]
+turn = 45 Q[3 4] [3 4]
+turn = 46 L[3 4] [3 4]
+turn = 47 L[3 3] [3 3]
+turn = 48 L[3 2] [3 2]
+turn = 49 L[3 1] [3 1]
+turn = 50 U[3 0] [3 0]
+turn = 51 P[2 0] [2 0]
+turn = 52 R[2 0] [2 0]
+turn = 53 U[2 1] [2 1]
+turn = 54 R[1 1] [1 1]
+turn = 55 R[1 2] [1 2]
+turn = 56 U[1 3] [1 3]
+turn = 57 R[0 3] [0 3]
+turn = 58 Q[0 4] [0 4]
+turn = 59 L[0 4] [0 4]
+turn = 60 D[0 3] [0 3]
+turn = 61 D[1 3] [1 3]
+turn = 62 D[2 3] [2 3]
+turn = 63 D[3 3] [3 3]
+turn = 64 L[4 3] [4 3]
+turn = 65 L[4 2] [4 2]
+turn = 66 L[4 1] [4 1]
+turn = 67 P[4 0] [4 0]
+turn = 68 R[4 0] [4 0]
+turn = 69 R[4 1] [4 1]
+turn = 70 R[4 2] [4 2]
+turn = 71 R[4 3] [4 3]
+turn = 72 Q[4 4] [4 4]
+turn = 73 L[4 4] [4 4]
+turn = 74 L[4 3] [4 3]
+turn = 75 L[4 2] [4 2]
+turn = 76 L[4 1] [4 1]
+turn = 77 #[4 0] [4 0]
+turn = 78 #[4 0] [4 0]
+turn = 79 #[4 0] [4 0]
+turn = 80 #[4 0] [4 0]
+turn = 81 #[4 0] [4 0]
+turn = 82 #[4 0] [4 0]
+assert check insert
+turn = 73 finish task = 27
+69 64 81 74 73 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 27 -1 
+-1 -1 -1 -1 25 
+-1 26 -1 -1 24 
+
+-1 -1 -1 -1 -1 
+1 -1 -1 0 -1 
+-1 -1 -1 -1 -1 
+-1 -1 -1 -1 3 
+-1 2 -1 -1 4 
+
+start 14 2 3 2 4 73
+ update return from start
+last return clane 0 1 2 3 4 
+plan_return_clane 0 1 2 3 4 
+last_use_clane 69 64 81 74 73 
+start 0
+nx = 1 ny = 4
+nx = 1 ny = 3
+nx = 1 ny = 2
+nx = 0 ny = 2
+nx = 0 ny = 3
+nx = 1 ny = 3
+nx = 0 ny = 3
+nx = 1 ny = 3
+nx = 2 ny = 3
+changed 
+2 
+move history clane = 0
+turn = 0 P[0 0] [0 0]
+turn = 1 R[0 0] [0 0]
+turn = 2 D[0 1] [0 1]
+turn = 3 U[1 1] [1 1]
+turn = 4 D[0 1] [0 1]
+turn = 5 U[1 1] [1 1]
+turn = 6 D[0 1] [0 1]
+turn = 7 U[1 1] [1 1]
+turn = 8 D[0 1] [0 1]
+turn = 9 U[1 1] [1 1]
+turn = 10 R[0 1] [0 1]
+turn = 11 R[0 2] [0 2]
+turn = 12 Q[0 3] [0 3]
+turn = 13 L[0 3] [0 3]
+turn = 14 L[0 2] [0 2]
+turn = 15 D[0 1] [0 1]
+turn = 16 D[1 1] [1 1]
+turn = 17 L[2 1] [2 1]
+turn = 18 P[2 0] [2 0]
+turn = 19 R[2 0] [2 0]
+turn = 20 U[2 1] [2 1]
+turn = 21 U[1 1] [1 1]
+turn = 22 D[0 1] [0 1]
+turn = 23 U[1 1] [1 1]
+turn = 24 .[0 1] [0 1]
+turn = 25 D[0 1] [0 1]
+turn = 26 R[1 1] [1 1]
+turn = 27 R[1 2] [1 2]
+turn = 28 D[1 3] [1 3]
+turn = 29 Q[2 3] [2 3]
+turn = 30 U[2 3] [2 3]
+turn = 31 U[1 3] [1 3]
+turn = 32 L[0 3] [0 3]
+turn = 33 L[0 2] [0 2]
+turn = 34 L[0 1] [0 1]
+turn = 35 P[0 0] [0 0]
+turn = 36 R[0 0] [0 0]
+turn = 37 D[0 1] [0 1]
+turn = 38 D[1 1] [1 1]
+turn = 39 R[2 1] [2 1]
+turn = 40 D[2 2] [2 2]
+turn = 41 R[3 2] [3 2]
+turn = 42 R[3 3] [3 3]
+turn = 43 Q[3 4] [3 4]
+turn = 44 L[3 4] [3 4]
+turn = 45 U[3 3] [3 3]
+turn = 46 U[2 3] [2 3]
+turn = 47 U[1 3] [1 3]
+turn = 48 L[0 3] [0 3]
+turn = 49 P[0 2] [0 2]
+turn = 50 D[0 2] [0 2]
+turn = 51 U[1 2] [1 2]
+turn = 52 R[0 2] [0 2]
+turn = 53 R[0 3] [0 3]
+turn = 54 Q[0 4] [0 4]
+turn = 55 L[0 4] [0 4]
+turn = 56 L[0 3] [0 3]
+turn = 57 L[0 2] [0 2]
+turn = 58 L[0 1] [0 1]
+turn = 59 P[0 0] [0 0]
+turn = 60 R[0 0] [0 0]
+turn = 61 D[0 1] [0 1]
+turn = 62 R[1 1] [1 1]
+turn = 63 R[1 2] [1 2]
+turn = 64 R[1 3] [1 3]
+turn = 65 D[1 4] [1 4]
+turn = 66 D[2 4] [2 4]
+turn = 67 D[3 4] [3 4]
+turn = 68 Q[4 4] [4 4]
+turn = 69 L[4 4] [4 4]
+turn = 70 U[4 3] [4 3]
+turn = 71 U[3 3] [3 3]
+turn = 72 P[2 3] [2 3]
+turn = 73 U[2 3] [2 3]
+turn = 74 U[1 3] [1 3]
+turn = 75 D[0 3] [0 3]
+turn = 76 U[1 3] [1 3]
+turn = 77 L[0 3] [0 3]
+turn = 78 D[0 2] [0 2]
+turn = 79 R[1 2] [1 2]
+turn = 80 R[1 3] [1 3]
+turn = 81 D[1 4] [1 4]
+turn = 82 Q[2 4] [2 4]
+turn = 83 L[2 4] [2 4]
+turn = 84 U[2 3] [2 3]
+turn = 85 U[1 3] [1 3]
+turn = 86 L[0 3] [0 3]
+turn = 87 L[0 2] [0 2]
+turn = 88 L[0 1] [0 1]
+turn = 89 #[0 0] [0 0]
+turn = 90 #[0 0] [0 0]
+turn = 91 #[0 0] [0 0]
+turn = 92 #[0 0] [0 0]
+turn = 93 #[0 0] [0 0]
+turn = 94 #[0 0] [0 0]
+assert check insert
+501 82
+apply end
+score = 83

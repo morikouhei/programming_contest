@@ -1,0 +1,38 @@
+平均は70ターンぐらいがトップ
+ソロだと雑に340 で5倍
+
+
+a を [x,y] から [nx,ny] に運ぶというタスクを順番に割り当てる
+
+clane は clane_state[i] i turn目の時は task_x が割り当てられてる or -1 フリー
+board_state[i] i turn目の board の状態 未来については タスクの消化分だけ反映する 現在turn で 何か置いてある かつ そのタスクが未消化なら未来でもそのままと仮定
+clane_state[i] i turn目の clane の状態
+
+turn = 0 から順番に
+未消化のタスクの最初から a が [x,y] にあるかを確認
+
+あるなら turnを遡った bfs をして clane の割り当てを決める なければターンが進む
+あれば clane_state の過去分を修正して a [x,y] から [nx,ny] への　未来への bfs をして タスクを消化する
+タスクを消化したら [j,0] に戻ることにする
+
+荷物を持ってない状態の bfs 極力端を通る, 荷物の上を通る経路だと良さそう 曲がりも少ないと良い
+荷物を持ってる状態の bfs 搬出の場合は 前のものが運び終わってから到着するようにする
+
+turn に x,y に動ける条件
+
+turn で x,y に task が与えられた clane がない
+turn-1 で nx,ny に taskが与えられた clane がない
+turn-1 で x,y に いた clane が turn で nx,ny に行ってない 
+
+board_state[i] = i turn目が終わった boardの状態
+clane_state[i] = i turn目が終わった claneの状態
+ans[i] i+1 turn目に行った行動
+
+
+last_return_clane 
+clane が戻る場所はこれで指定する
+戻ろうとしてる場所の荷物に別のclaneが割り当てられたら
+last_return_clane[戻ろうとしてるclane] = 別のclane になったら -1 の claneから再設定する 
+
+last_return_clane[i] row i に 戻る予定の clane 
+plan_return_clane[i] clane i が 戻る予定の row

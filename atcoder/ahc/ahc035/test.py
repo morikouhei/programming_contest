@@ -25,7 +25,7 @@ for i in range(N):
     # proc = subprocess.Popen(f"cargo run -r --bin tester python3 /Users/morikouhei/github/programming_contest/atcoder/ahc/ahc029/a.py < in/{S}.txt > out/{S}.txt", shell=True)#要変更
 
     # command = f"python3 /Users/morikouhei/github/programming_contest/atcoder/ahc/ahc030/a.py < in/{S}.txt > out/{S}.txt"
-    command = f"/Users/morikouhei/a.out < in/{S}.txt > out/{S}.txt 2> score/{S}.txt"
+    command = f"cargo run -r --bin tester /Users/morikouhei/a.out < in/{S}.txt > out/{S}.txt 2> score/{S}.txt"
 
     proc = subprocess.Popen(
         command,
@@ -62,7 +62,7 @@ prob_score = 0
 sum_pena = 0
 scores = []
 errors = []
-num = 400
+num = N
 
 out_num = num
 

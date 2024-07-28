@@ -62,7 +62,7 @@ prob_score = 0
 sum_pena = 0
 scores = []
 errors = []
-num = 400
+num = N
 
 out_num = num
 

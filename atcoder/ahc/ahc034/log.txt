@@ -1,0 +1,4 @@
+end input
+start at 0.002258
+loop = 20146944
+score = 150052

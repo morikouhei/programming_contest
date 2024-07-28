@@ -24,7 +24,7 @@ for i in range(N):
 
     # proc = subprocess.Popen(f"cargo run -r --bin tester python3 /Users/morikouhei/github/programming_contest/atcoder/ahc/ahc029/a.py < in/{S}.txt > out/{S}.txt", shell=True)#要変更
 
-    # command = f"python3 /Users/morikouhei/github/programming_contest/atcoder/ahc/ahc030/a.py < in/{S}.txt > out/{S}.txt"
+    command = f"python3 /Users/morikouhei/github/programming_contest/atcoder/ahc/ahc030/a.py < in/{S}.txt > out/{S}.txt"
     command = f"/Users/morikouhei/a.out < in/{S}.txt > out/{S}.txt 2> score/{S}.txt"
 
     proc = subprocess.Popen(
@@ -46,11 +46,17 @@ print("time: ", time.time() - start)
 
 freaqs = [0]*1000
 E = [0]*100
+num_count = 0
 plot_Y = []
 def calc_score(input_path, output_path,score_path):
+    global num_count
+    find = 0
     with open(score_path) as f:
         lines = f.readlines()
-
+        for line in lines:
+            if "need clane 0" in line:
+                find = 1
+        num_count += find
         score = int(lines[-1].replace("\n", "").split()[-1])
         # print(f"d = {d} comp_d = {turn}")
         return score
@@ -66,6 +72,8 @@ num = 400
 
 out_num = num
 
+comps_num = 0
+comps_rate = 0
 for i in range(num):
     S = str(i).zfill(4)
     input_path = f"in/{S}.txt"
@@ -100,7 +108,8 @@ for i in range(num):
 
 # exit()
 # print(comps_num,comps_rate/comps_num)
-print("average =", sum_score / num, num)
+print(num_count)
+print("average =", sum_score / num, sum_pena/num ,prob_score/num , prob_score,sum_score, num, prob_score / sum_score,out_num)
 scores.sort()
 print(scores[:20])
 print(scores[-20:])
